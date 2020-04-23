@@ -1,0 +1,43 @@
+<nav id="top-navigation" class="navbar navbar-expand-lg p-3 px-md-4 mb-3 align-items-center justify-content-between">
+    <a class="navbar-brand mr-md-auto" href="/">
+        <img src="{{ "/images/logo.svg" | absURL }}" style="width: 50px;" />
+        {{ .Site.Title }}
+    </a>
+    <button class="navbar-toggler text-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    >
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+        <ul class="navbar-nav">
+            {{ $currentPage := . }}
+            {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>{{ .Name }}</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            {{ range .Children }}
+                                <a class="dropdown-item {{ if $currentPage.IsMenuCurrent " main" . }}active{{ end }}"
+                                   href="{{ .URL }}">
+                                    {{ .Name }}
+                                </a>
+                            {{ end }}
+                        </div>
+                    </li>
+                {{ else }}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ .URL }}">
+                            {{ .Pre }}
+                            <span>{{ .Name }}</span>
+                        </a>
+                    </li>
+                {{ end }}
+            {{ end }}
+        </ul>
+    </div>
+</nav>

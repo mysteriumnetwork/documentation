@@ -1,0 +1,20 @@
+<div class="sidebar-sticky">
+    {{ $home := .Site.Home }}
+    {{ $current := . }}
+
+    {{ range $home.Pages}}
+        {{ if eq $current.Section .Section }}
+            <h6 class="section-title">
+                {{ .Title }}
+            </h6>
+            <ul class="section-page-list">
+                {{ range .Pages }}
+                    <li class="section-page">
+                        <a href="{{ .RelPermalink}}">{{ .Title }}</a>
+                        {{ partial "sidebar-child-menu" . }}
+                    </li>
+                {{ end }}
+            </ul>
+        {{ end }}
+    {{ end }}
+</div>

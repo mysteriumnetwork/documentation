@@ -1,0 +1,106 @@
+@import url('https://rsms.me/inter/inter.css');
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter var', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+body {
+  //background-color: #121723;
+  //color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+}
+
+#top-navigation {
+  //background-color: #121723 !important;
+  color: #fff;
+  border-bottom: 1px solid #eee;
+
+  .navbar-nav {
+    .nav-link, .nav-link:hover {
+      color: #2c374a;
+    }
+  }
+  a.navbar-brand {
+    color: #412361;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-container {
+  min-width: 300px;
+  width: 300px;
+  padding: 0 1.5rem;
+
+  .section-title {
+    color: #000;
+    font-size: 1.2rem;
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  ul.section-page-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li.section-page {
+      margin-top: 0.5rem;
+      a {
+        font-size: 1.1rem;
+        font-weight: 500;
+        line-height: 1.8;
+        color: #465165;
+        display: block;
+        padding-left: 0;
+
+        &:hover {
+          color: #121723;
+          text-decoration: none;
+        }
+      }
+
+      ul.page-child-menu {
+        margin: 0;
+
+        li.page-child-item a {
+          font-size: 1rem;
+          font-weight: 500;
+          line-height: 2;
+          display: block;
+          padding-left: 1rem;
+        }
+
+        ul.page-child-submenu {
+          li.page-child-submenu-item a {
+            font-size: 0.9rem;
+            font-weight: 500;
+            line-height: 1.8;
+            display: block;
+            padding-left: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.toc-container {
+  min-width: 250px;
+  width: 250px;
+  padding: 0 1.5rem;
+}

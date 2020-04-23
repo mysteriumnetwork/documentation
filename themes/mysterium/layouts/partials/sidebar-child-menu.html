@@ -1,0 +1,17 @@
+<ul class="page-child-menu">
+    {{ range .Pages}}
+        <li class="page-child-item">
+            <a href="{{ .RelPermalink}}">{{ .Name }}</a>
+            {{ if len .Pages }}
+                <ul class="page-child-submenu">
+                    {{ range .Pages }}
+                        <li class="page-child-submenu-item">
+                            <a href="{{ .RelPermalink}}">{{ .Title }}</a>
+                            {{ partial "sidebar-child-menu" . }}
+                        </li>
+                    {{ end }}
+                </ul>
+            {{ end }}
+        </li>
+    {{ end }}
+</ul>
