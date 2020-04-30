@@ -3,4 +3,4 @@ title: Legal considerations
 weight: 10
 ---
 
-Legal considerations content
+Legal considerations content here
