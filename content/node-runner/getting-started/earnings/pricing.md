@@ -5,7 +5,7 @@ weight: 3
 
 Default pricing for Mysterium network users:
 
-- [ ]  1 gigabyte of traffic: 0.10 MYST
+- [ ]  1 gigabyte of traffic: 0.20 MYST
 - [ ]  1 minute of session: 0.0001 MYST
 - [ ]  Accountant fee: 12%
 
