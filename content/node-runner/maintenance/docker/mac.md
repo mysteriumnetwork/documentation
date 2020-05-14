@@ -1,9 +1,7 @@
 ---
 title: Docker for macOS
-weight: 11
+weight: 2
 ---
-
-
 
 Start your node with the following command (custom port=25007 is used for the example below): 
 

@@ -1,6 +1,6 @@
 ---
 title: Raspberry Pi
-weight: 11
+weight: 1
 ---
 
 ### Getting started with a Raspberry Pi

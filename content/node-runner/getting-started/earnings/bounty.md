@@ -1,14 +1,15 @@
 ---
 title: Bounty program
 weight: 1
+description: Network kickoff initiative
 ---
 
 Being a part of the Mysterium Network Node Pilot means you join us in the research phase of our project. So expect rapid changes to bounty rules.
 
 We are going to be introducing two bounties for the Month of March. These rules come into effect on the 1st of March 2020 and will affect your payout in April.
 
-1. [Residential IP bounties with payout caps and rolling payments + New countries 🇦🇺🇳🇱](https://my.mysterium.network/node-running-guide/bounty-rules#rule-residential-ip)
-2. [Top 3 nodes / region bounties 🌍](https://my.mysterium.network/node-running-guide/bounty-rules#rule-top)
+1. [Residential IP bounties with payout caps and rolling payments + New countries 🇦🇺🇳🇱](#rule-residential-ip)
+2. [Top 3 nodes / region bounties 🌍](#rule-top)
 
 Important Definitions:
 

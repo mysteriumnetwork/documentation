@@ -1,6 +1,6 @@
 ---
 title: Docker
-weight: 10
+weight: 3
 ---
 
 [Docker](https://www.docker.com/) is a tool that enables developers to ship and run applications such as a Mysterium Node by the use of containers. A container holds all the required libraries, services and other application dependencies and ships it as a single package.

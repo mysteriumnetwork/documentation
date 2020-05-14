@@ -1,6 +1,7 @@
 ---
 title: MYST Token
 weight: 2
+description: Our ERC-20 token
 ---
 
 Mysterium (**MYST**) is a cryptocurrency **token** deployed as smart contract which operates on the Ethereum blockchain and allows users to perform activities within the Mysterium VPN network both as VPN clients or as a service provider (VPN Node).

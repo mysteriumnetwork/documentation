@@ -1,6 +1,6 @@
 ---
 title: Docker for Linux
-weight: 11
+weight: 1
 ---
 
 You should be able to run a node on any Linux OS that supports Docker. Tested on these operating systems: *Debian 9/10*, *Raspbian 9/10*, *Ubuntu* and *CentOS*.

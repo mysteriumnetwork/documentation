@@ -1,15 +1,20 @@
 ---
 title: Introduction
+description: What is a Mysterium Node runner; core concepts.
 weight: 20
 ---
 
-# What is a Mysterium Node?
+### What is a Mysterium Node?
 
-Software which represents Mysterium Network element responsible for either providing or consuming network service. Such node can be run on your raspberry, desktop, mobile, docker or on any debian server using debian package. On mobile only service consumption is possible. 
+Mysterium Node is a piece of software which represents Mysterium Network's element responsible for either providing or
+ consuming a network service. Such node can be run on your Raspberry PI, Docker or any Debian based
+  distribution. The current mobile version does not support service running. 
 
-## Mysterium node runner/provider
+### Mysterium node runner/provider
 
-Node providing service inside Mysterium Network is called a Provider. Currently node can operate either as a Provider or as a Consumer at the same time.
+A node that's providing a service within Mysterium Network is called a Provider. Our node software can
+ operate as a
+ Provider or as a Consumer, but in this section lets focus on the provider side of things.
 
 ## Why Run a Mysterium Node?
 
@@ -19,19 +24,8 @@ Most of the internet you pay for goes to waste, sitting idle or completely unuse
 
 ##### Fight censorship with a click
 
-Help us reengineer the web so it’s censorship and surveillance-free. A residential IP network will rewire it to be safe and private by default.
-
-##### No technical skills required
-
-Our node application is easy – just a few clicks to get you up and running. Your personal dashboard tracks your earnings and contributions.
-
-##### Connect to your home from anywhere
-
-Want to access television shows from your home when you’re on the road? Set up a node and connect to it when you’re away.
-
-##### Try the real killer dApp
-
-Looking for *that project* that will take blockchain into the mainstream stratosphere? Pack your bags.
+Help us re-engineer the web so it’s censorship and surveillance-free. A residential IP network will rewire it to be
+ safe and private by default.
 
 ##### Fire up your Raspberry Pi
 
@@ -39,7 +33,9 @@ Run out of ideas for putting your Pi to work? Make cash while kickstarting the n
 
 ## How does it work?
 
-When you become a node you share your IP address (anonymously) and spare bandwidth to help power our dVPN. Any Mysterium network node can become a service provider and provide VPN services using its own infrastructure. To become a service provider, the following steps should be performed:
+When you become a node you share your IP address (anonymously) and spare bandwidth to help power our network. Any
+ Mysterium network node can become a service provider and provide VPN services using its own infrastructure. To
+  become a service provider, the following steps should be performed (some of them are automated):
 
 - Create a personal user identity.
 - Register the user identity.
@@ -60,13 +56,3 @@ The service provider then sends all the required information for establishing a 
 4. RaspberryPi
 5. Docker
 6. Avado
-7. MacOS
-
-## Mysterium Node Pilot
-
-###### The Mysterium Node Pilot is a Research and Development initiative to help the core development team understand various network factors in a live environment. Here are important factors to consider before signing up for the Mysterium Node Pilot:
-
-- [ ] There are regular changes to bounty rules to accommodate network requirements
-- [ ] There are no guaranteed earnings. Successful bounties will receive ETH each month
-- [ ] You must run a node almost full-time to increase your chances
-- [ ] You’ll receive great digital karma and play a pivotal role in rewiring the internet for good

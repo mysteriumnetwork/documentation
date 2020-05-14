@@ -1,6 +1,6 @@
 ---
 title: Linux
-weight: 11
+weight: 2
 ---
 
 Getting started with Linux

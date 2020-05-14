@@ -1,12 +1,13 @@
 {{ define "main" -}}
-    <ul class="posts">
-        {{ range .Data.Pages -}}
-            <li>
-                <span><a href="{{ .Permalink }}">{{ .Title }}</a></span>
-            </li>
-        {{- end }}
-    </ul>
-    <hr/>
+    {{ if not .Params.children_after_content }}
+        {{- partial "list-page-child-menu.html" . -}}
+        <hr/>
+    {{- end }}
+
     <h1>{{ .Title }}</h1>
     <div class="content">{{ .Content }}</div>
+
+    {{ if .Params.children_after_content }}
+        {{- partial "list-page-child-menu.html" . -}}
+    {{- end }}
 {{- end }}

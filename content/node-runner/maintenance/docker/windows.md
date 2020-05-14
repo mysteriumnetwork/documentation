@@ -1,11 +1,7 @@
 ---
 title: Docker for Windows
-weight: 11
+weight: 3
 ---
-
-
-
-
 
 Docker Desktop for Windows is Docker designed to run on Windows 10. It is a native Windows application that provides an easy-to-use development environment for building, shipping, and running dockerized apps. Docker Desktop for Windows uses Windows-native Hyper-V virtualization and networking and is the fastest and most reliable way to develop Docker apps on Windows. 
 

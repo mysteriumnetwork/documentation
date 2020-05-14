@@ -42,6 +42,10 @@ ul {
   padding: 0;
 }
 
+.content-container {
+    max-width: 1024px;
+}
+
 .sidebar-container {
   min-width: 300px;
   width: 300px;
@@ -103,4 +107,17 @@ ul {
   min-width: 250px;
   width: 250px;
   padding: 0 1.5rem;
+}
+
+.child-page-list {
+  .child-page-brief {
+    border: 1px solid #eee;
+    margin-left: 1rem;
+  }
+}
+
+.post-footer {
+    margin: 25px 0;
+    width: 100%;
+    text-align: center;
 }

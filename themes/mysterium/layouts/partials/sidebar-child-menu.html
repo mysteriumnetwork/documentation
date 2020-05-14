@@ -1,5 +1,5 @@
 <ul class="page-child-menu">
-    {{ range .Pages}}
+    {{ range .Pages.ByWeight}}
         <li class="page-child-item">
             <a href="{{ .RelPermalink}}">{{ .Name }}</a>
             {{ if len .Pages }}
