@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Earnings on Mysterium Docs</title>
-    <link>https://docs.mysterium.network/node-runner/getting-started/earnings/</link>
+    <link>https://mysteriumnetwork.github.io/documentation/node-runner/getting-started/earnings/</link>
     <description>Recent content in Earnings on Mysterium Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://docs.mysterium.network/node-runner/getting-started/earnings/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mysteriumnetwork.github.io/documentation/node-runner/getting-started/earnings/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bounty program</title>
-      <link>https://docs.mysterium.network/node-runner/getting-started/earnings/bounty/</link>
+      <link>https://mysteriumnetwork.github.io/documentation/node-runner/getting-started/earnings/bounty/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.mysterium.network/node-runner/getting-started/earnings/bounty/</guid>
+      <guid>https://mysteriumnetwork.github.io/documentation/node-runner/getting-started/earnings/bounty/</guid>
       <description>Being a part of the Mysterium Network Node Pilot means you join us in the research phase of our project. So expect rapid changes to bounty rules.
 We are going to be introducing two bounties for the Month of March. These rules come into effect on the 1st of March 2020 and will affect your payout in April.
  Residential IP bounties with payout caps and rolling payments + New countries 🇦🇺🇳🇱 Top 3 nodes / region bounties 🌍  Important Definitions:</description>
@@ -22,20 +22,20 @@ We are going to be introducing two bounties for the Month of March. These rules 
     
     <item>
       <title>MYST Token</title>
-      <link>https://docs.mysterium.network/node-runner/getting-started/earnings/myst/</link>
+      <link>https://mysteriumnetwork.github.io/documentation/node-runner/getting-started/earnings/myst/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.mysterium.network/node-runner/getting-started/earnings/myst/</guid>
+      <guid>https://mysteriumnetwork.github.io/documentation/node-runner/getting-started/earnings/myst/</guid>
       <description>Mysterium (MYST) is a cryptocurrency token deployed as smart contract which operates on the Ethereum blockchain and allows users to perform activities within the Mysterium VPN network both as VPN clients or as a service provider (VPN Node).
 MYST is an integral part of Mysterium Network where VPN consumers is charged fees for services. The biggest slice of those fees goes to the VPN node owner (service provider) the leftover will be dedicated to protocol development and support.</description>
     </item>
     
     <item>
       <title>Pricing</title>
-      <link>https://docs.mysterium.network/node-runner/getting-started/earnings/pricing/</link>
+      <link>https://mysteriumnetwork.github.io/documentation/node-runner/getting-started/earnings/pricing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.mysterium.network/node-runner/getting-started/earnings/pricing/</guid>
+      <guid>https://mysteriumnetwork.github.io/documentation/node-runner/getting-started/earnings/pricing/</guid>
       <description>The current pricing for network consumers is:
  1 gigabyte of traffic: 0.10 MYST 1 minute of session: 0.0001 MYST Accountant fee: 12%  One gigabyte will earn you 0.10 MYST. You will earn 0.0001 MYST / minute of each session your node accepts . Mysterium node runners are able to fine-tune and set their own pricing.</description>
     </item>

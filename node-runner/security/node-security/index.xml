@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Node Security on Mysterium Docs</title>
-    <link>https://docs.mysterium.network/node-runner/security/node-security/</link>
+    <link>https://mysteriumnetwork.github.io/documentation/node-runner/security/node-security/</link>
     <description>Recent content in Node Security on Mysterium Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://docs.mysterium.network/node-runner/security/node-security/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mysteriumnetwork.github.io/documentation/node-runner/security/node-security/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Node security for Docker</title>
-      <link>https://docs.mysterium.network/node-runner/security/node-security/docker/</link>
+      <link>https://mysteriumnetwork.github.io/documentation/node-runner/security/node-security/docker/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.mysterium.network/node-runner/security/node-security/docker/</guid>
+      <guid>https://mysteriumnetwork.github.io/documentation/node-runner/security/node-security/docker/</guid>
       <description>If You use docker image, it is strongly recommended not to store identity inside docker container (since You might need to remove container in order to upgrade), but to mount Your keystore from Your host to container using -v host_volume:container_volume option as follows:
 # docker run --cap-add NET_ADMIN --net host -v /home/mysterium-node:/var/lib/mysterium-node --name myst -d mysteriumnetwork/myst service --identity.passphrase=your_passphrase_here Now You can copy and safely store /home/mysterium-node/keystore directory to backup all Your identities.</description>
     </item>
     
     <item>
       <title>Node security for Linux</title>
-      <link>https://docs.mysterium.network/node-runner/security/node-security/linux/</link>
+      <link>https://mysteriumnetwork.github.io/documentation/node-runner/security/node-security/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.mysterium.network/node-runner/security/node-security/linux/</guid>
+      <guid>https://mysteriumnetwork.github.io/documentation/node-runner/security/node-security/linux/</guid>
       <description>Node security for Linux content</description>
     </item>
     
     <item>
       <title>Node security for RaspberryPi</title>
-      <link>https://docs.mysterium.network/node-runner/security/node-security/mac/</link>
+      <link>https://mysteriumnetwork.github.io/documentation/node-runner/security/node-security/mac/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.mysterium.network/node-runner/security/node-security/mac/</guid>
+      <guid>https://mysteriumnetwork.github.io/documentation/node-runner/security/node-security/mac/</guid>
       <description>Backing up your Raspberry Pi node ID For this we shall be using Putty and Windows Powershell (Terminal in Linux/MacOS).
 So open up Putty and SSH into your RPI using the following command:
 Now to copy the keystore folder to your home directory. $ sudo cp -r /var/lib/mysterium-node/keystore /home/pi Make sure that it is properly copied.
@@ -43,10 +43,10 @@ $ sudo chown -R pi keystore Now you will have a keystore folder on your home dir
     
     <item>
       <title>Node security for Windows</title>
-      <link>https://docs.mysterium.network/node-runner/security/node-security/windows/</link>
+      <link>https://mysteriumnetwork.github.io/documentation/node-runner/security/node-security/windows/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.mysterium.network/node-runner/security/node-security/windows/</guid>
+      <guid>https://mysteriumnetwork.github.io/documentation/node-runner/security/node-security/windows/</guid>
       <description>Node security for Windows content</description>
     </item>
     

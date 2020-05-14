@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Troubleshooting on Mysterium Docs</title>
-    <link>https://docs.mysterium.network/node-runner/troubleshooting/</link>
+    <link>https://mysteriumnetwork.github.io/documentation/node-runner/troubleshooting/</link>
     <description>Recent content in Troubleshooting on Mysterium Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://docs.mysterium.network/node-runner/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mysteriumnetwork.github.io/documentation/node-runner/troubleshooting/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Node troubleshooting</title>
-      <link>https://docs.mysterium.network/node-runner/troubleshooting/node/</link>
+      <link>https://mysteriumnetwork.github.io/documentation/node-runner/troubleshooting/node/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.mysterium.network/node-runner/troubleshooting/node/</guid>
+      <guid>https://mysteriumnetwork.github.io/documentation/node-runner/troubleshooting/node/</guid>
       <description>I am getting &amp;ldquo;403 Forbidden&amp;rdquo; error If you see the message &amp;ldquo;identity is not registered&amp;rdquo; for the 403 error, that means that you are trying to connect with an unregistered identity.
 You need to finish registration process for your identity to be accepted.
 This error might also mean that you are connecting to discovery service which is closed for Your IP, either because someone from your IP was abusing the service or due to load issues.</description>

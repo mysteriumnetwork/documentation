@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Installation &amp; Configuration on Mysterium Docs</title>
-    <link>https://docs.mysterium.network/node-runner/maintenance/</link>
+    <link>https://mysteriumnetwork.github.io/documentation/node-runner/maintenance/</link>
     <description>Recent content in Installation &amp; Configuration on Mysterium Docs</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	<atom:link href="https://docs.mysterium.network/node-runner/maintenance/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mysteriumnetwork.github.io/documentation/node-runner/maintenance/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Raspberry Pi</title>
-      <link>https://docs.mysterium.network/node-runner/maintenance/raspberry-pi/</link>
+      <link>https://mysteriumnetwork.github.io/documentation/node-runner/maintenance/raspberry-pi/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.mysterium.network/node-runner/maintenance/raspberry-pi/</guid>
+      <guid>https://mysteriumnetwork.github.io/documentation/node-runner/maintenance/raspberry-pi/</guid>
       <description>Getting started with a Raspberry Pi The Raspberry Pi is a low cost, mini-computer used by our node runners to help power Mysterium Network. It provides a stable, 24/7 network connection, and most importantly, it enables you to earn with minimal effort on your part. While there are other options for running a node, with an RPI you no longer need to worry about closing your laptop lid or keeping your PC on.</description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>https://docs.mysterium.network/node-runner/maintenance/linux/</link>
+      <link>https://mysteriumnetwork.github.io/documentation/node-runner/maintenance/linux/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://docs.mysterium.network/node-runner/maintenance/linux/</guid>
+      <guid>https://mysteriumnetwork.github.io/documentation/node-runner/maintenance/linux/</guid>
       <description>Getting started with Linux
 Supported operating systems  Raspbian 9/10 Debian 9/10 Ubuntu  You can install the Mysterium Node package by running the following script:
 sudo -E bash -c &amp;#34;$(curl -s https://raw.githubusercontent.com/mysteriumnetwork/node/master/install.sh)&amp;#34; Once the installation is complete, you can check your service status:
