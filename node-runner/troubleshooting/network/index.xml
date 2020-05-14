@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Network troubleshooting on Mysterium Docs</title>
+    <link>https://docs.mysterium.network/node-runner/troubleshooting/network/</link>
+    <description>Recent content in Network troubleshooting on Mysterium Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	<atom:link href="https://docs.mysterium.network/node-runner/troubleshooting/network/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Firewall</title>
+      <link>https://docs.mysterium.network/node-runner/troubleshooting/network/firewall/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.mysterium.network/node-runner/troubleshooting/network/firewall/</guid>
+      <description>In logs I see client&amp;rsquo;s attempts, but it does not fully connect There might be many things, but most frequent is firewall. If You run node via docker image, check that ip_forwarding is enabled on a host and that UDP service port (specified by --openvpn.port flag) is allowed from outside.
+check ip_forward status:
+# cat /proc/sys/net/ipv4/ip_forward enable ip_forward if disabled:
+# sysctl -w net.ipv4.ip_forward=1 It also might be that default firewall forward policy is set to DROP.</description>
+    </item>
+    
+    <item>
+      <title>NAT traversal</title>
+      <link>https://docs.mysterium.network/node-runner/troubleshooting/network/nat-traversal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.mysterium.network/node-runner/troubleshooting/network/nat-traversal/</guid>
+      <description>NAT Traversal also known as UDP encapsulation allows traffic to get to the specified destination when a device does not have a public IP address. This is usually the case if your ISP is doing NAT, or the external interface of your firewall is connected to a device that has NAT enabled.
+The shortage of IPv4 addresses and the very slow transition to IPv6 leads to pragmatic solutions in the Internet: today many hosts are still using IPv4 and are connected to the Internet over a Network Address Translation (NAT) router.</description>
+    </item>
+    
+    <item>
+      <title>Router settings</title>
+      <link>https://docs.mysterium.network/node-runner/troubleshooting/network/router-settings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://docs.mysterium.network/node-runner/troubleshooting/network/router-settings/</guid>
+      <description>NAT (Network Address Translation) is used to enable internet access for computers that do not have an external internet address (IP). Usually of the form like 192.168.x.y or 10.x.y.z If you are running a node on a computer behind NAT you will need some means to enable access to your node from outside your local network. Below are suggested methods to enable such external access.
+Essentially you need to make ports on which node services run accessible from outside.</description>
+    </item>
+    
+  </channel>
+</rss>

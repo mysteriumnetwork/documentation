@@ -1,5 +1,0 @@
-baseURL = "https://docs.mysterium.network"
-title = "Mysterium Docs"
-theme = "mysterium"
-#sectionPagesMenu = "main"
-disqusShortname = "mysterium-docs"
