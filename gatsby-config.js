@@ -19,7 +19,7 @@ module.exports = {
       options: {
         root: __dirname,
         contentDir: 'content',
-        baseDir: 'docs',
+        baseDir: '',
         siteName: 'Documentation',
         pageTitle: 'Mysterium Network Docs',
         menuTitle: 'Mysterium Platform',
