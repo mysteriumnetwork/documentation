@@ -8,8 +8,8 @@ Being a part of the Mysterium Network Node Pilot means you join us in the resear
 
 We are going to be introducing two bounties for the Month of March. These rules come into effect on the 1st of March 2020 and will affect your payout in April.
 
-1. [Residential IP bounties with payout caps and rolling payments + New countries 🇦🇺🇳🇱](#rule-residential-ip)
-2. [Top 3 nodes / region bounties 🌍](#rule-top)
+1. [Residential IP bounties with payout caps and rolling payments + New countries 🇦🇺🇳🇱](#residential-ip-bounties-with-payout-caps-and-rolling-payments)
+2. [Top 3 nodes / region bounties 🌍](#top-3-node--region-global-bounty)
 
 Important Definitions:
 

@@ -1,7 +1,6 @@
 ---
 title: Introduction
 description: What is a Mysterium Node runner; core concepts.
-weight: 20
 ---
 
 ### What is a Mysterium Node?
@@ -42,7 +41,11 @@ When you become a node you share your IP address (anonymously) and spare bandwid
 - Create a service proposal.
 - Register the service proposal with the Discovery service.
 
-All Mysterium network nodes should have a valid identity to interact with other systems. The `myst` binary provides a way to create the required identity. After creating the identity, the user should finish the identity registration process to be able to provide services in the Mysterium network. The registered identity is used as one of the components for creating a service proposal, that acts as a complete description of the service that the service provider will provide. The created proposal should be registered with the service discovery component to allow other network participants to search through all available services and consume them.
+All Mysterium network nodes should have a valid identity to interact with other systems.
+The `myst` binary provides a way to create the required identity.
+After creating the identity, the user should finish the identity registration process to be able to provide services in the Mysterium network.
+The registered identity is used as one of the components for creating a service proposal, that acts as a complete description of the service that the service provider will provide.
+The created proposal should be registered with the service discovery component to allow other network participants to search through all available services and consume them.
 
 After successfully registering a proposal, the service provider waits for an incoming request. It handles all valid requests and establishes a new VPN session for the consumer.
 

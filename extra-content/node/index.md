@@ -12,7 +12,6 @@ You need to finish registration process for your identity to be accepted.
 This error might also mean that you are connecting to discovery service which is closed for Your IP, either because someone from your IP was abusing the service or due to load issues.
 
 
-
 ## What client software to use with Mysterium Network node?
 
 Mysterium team created client software called **Mysterium VPN** and it is available [here](https://github.com/mysteriumnetwork/mysterium-vpn/releases). 

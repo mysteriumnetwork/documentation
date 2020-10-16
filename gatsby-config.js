@@ -46,6 +46,7 @@ module.exports = {
             'node-runners/webui/index'
           ],
           Resources: [
+            'troubleshooting/index',
             'resources/faq',
             '[MMN](https://my.mysterium.network)',
           ],
