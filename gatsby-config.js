@@ -10,7 +10,7 @@ module.exports = {
   pathPrefix: '/',
   siteMetadata: {
     title: `Mysterium Network Documentation`,
-    siteUrl: `http://localhost:8000`,
+    siteUrl: `https://docs-v2.mysterium.network`,
     description: ``,
   },
   plugins: [

@@ -1,14 +1,14 @@
 module.exports = {
   'Introduction': {
     category: 'Mysterium Network',
-    url: 'http://localhost:8000',
+    url: '/',
     description:
       'Learn about Mysterium Network.',
     omitLandingPage: true
   },
   'Network Topology': {
     category: 'Mysterium Network',
-    url: 'http://localhost:8000/network/topology',
+    url: '/network/topology',
     description:
       'Learn about Mysterium Network components.',
     omitLandingPage: true
@@ -17,14 +17,14 @@ module.exports = {
   'Node runners': {
     category: 'Node runners',
     shortName: 'Introduction',
-    url: 'http://localhost:8000/node-runners',
+    url: '/node-runners',
     description:
       "Learn how to start running your own node and earn while you sleep."
   },
   'Node runners (Raspberry Pi)': {
     category: 'Node runners',
     shortName: 'Raspberry Pi',
-    url: 'http://localhost:8000/node-runners/setup/raspberry-pi',
+    url: '/node-runners/setup/raspberry-pi',
     description:
       "Run your node on a RaspberryPi",
     omitLandingPage: true,
@@ -32,7 +32,7 @@ module.exports = {
   'Node runners (Linux)': {
     category: 'Node runners',
     shortName: 'Linux',
-    url: 'http://localhost:8000/node-runners/setup/linux',
+    url: '/node-runners/setup/linux',
     description:
       "Run your node on a Linux machine",
     omitLandingPage: true,
@@ -40,7 +40,7 @@ module.exports = {
   'Node runners (Docker)': {
     category: 'Node runners',
     shortName: 'Docker',
-    url: 'http://localhost:8000/node-runners/setup/docker',
+    url: '/node-runners/setup/docker',
     description:
       "Run your node on Docker",
     omitLandingPage: true,
