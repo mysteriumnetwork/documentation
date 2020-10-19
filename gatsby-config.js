@@ -14,6 +14,7 @@ module.exports = {
     description: ``,
   },
   plugins: [
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: 'gatsby-theme-apollo-docs',
       options: {
