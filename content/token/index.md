@@ -5,7 +5,7 @@ description: ETH bounties, MYST and more.
 
 In Mysterium Network, you earn for providing VPN services to a global user base. 
 
-A decentralised virtual private network is that it is essentially peer to peer. People running VPN service are paid by people using VPN service, however getting there isn't a short and easy journey.
+A decentralised virtual private network is essentially peer to peer. People running VPN service are paid by people using VPN service. However getting there isn't a short and easy journey.
 
 One of the primary issues in global incentivised networks is payments. <a href="https://mysterium.network/blog/">Track our journey towards blockchain micropayments for distributed networks.</a>
 
@@ -16,9 +16,9 @@ Before we move towards blockchain based micropayments, we're incentivizing peopl
 
 ### Mysterium Node Pilot - ETH Bounties
 
-The Mysterium Node Pilot is a Research and Development initiative to kickstart Mysterium Network in 2019. We are actively seeking testers willing to participate in exchange for a bounty. You can get paid up to $50 worth of ETH for renting your spare bandwidth.
+The <a href="https://docs-v2.mysterium.network/token/bounty/">Mysterium Node Pilot</a> is a Research and Development initiative to kickstart Mysterium Network in 2019. We are actively seeking testers willing to participate in exchange for a bounty. You can get paid up to $50 worth of ETH for renting your spare bandwidth.
 
-As this is a R&D initiative to test incentive mechanics, network stability, NAT traversal and several other technical fundamentals. The bounties are subsidised by Mysterium Network, therefore there are limits to what you can earn. 
+This is a R&D initiative to test incentive mechanics, network stability, NAT traversal and several other technical fundamentals. The bounties are subsidised by Mysterium Network, therefore there are limits to what you can earn. 
 
 Our technology stack is in early stages. We are working hard towards blockchain based micropayments - which will enable peer to peer payments within Mysterium Network.
 
