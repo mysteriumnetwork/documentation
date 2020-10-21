@@ -4,9 +4,9 @@ weight: 1
 description: Mysterium Node Pilot
 ---
 
-Being a part of the Mysterium Network Node Pilot means you join us in the research phase of our project. So expect rapid changes to bounty rules.
+The Mysterium Node Pilot is a network kick off initiative. Being a part of the Mysterium Network Node Pilot means you join us in the research phase of our project. So expect rapid changes to bounty rules.
 
-We are going to be introducing two bounties for the Month of March. These rules come into effect on the 1st of March 2020 and will affect your payout in April.
+The following are the most up to date bounties that we are running. These rules came into effect on the 1st of March 2020. Further updates will be reflected here.
 
 1. [Residential IP bounties with payout caps and rolling payments + New countries 🇦🇺🇳🇱](#residential-ip-bounties-with-payout-caps-and-rolling-payments)
 2. [Top 3 nodes / region bounties 🌍](#top-3-node--region-global-bounty)
@@ -15,7 +15,7 @@ Important Definitions:
 
 **MYSTT** - Test tokens used to calculate the usage of your node.
 
-**Residential IP** - An IP address tied to a physical device, in our case Raspberry Pis [preferred for Mysterium Network and a higher likelihood of earning], desktops or mobile phones.
+**Residential IP** - An IP address tied to a physical device, in our case Raspberry Pis [preferred for Mysterium Network and a higher likelihood of earning], desktops or mobile phones. Find out how to run a Mysterium Node
 
 And with that, here is our proposal for March Node Pilot bounty rules:
 
