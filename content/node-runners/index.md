@@ -1,6 +1,6 @@
 ---
-title: Introduction
-description: Our mission as Mysterium Node runners
+title: Mission
+description: Censorship free internet for all
 ---
 
 ## What is Mysterium Network 
