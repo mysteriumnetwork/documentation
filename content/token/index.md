@@ -36,7 +36,7 @@ MYST is an integral part of Mysterium Network. It is the mechanism for value tra
 
 The biggest slice of those fees goes to the VPN node owner (service provider) the leftover will be dedicated to protocol development and support. As aforementioned node owners who run their nodes are incentivized for their support of the network. In such a way node owner essentially acts as a miner, with reward coming in MYST token form. We are different from typical blockchain networks in that in Mysterium, the node runner is rewarded not for his computing power (proof of work), ownership of the currency (proof of stake), but instead for <b>sharing their bandwidth</b>. 
 
-#### Current pricing
+#### Current VPN service pricing structure
 
 The current pricing for network consumers is:
 
@@ -47,14 +47,11 @@ The current pricing for network consumers is:
 One gigabyte will earn you *0.10* MYST. You will earn **0.0001** MYST / minute of each session your node accepts.
 Mysterium node runners are able to fine-tune and set their own pricing.
 
-### MYST as an earning mechanism
-Mysterium Foundation is actively pursuing the various ways to enable MYST holders to benefit by receiving a commission for each transaction in the Mysterium Network with payments being conducted in currencies other than MYST.
-
-#### How To Store MYST Coin?
+#### How do I store MYST?
 
 MYST is an ERC-20 token and can be stored in any Ethereum wallet (MyEtherWallet, Ledger, Trezor etc).
 
-#### How To Buy MYST Coin?
+#### How To Buy MYST?
 
 <a href="https://mysterium.network/token/">Find out more about MYST</a>.
 
