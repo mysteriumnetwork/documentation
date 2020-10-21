@@ -8,6 +8,8 @@ It provides a stable, 24/7 network connection, and most importantly, it enables 
 While there are other options for running a node, with an RPI you no longer need to worry about closing your laptop lid or keeping your PC on.
 Once it's plugged in and set up you can forget all about it.
 
+You can get a <a href="https://raspberrypi.dk/en/product/mysterium-network-node-raspberry-pi-starter-kit/">Mysterium Node preloaded on a Raspberry Pi delivered to your door</a>, but we honestly recommend you get one at a store nearby and follow our guide below.
+
 ## Supported Raspberry Pi models
 - RPI 3B
 - RPI 3B+
