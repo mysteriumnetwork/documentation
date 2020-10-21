@@ -1,32 +1,40 @@
 ---
-title: Earnings & Token
-description: Everything you need to know about earning MYST tokens or ETH from node runner bounties.
+title: How to earn?
+description: ETH bounties, MYST and more.
 ---
 
-The concept behind Mysterium's earning system is fairly straightforward.
+In Mysterium Network, you earn for providing VPN services to a global user base. 
 
-### Pre-mainnet bounty system
+A decentralised virtual private network is that it is essentially peer to peer. People running VPN service are paid by people using VPN service, however getting there isn't a short and easy journey.
 
-Before we move into Mainnet, we're incentivizing node running through our Bounty Pilot.
-The idea of decentralized VPN network is that people running the VPN service are paid by people using VPN service, however getting there isn't a short and easy journey.
-In order to build the network, we need active testers who are willing to
-participate in the Bounty Pilot and get paid up to $50 worth of ETH for running a VPN service. This money is subsidised
-by Mysterium Network, therefore there are limits to what you can earn.
-Our software is still young and we're working hard and fast to deliver the worlds' first decentralized VPN network.
-Running a VPN service has its technical challenges and things might break from time to time.
-For this reason (and a few other reasons) we're subsidising node runners from our own funds to ensure that we're getting as much feedback as possible to prepare us
-for going to Mainnet.
-We need your help to make sure that at the end of 2020 Q3 we have a tested and fully working node software infrastructure.
+One of the primary issues in global incentivised networks is payments. <a href="https://mysterium.network/blog/">Track our journey towards blockchain micropayments for distributed networks.</a>
+
+
+## Pre-mainnet bounty system
+
+Before we move towards blockchain based micropayments, we're incentivizing people to run Mysteriumn Nodes through the <a href="https://docs-v2.mysterium.network/token/bounty/">Mysterium Node Pilot</a>.
+
+### Mysterium Node Pilot - ETH Bounties
+
+The Mysterium Node Pilot is a Research and Development initiative to kickstart Mysterium Network in 2019. We are actively seeking testers willing to participate in exchange for a bounty. You can get paid up to $50 worth of ETH for renting your spare bandwidth.
+
+As this is a R&D initiative to test incentive mechanics, network stability, NAT traversal and several other technical fundamentals. The bounties are subsidised by Mysterium Network, therefore there are limits to what you can earn. 
+
+Our technology stack is in early stages. We are working hard towards blockchain based micropayments - which will enable peer to peer payments within Mysterium Network.
+
     
-### Mainnet payments
+## Mainnet payments - Micropayments in MYST
 
-Once we move to Mainnet, there will be no limits to what you can earn.
-Your earnings will be based upon the consumption of your services, your nodes will be earning MYST (ERC-20) tokens and you'll be able to set your own price for the services.
-We will provide guidelines to ensure you're up to date with the market and be able to compete with other nodes.
+### MYST as a payment mechanism
+Once we move to blockchain based micropayments, there will be no limit as to what you are able to earn offering VPN services in Mysterium Network.
+
+Your earnings will be based upon the consumption of your services, your nodes will be earning MYST (ERC-20) tokens and you'll be able to set your own price for the services. We will provide guidelines to ensure you're up to date with the market and be able to compete with other nodes.
 
 Mysterium (**MYST**) is a cryptocurrency **token** deployed as smart contract which operates on the Ethereum blockchain and allows users to perform activities within the Mysterium VPN network both as VPN clients or as a service provider (VPN Node).
 
-MYST is an integral part of Mysterium Network where VPN consumers is charged fees for services. The biggest slice of those fees goes to the VPN node owner (service provider) the leftover will be dedicated to protocol development and support. As aforementioned node owners who run their nodes are incentivized for their support of the network. In such a way node owner essentially acts as a miner, with reward coming in MYST token form. Differently from the typical blockchains the miner is  rewarded not for his computing power (proof of work), ownership of the currency (proof of stake), but for sharing their bandwidth.The token reflects growth of Mysterium Network. Mysterium Foundation will pursuit the possibility to enable MYST holders benefit by receiving a commission for each transaction in the Mysterium Network with payments being conducted in currencies other than MYST.
+MYST is an integral part of Mysterium Network. It is the mechanism for value transfer between VPN consumers and VPN providers. In laymens terms, in Mysterium Network you pay as you go for VPN by the second with MYST. 
+
+The biggest slice of those fees goes to the VPN node owner (service provider) the leftover will be dedicated to protocol development and support. As aforementioned node owners who run their nodes are incentivized for their support of the network. In such a way node owner essentially acts as a miner, with reward coming in MYST token form. We are different from typical blockchain networks in that in Mysterium, the node runner is rewarded not for his computing power (proof of work), ownership of the currency (proof of stake), but instead for <b>sharing their bandwidth</b>. 
 
 #### Current pricing
 
@@ -39,11 +47,14 @@ The current pricing for network consumers is:
 One gigabyte will earn you *0.10* MYST. You will earn **0.0001** MYST / minute of each session your node accepts.
 Mysterium node runners are able to fine-tune and set their own pricing.
 
+### MYST as an earning mechanism
+Mysterium Foundation is actively pursuing the various ways to enable MYST holders to benefit by receiving a commission for each transaction in the Mysterium Network with payments being conducted in currencies other than MYST.
+
 #### How To Store MYST Coin?
 
 MYST is an ERC-20 token and can be stored in any Ethereum wallet (MyEtherWallet, Ledger, Trezor etc).
 
 #### How To Buy MYST Coin?
 
-MYST coin is listed on HitBTC and IDEX exchanges. You may always check the most relevant MYST price on [CoinMarketCap.](https://coinmarketcap.com/currencies/mysterium/)
+<a href="https://mysterium.network/token/">Find out more about MYST</a>.
 
