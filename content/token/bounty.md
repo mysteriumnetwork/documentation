@@ -1,7 +1,7 @@
 ---
 title: Bounty program
 weight: 1
-description: Network kickoff initiative
+description: Mysterium Node Pilot
 ---
 
 Being a part of the Mysterium Network Node Pilot means you join us in the research phase of our project. So expect rapid changes to bounty rules.
