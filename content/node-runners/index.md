@@ -26,4 +26,4 @@ We are also hard at work progressing micropayments within our network. Follow ou
 <ul>
   <li><a href="https://mysterium.network/2020/06/26/what-is-p2p-peer-to-peer-technology/">What is Peer to Peer (P2P) technology?</a></li>
   <li><a href="https://mysterium.network/2020/06/26/what-is-p2p-peer-to-peer-technology/">VPN vs TOR vs dVPN - Differences explained.</a></li>
-  <li><a href="https://mysterium.network/2019/12/03/geoblocking-its-impact-on-free-speech-to-free-movies-online/">"What is geoblocking? And how does it affect freedom of speech?</a></li>
+  <li><a href="https://mysterium.network/2019/12/03/geoblocking-its-impact-on-free-speech-to-free-movies-online/">What is geoblocking? And how does it affect freedom of speech?</a></li>
