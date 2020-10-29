@@ -5,6 +5,7 @@
  */
 const mainNavigation = require('./navigation/main')
 const footerNavigation = require('./navigation/footer')
+const sidebarNavigation = require('./navigation/sidebar')
 
 module.exports = {
   pathPrefix: '/',
@@ -33,25 +34,7 @@ module.exports = {
         //   '1': 'version-1'
         // },
         gatsbyRemarkPlugins: [],
-        sidebarCategories: {
-          'How to earn': [
-            'node-runners/index',
-            'token/index',
-            'token/bounty',
-            'node-runners/setup/index',
-          ],
-          'Become a node runner': [
-            'node-runners/setup/docker',
-            'node-runners/setup/raspberry-pi',
-            'node-runners/setup/linux',
-            'node-runners/webui/index'
-          ],
-          Resources: [
-            'troubleshooting/index',
-            'resources/faq',
-            '[MMN](https://my.mysterium.network)',
-          ],
-        }
+        sidebarCategories: sidebarNavigation
       }
     }
   ]
