@@ -55,6 +55,20 @@
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.com/tutorial/part-five/#introducing-graphiql)._
 
+1.  **Edit content or create a new page**
+    Content is located in the `content/` directory.
+    
+    All pages must contain a title and description.
+    ```
+    ---
+    title: Mission
+    description: Censorship free internet for all
+    ---
+    
+    ## Don't use #h1 to start the content as the page title is already h1
+    Your content
+    ```
+
 ## Tips
 
 Navigations in Gatsby are hardcoded, your can find its configuration in the `navigation/` directory.
