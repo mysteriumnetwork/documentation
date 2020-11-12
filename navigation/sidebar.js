@@ -19,7 +19,8 @@ module.exports = {
   ],
   "Developer guide": [
     "developers/index",
-    "developers/mobile"
+    "developers/mobile",
+    "developers/node"
   ],
   Resources: [
     "resources/faq",
