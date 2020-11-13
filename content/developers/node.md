@@ -49,12 +49,31 @@ go build -o myst  cmd/mysterium_node/mysterium_node.go
 
 ### Running
 
-A node can be ran in consumer and provider modes, this can be done easily for basic development by executing:
-* `mage cli` consumer (testing) mode (without mage you can execute: `build/myst/myst cli`)
-* `mage daemon` for provider mode (without mage you can execute: `build/myst/myst daemon`)
+A node can be started as a `daemon` by executing:
+```sh
+mage daemon
+```
 
-The `myst cli` interacts with the `daemon` using `tequilaAPI` which you can also use with `curl` or `postman`.
-For example to check if node is running you can send a healthcheck request:
+Or without mage:
+```sh
+ build/myst/myst daemon
+```
+
+Interacting with the now running node can be done using it's `tequilaAPI`.
+For that we have built a `CLI` app which you can start by executing:
+
+```sh
+mage cli
+```
+
+Or without mage:
+```sh
+build/myst/myst cli
+```
+
+For greater control you can skip the `CLI` step and interact with `tequilaAPI` yourself
+as if it was a rest service using `curl`, `postman` or any other tool you like.
+For example to check if a node is running you can send a healthcheck request:
 
 ```sh
 curl http://localhost:4050/healthcheck
