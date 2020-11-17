@@ -12,9 +12,7 @@ If after reading this you have more questions try exploring the code and the com
 ### Getting 
 
 Node is located at: https://github.com/mysteriumnetwork/node
-
-If you're not part of the `mysterium` team you will have to make your own fork.
-You can follow the official github [guide](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) on how to do that.
+You will have to fork the repository to work on it can follow the official github [guide](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) on how to do that.
 
 After creating a fork execute:
 

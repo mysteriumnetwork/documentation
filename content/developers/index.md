@@ -1,12 +1,12 @@
 ---
-title: Quick start
+title: Developer quick start
+sidebar_title: Quick start
 description: How to build and extend on top of Mysterium Network
 ---
 
 ## Quick start for developers
 
-Setting up your environment for building, running and testing Mysterium node doesnt have to be hard.
-The minimum required software to set up is:
+The minimum required software to set up for running, building and testing Mysterium node is:
 
 | Software           | Minimum Version |
 |--------------------|-----------------|
@@ -16,33 +16,10 @@ The minimum required software to set up is:
 | Mage (Recommended) | 1.10+           |
 
 
-<details><summary>General (Mage)</summary>
-<p>
+The instructions below will help you to set that up.
 
-[Mage](https://github.com/magefile/mage) is a simple make-like Go tool we use to help us develop our software.
-Before installing Mage, make sure you've completed the below steps for system setup
-as it requires you to have `golang` installed on your system.
 
-To install simply execute these commands:
-
-```sh
-git clone https://github.com/magefile/mage
-cd mage
-go run bootstrap.go
-```
-
-To test if it's working, try executing `mage` in any directory.
-You should see a similar output to this:
-
-```sh
-No .go files marked with the mage build tag in this directory.
-```
-
-</p>
-</details>
-
-<details><summary>Setup for Ubuntu</summary>
-<p>
+### Setup for Ubuntu
 
 1. **Install and configure Docker CE**:
 
@@ -109,11 +86,8 @@ Test your setup using these commands:
 * `docker --version` to check if docker was installed and is working
 * `docker-compose --version` to check if docker-compose was installed and is working
 
-</p>
-</details>
 
-<details><summary>Setup for OSC (MAC)</summary>
-<p>
+### Setup for macOS 
 
 1. **Install and configure Docker CE: https://docs.docker.com/docker-for-mac/**.
 
@@ -144,5 +118,16 @@ Test your setup using these commands:
 * `docker --version` to check if docker was installed and is working
 * `docker-compose --version` to check if docker-compose was installed and is working
 
-</p>
-</details>
+### Mage - Golang's task automation tool
+
+[Mage](https://github.com/magefile/mage) is a simple make-like Go tool we use to help us develop our software.
+Before installing Mage, make sure you've completed the below steps for system setup
+as it requires you to have `golang` installed on your system.
+
+To install simply execute these commands:
+
+```sh
+git clone https://github.com/magefile/mage
+cd mage
+go run bootstrap.go
+```
