@@ -14,22 +14,32 @@ It has been tested on:
 - Ubuntu 18.04/20.04
 - Pop_os 20.04
 
-Don't get scared if you're running a different linux distribution, you can still
-download the tool and try to configure it, it should work without any issues.
+If you're running a different linux distribution, you can still
+download the tool and try to configure the `dVPN`. 
 
 ## Installation 
 
 ### Install Mysterium Node
 
-For installing Mysterium Node we provide a `bash` script which can be executed in your terminal.
-In addition to downloading and installing our Node it will also install additional required dependencies (WireGuard and OpenVPN)
-if you dont have them already.
+There are two ways to install Mysterium node.
 
-Open up your terminal and run this script:
+On `Debian`/`Ubuntu` systems you can use `Aptitude` and execute:
+
+```bash
+sudo add-apt-repository ppa:mysteriumnetwork/node
+sudo apt-get update
+sudo apt install myst
+```
+
+If for some reason that fails or you can't do that we also provide an install script written in `bash`
+which can be downloaded and executed using this command:
 
 ```bash
 sudo -E bash -c "$(curl -s https://raw.githubusercontent.com/mysteriumnetwork/node/master/install.sh)"
 ```
+
+In addition to downloading and installing our Node using either of these commands will also
+install additional required dependencies like WireGuard and OpenVPN if you dont have them already.
 
 ### Check service health 
 
@@ -58,8 +68,8 @@ If thats not the case, you can try and restart the mysterium service by running:
 sudo systemctl restart mysterium-node.service
 ```
 
-If you still seem to not be able to use our 
-
+If your `mysterium.node` service is still refusing to start you can report an issue to our support team
+which will help you figure it out as best as they can. 
 
 ## Basic myst CLI guide 
 
@@ -82,7 +92,9 @@ To get help and see a list of possible commands execute:
 » help 
 ```
 
-Each command has an output, if the output does not start with `[ERROR]` consider that command a success.
+Each command has an output, if the output does not start with `[ERROR]` or `[WARNING` consider that command a success.
+
+Commands can be autocompleted using the `tab` key on your keyboard.
 
 ### Initial setup 
 
@@ -155,10 +167,9 @@ If your balance is not `0` and don't want to top up you can skip furhter to the 
 #### Adding balance 
 > Command: order create [identity] [amount] [pay currency]
 
-To add additional `MYST` to the balance an order has to be created.
-An order is basically a balance top up request, for which you pay using other crypto currencies.
+To add additional `MYST` to the balance a payment order has to be created.
 
-To get the full list of currencies which can be used to pay, use execute:
+To get the full list of currencies which can be used to pay execute:
 
 ```bash
 » order currencies
