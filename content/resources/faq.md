@@ -3,7 +3,7 @@ title: Frequently Asked Questions
 description: Common questions asked by our community
 ---
 
-Everyone has questions about how to properly set up a GraphQL schema, but not all questions are alike. In different stages of development, different things matter. This guide answers questions that people commonly have at every step along the journey to GraphQL in production.
+Everyone has questions about how to properly run a Mysterium node, but not all questions are alike. In different stages of setup, different things matter. This guide answers questions that people commonly have at many step along the journey to Mysterium node run.
 
 ## What is Mysterium Network?
 We are building a permissionless VPN Node Network to help rewire the fabric of the internet.
