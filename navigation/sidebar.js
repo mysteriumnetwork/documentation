@@ -13,7 +13,7 @@ module.exports = {
   ],
   "Developer guide": [
     "developers/index",
-    "developers/something-else"
+    "developers/mobile"
   ],
   Resources: [
     "troubleshooting/index",
