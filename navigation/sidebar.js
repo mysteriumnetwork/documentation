@@ -11,6 +11,9 @@ module.exports = {
     "node-runners/setup/linux",
     "node-runners/webui/index"
   ],
+  "dVPN user guide": [
+      "userguide/index",
+  ],
   "Developer guide": [
     "developers/index",
     "developers/something-else"
