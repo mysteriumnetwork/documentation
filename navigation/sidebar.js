@@ -19,7 +19,7 @@ module.exports = {
     "developers/something-else"
   ],
   Resources: [
-    "troubleshooting/index",
+    "node-runners/troubleshooting/index",
     "resources/faq",
     "[MMN](https://my.mysterium.network)"
   ]
