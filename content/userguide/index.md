@@ -71,13 +71,170 @@ sudo systemctl restart mysterium-node.service
 If your `mysterium.node` service is still refusing to start you can report an issue to our support team
 which will help you figure it out as best as they can. 
 
-## Basic myst CLI guide 
+## Basic: Connect using myst commands
 
-In order to start using our dVPN you will have to get familiar with our
-`myst cli` console application.
+After getting your node up and running you should be almost ready to connect. In this section
+we'll go through the steps required to do that.
 
-Initial setup shouldn't take more than a few minutes and after that you'll only need to execute
-a few commands whenever you want to use mysterium dVPN.
+This section will touch on two commands `myst account` and `myst connection` together with
+their subcommands.
+
+These two commands expose the most basic and user friendly way to use your terminal in order
+to connect to the dVPN. For more advanced user guide please follow the section below
+which explains how to use `myst cli`.
+
+### How to use the commands 
+
+As mentioned above we'll use two commands and their subcommands:
+- `myst account`
+- `myst connection`
+
+In order to read more about them you can execute them with a help flag like this:
+
+```bash
+myst account --help
+myst connection --help
+```
+This also works for any sub-commands.
+
+Each command has an output, if the output does not start with `[ERROR]` or `[WARNING]` consider that command a success.
+
+### Initial setup 
+
+#### Register a new identity
+> Command: myst account register 
+
+First of all we will need to create and register and identity which is required 
+in order to identify yourself in the network.
+
+This can be done by executing:
+
+```bash
+myst account register
+```
+
+Depending on the network you're using, you might need to top up your balance to finish your registration,
+if that is the case after executing the above command you'll get an output which asks you to do so.
+For that just follow the below instructions on managing your balance.
+
+#### Inspect your identity 
+> Command: myst account info 
+
+If the above command passed without any errors, you can now view your account information using:
+```bash
+myst account info 
+```
+
+This will display the identity you're using, it's balance and other important information like your registration status.
+
+### Managing your balance 
+
+Managing your balance is essential as you must have some amount of `MYST` in order to use the dVPN.
+
+#### Creating a topup request 
+> Command: myst account topup
+
+Topping up is done using the `topup` sub-command. It expects a few flags to be passed
+together with your request:
+- amount ( Amount of MYST you want to top up in to your account )
+- currency ( Currency you want to use when paying for your top up )
+
+For the example lets say we'll top up 100 `MYST` while paying in `BTC`
+in that case we'd execute the command like this:
+
+```bash
+myst account topup --amount 100 --currency BTC 
+```
+
+If everything is completed without errors, the output should be similar to this:
+```bash
+[INFO] Order ID 'XXXX' is in state: 'pending'
+[INFO] Price: 0.000584 BTC
+[INFO] Pay: unknown unknown
+[INFO] Receive: 0.000578 BTC
+[INFO] Myst amount: 100.000000
+[INFO] PaymentURL: https://pay-sandbox.coingate.com/invoice/c60cd410-99bb-4430-9d7a-ea7a01fXXXXX
+```
+
+You will now need to follow the `PaymentURL` in order to complete your top up request.
+
+#### Inspecting your last topup
+> Command: myst account info 
+
+To inspect your last top up, see it's state and `PaymentURL` you can execute:
+```bash
+myst account info --last-topup
+```
+
+### Connecting to other nodes
+
+Connecting to other nodes will require us to use the `connection` command and it's subcommands.
+
+#### Listing possible exit nodes 
+> Command: myst connection proposals 
+
+To list the possible exit nodes, you have to view proposals which can be done
+by executing:
+```bash
+myst connection proposals
+```
+
+The output should be similar to this:
+```bash
+[INFO] Found proposals:
+| Identity: 0x6b3dfae79ef37495c84f8de590503f54d8a597ce | Type: hosting | Country: CA | Price: 0.000698MYST/min   3.000016MYST/GB |
+| Identity: 0x95216857fe5575e033c143ad2d02e95b726f30df | Type: residential | Country: LT | Price: 0.000020MYST/min   0.650000MYST/GB |
+| Identity: 0xab0d493e23f4d9b568aa533db87d09fc8f836efb | Type: hosting | Country: NL | Price: 0.000007MYST/min   0.300000MYST/GB |
+| Identity: 0xb022800e11233a963040a48f456de922f2d0cc5d | Type: hosting | Country: GB | Price: 0.000010MYST/min   0.100000MYST/GB |
+```
+
+Now all you have to do is pick a node from this list, copy it's `Identity` field and continue to
+the next step.
+
+**Note:** This command also comes with a few flags which can act as filters. To view them
+use the `--help` flag at the end of the command.
+
+#### Connecting to a proposal 
+> Command: myst connection up 
+
+For simplicity lets say we picked `Identity: 0x6b3dfae79ef37495c84f8de590503f54d8a597ce` and will now
+connect to it using the `up` sub-command.
+
+That can be done by executing:
+```bash
+myst connection 0x6b3dfae79ef37495c84f8de590503f54d8a597ce
+```
+
+This might sake a few seconds and after that you should see a message `[CONNECTED]`.
+
+There is a possibility that the proposal you picked, cannot accept your connection
+in that case you should try and look for other proposals you can use.
+
+### Managing your connection 
+
+#### Disconnecting 
+
+To disconnect you can execute:
+```bash
+myst connection down
+```
+
+#### See connection information 
+
+To see your connection information you can execute:
+```bash
+myst connection info 
+```
+
+## Advanced: connect using myst CLI
+
+`myst cli` is a tool that is more advanced than the basic `myst` commands
+used for connecting. While in some ways it's similar to `connection`
+and `account` commands gives greater control for an end user alongside some additional
+features inturn sacrificing some convenience.
+
+To get familiar with `myst cli` follow the below steps which detail initial set up
+and use of the Mysterium dVPN using the `cli`.
 
 ### How to use the CLI
 
@@ -92,7 +249,7 @@ To get help and see a list of possible commands execute:
 » help 
 ```
 
-Each command has an output, if the output does not start with `[ERROR]` or `[WARNING` consider that command a success.
+Each command has an output, if the output does not start with `[ERROR]` or `[WARNING]` consider that command a success.
 
 Commands can be autocompleted using the `tab` key on your keyboard.
 
