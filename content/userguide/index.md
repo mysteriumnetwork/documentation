@@ -129,14 +129,14 @@ This will display the identity you're using, it's balance and other important in
 
 ### Managing your balance 
 
-Managing your balance is essential as you must have some amount of `MYST` in order to use the dVPN.
+Managing your balance is essential as you must have some amount of `MYST` (`MYSTT` while in Testnet) tokens in order to use the dVPN.
 
 #### Creating a topup request 
 > Command: myst account topup
 
 Topping up is done using the `topup` sub-command. It expects a few flags to be passed
 together with your request:
-- amount ( Amount of MYST you want to top up in to your account )
+- amount ( Amount of tokens you want to top up in to your account )
 - currency ( Currency you want to use when paying for your top up )
 
 For the example lets say we'll top up 100 `MYST` while paying in `BTC`
@@ -205,7 +205,7 @@ That can be done by executing:
 myst connection 0x6b3dfae79ef37495c84f8de590503f54d8a597ce
 ```
 
-This might sake a few seconds and after that you should see a message `[CONNECTED]`.
+This might take a few seconds and after that you should see a message `[CONNECTED]`.
 
 There is a possibility that the proposal you picked, cannot accept your connection
 in that case you should try and look for other proposals you can use.
