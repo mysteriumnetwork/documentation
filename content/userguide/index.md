@@ -170,10 +170,10 @@ myst account info --last-topup
 
 Connecting to other nodes will require us to use the `connection` command and it's subcommands.
 
-#### Listing possible exit nodes 
+#### Listing available exit nodes 
 > Command: myst connection proposals 
 
-To list the possible exit nodes, you have to view proposals which can be done
+To list the available exit nodes, you have to view proposals which can be done
 by executing:
 ```bash
 myst connection proposals
