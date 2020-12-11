@@ -21,15 +21,15 @@ CONF_DIR="--config-dir=/etc/mysterium-node"
 RUN_DIR="--runtime-dir=/var/run/mysterium-node"
 DATA_DIR="--data-dir=/var/lib/mysterium-node"
 DAEMON_OPTS="--tequilapi.address=0.0.0.0"
-SERVICE_OPTS="openvpn"
+SERVICE_OPTS="wireguard"
 ```
 
 List of available options can be found using a help commands: `myst --help` or `myst service --help`.
 
-For example, if you want to start only OpenVPN service on 1190 port and serve Mysterium verified consumer only, change the `SERVICE_OPTS=` line to the following:
+For example, if you want to start only Wireguard service on 61920-62075 ports and serve Mysterium verified consumer only, change the `SERVICE_OPTS=` line to the following:
 
 ```shell
-SERVICE_OPTS="--openvpn.port=1190 --access-policy.list=mysterium openvpn"
+SERVICE_OPTS="--wireguard.listen.ports=61920:62075 --access-policy.list=mysterium wireguard"
 ```
 
 To apply the changed service configuration you will need to restart service.
@@ -44,7 +44,7 @@ Runtime configuration of the running Mysterium node can be changed using a [Tequ
 **TequilAPI** is a REST API that allows you to manipulate a Mysterium node multiple ways.
 
 ```
-curl http://localhost:4050/healthcheck
+curl http://[node's internal IP]:4050/healthcheck
 
 {
     "uptime": "47m55.616006453s",
@@ -111,13 +111,9 @@ sudo journalctl -u mysterium-node.service
 
 A Mysterium node starts with a built-in UI server and allows to do the basic configuration.
 
-It uses basic authentication to prevent unauthorized access to the Mysterium node configuration.
+It uses authentication to prevent unauthorized access to the Mysterium node configuration.
 
-Default credentials for built-in UI:
- - login: `myst`
- - password: `mystberry`
-
-These credentials can be changed using a built-in UI.
+The credentials should be changed using a built-in UI.
 
 Default port for built-in UI server is `:4449`, and to get access to it you need to open [http://<mysterium-node-ip>:4449](http://<mysterium-node-ip>:4449).
 
@@ -140,6 +136,8 @@ SSDP based protocol is used for Mysterium Node discovery on Windows systems. Onc
 You just need to double click on the device icon to open the UI in the default browser.
 
 > Note: Network discovery should be enabled in your Windows.
+
+> Note: In order to use CLI tool on windows user should do it with PowerShell or WSL
 
 ### Using a Mac OS system for accessing Mysterium Node with UI
 
