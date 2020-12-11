@@ -9,6 +9,7 @@ module.exports = {
     "node-runners/setup/docker",
     "node-runners/setup/raspberry-pi",
     "node-runners/setup/linux",
+    "node-runners/setup/postinstall",
     "node-runners/webui/index"
   ],
   "dVPN user guide": [
