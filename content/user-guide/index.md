@@ -51,7 +51,7 @@ sudo systemctl status mysterium-node.service
 
 If everything is working you should see similar output to this:
 
-```sh
+```shell
 mysterium@pop-os:~$ sudo systemctl status mysterium-node.service 
 ● mysterium-node.service - Server for Mysterium - decentralised VPN Network
      Loaded: loaded (/lib/systemd/system/mysterium-node.service; enabled; vendor preset: enabled)

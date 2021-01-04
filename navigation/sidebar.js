@@ -6,6 +6,7 @@ module.exports = {
     "node-runners/setup/index"
   ],
   "Node runner guides": [
+    "node-runners/testnet2-migration",
     "node-runners/setup/docker",
     "node-runners/setup/raspberry-pi",
     "node-runners/setup/linux",
@@ -15,7 +16,7 @@ module.exports = {
     "node-runners/troubleshooting/index"
   ],
   "dVPN user guide": [
-      "userguide/index",
+      "user-guide/index",
   ],
   "Developer guide": [
     "developers/index",
