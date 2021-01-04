@@ -16,8 +16,15 @@ module.exports = {
   /** Node runner guides **/
   'Node runners': {
     category: 'Node runners',
-    shortName: 'Introduction',
+    shortName: 'Mission',
     url: '/node-runners',
+    description:
+      "Learn how to start running your own node and earn while you sleep."
+  },
+  'Node runners (Testnet2 Migration)': {
+    category: 'Node runners',
+    shortName: 'Migrating to Testnet2',
+    url: '/node-runners/testnet2-migration',
     description:
       "Learn how to start running your own node and earn while you sleep."
   },

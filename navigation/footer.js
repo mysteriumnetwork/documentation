@@ -13,7 +13,7 @@ module.exports = {
     href: 'https://github.com/mysteriummnetwork/'
   },
   'My Mysterium Network': {
-    href: 'https://my.mysterium.network',
+    href: 'https://testnet2.mysterium.network',
     target: '_blank',
   },
 };

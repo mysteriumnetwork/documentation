@@ -1,5 +1,6 @@
 ---
 title: Updating your node
+description: How to update your node to the latest version
 ---
 
 ## How to update your Raspberry Pi node

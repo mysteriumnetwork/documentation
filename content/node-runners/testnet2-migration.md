@@ -46,7 +46,7 @@ VPN services rendered on Testnet 2.0 will run alongside VPN services on Testnet 
 
 ## Ready to upgrade? Here's how.
 
-Firstly you will need to [update your nodes](/node-runners/setup/updating) and [log into the Web UI](/node-runners/webui/).
+Firstly you will need to [update your nodes](/node-runners/setup/updating/) and [log into the Web UI](/node-runners/webui/).
 
 **How to update your current MMN/Web UI settings to be compatible with Testnet 2.0?**
 
@@ -72,4 +72,4 @@ There are two ways of claiming your node:
 
 *Claim your node*: `mmn {api_key}`
 
-**Note:** You can find and copy your MMN API key in your [MMN profile](https://testnet2.mysterium.network//user/profile). Your API key allows you to claim your nodes via the node’s WebUI and CLI.
+**Note:** You can find and copy your MMN API key in your [MMN profile](https://testnet2.mysterium.network/user/profile). Your API key allows you to claim your nodes via the node’s WebUI and CLI.

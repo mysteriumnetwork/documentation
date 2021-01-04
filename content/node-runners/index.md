@@ -20,7 +20,7 @@ When you run a <a href="http://mysterium.network/node">Mysterium Node</a> you sh
 ## Like TOR but incentivised
 Mysterium Network is building a global peer to peer network. In this Mysterium Network, nodes earn for providing VPN service to users all over the world. 
 
-Mysterium Network has been running an incentivised test network from early 2019. Check out our <a href="https://my.mysterium.network/network">network statistics</a>. 
+Mysterium Network has been running an incentivised test network from early 2019. Check out our <a href="https://testnet2.mysterium.network/network">network statistics</a>. 
 
 We are also hard at work progressing micropayments within our network. Follow our journey into <a href="https://mysterium.network/blog/">blockchain based payments</a>.
 
