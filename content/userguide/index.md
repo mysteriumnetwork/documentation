@@ -1,11 +1,11 @@
 ---
 title: Linux guide
-description: How to use mysterium dvpn on linux 
+description: How to run Mysterium dVPN on Linux 
 ---
 
 ## Introduction 
 
-Mysterium node comes with a built in command line tool `myst cli`
+Mysterium node comes with a built-in command line tool `myst cli`
 which can be used to connect to other nodes and use our `dvpn` service.
 
 It has been tested on:

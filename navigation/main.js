@@ -6,13 +6,13 @@ module.exports = {
       'Learn about Mysterium Network.',
     omitLandingPage: true
   },
-  'Network Topology': {
-    category: 'Mysterium Network',
-    url: '/network/topology',
-    description:
-      'Learn about Mysterium Network components.',
-    omitLandingPage: true
-  },
+  // 'Network Topology': {
+  //   category: 'Mysterium Network',
+  //   url: '/network/topology',
+  //   description:
+  //     'Learn about Mysterium Network components.',
+  //   omitLandingPage: true
+  // },
   /** Node runner guides **/
   'Node runners': {
     category: 'Node runners',

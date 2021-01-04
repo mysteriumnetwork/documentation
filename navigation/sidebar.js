@@ -5,12 +5,14 @@ module.exports = {
     "token/bounty",
     "node-runners/setup/index"
   ],
-  "Become a node runner": [
+  "Node runner guides": [
     "node-runners/setup/docker",
     "node-runners/setup/raspberry-pi",
     "node-runners/setup/linux",
     "node-runners/setup/postinstall",
-    "node-runners/webui/index"
+    "node-runners/webui/index",
+    "node-runners/setup/updating",
+    "node-runners/troubleshooting/index"
   ],
   "dVPN user guide": [
       "userguide/index",
@@ -20,7 +22,6 @@ module.exports = {
     "developers/mobile"
   ],
   Resources: [
-    "node-runners/troubleshooting/index",
     "resources/faq",
     "[MMN](https://my.mysterium.network)"
   ]
