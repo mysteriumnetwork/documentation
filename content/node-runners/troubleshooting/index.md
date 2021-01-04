@@ -94,3 +94,15 @@ It also might be that default firewall forward policy is set to `DROP`. In that
 ```
 # iptables -P FORWARD ACCEPT
 ```
+
+### Forgot TequilAPI password
+
+On the machine running Mysterium Node run the following to reset password: 
+
+```
+# myst reset --tequilapi
+```
+or
+```
+# myst reset
+```
