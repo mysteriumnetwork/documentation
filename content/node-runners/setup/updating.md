@@ -5,7 +5,7 @@ description: How to update your node to the latest version
 
 ## How to update your Raspberry Pi node
 
-SSH into your PI using the following command:
+SSH into your Raspberry Pi using the following command:
 
 ```bash
 ssh myst@ip-of-your-raspberry
@@ -16,14 +16,14 @@ The default password is  `mystberry`.
 Then to update your RPI, run:
 
 ```bash
-sudo apt-get update && sudo apt install myst
+sudo apt update; sudo apt install myst
 ```
 
 ## How to update your Linux node
 
 To update your Linux node, run:
 ```bash
-sudo apt-get update && sudo apt install myst
+sudo apt update; sudo apt install myst
 ```
 
 ## How to update your Docker node
