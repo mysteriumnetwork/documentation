@@ -17,7 +17,7 @@ docker run \
  --cap-add NET_ADMIN \
  -d --name myst \
  -v $YOUR_MYSTERIUM_DIR:/var/lib/mysterium-node \
- mysteriumnetwork/myst:latest \
+ mysteriumnetwork/myst:testnet2 \
  service --agreed-terms-and-conditions
 ```
 
@@ -71,7 +71,7 @@ docker run --cap-add NET_ADMIN -p 4449:4449 \
     -p 41920-42075:41920-42075/udp \
     -p 61920-62075:61920-62075/udp \
     -p 27005:27005/udp -d --name myst \
-    -v $YOUR_MYSTERIUM_DIR:/var/lib/mysterium-node mysteriumnetwork/myst:latest \
+    -v $YOUR_MYSTERIUM_DIR:/var/lib/mysterium-node mysteriumnetwork/myst:testnet2 \
     --experiment-natpunching=false \
     --p2p.listen.ports=41920:42075 service \
     --agreed-terms-and-conditions \

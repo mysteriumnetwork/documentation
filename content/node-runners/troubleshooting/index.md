@@ -10,7 +10,7 @@ In order for us to understand what is happening we'd like you to submit your nod
 
 **Node logs do not include your node's traffic.**
 
-1. [Login to your Web UI](https://testnet2.mysterium.network/node-running-guide/node-ui-login) and click the "Bug" button on the left side panel.
+1. [Login to your Web UI](/node-runners/webui/) and click the "Bug" button on the left side panel.
 
 3. Report issue directly to Mysterium support using API service: 
 

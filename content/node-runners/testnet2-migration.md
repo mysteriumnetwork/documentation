@@ -25,7 +25,7 @@ We’ve updated the Web UI so it is far more stable, with fewer glitches.
 We found and fixed lots of bugs found during ALPHA testing in preparation of our upcoming node release.
 
 We also created user-friendly consumer CLI commands.
-Now it’s much easier to use [Mysterium VPN for advanced Linux users](https://docs-v2.mysterium.network/user-guide/) and on servers.
+Now it’s much easier to use [Mysterium VPN for advanced Linux users](/user-guide/) and on servers.
 
 ### Matic x Mysterium
 
