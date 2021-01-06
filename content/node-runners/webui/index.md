@@ -37,7 +37,7 @@ To start running services and become eligible for the bounty program to receive 
 
 ### Service price settings
 
-We recommend keeping the defaults since they were fine tuned for Testnet2 and dVPN consumer apps. 
+We recommend keeping the defaults since they were fine tuned for Testnet 2.0 and dVPN consumer apps. 
 
 <div style="text-align:center">
   <img src="../../images/webui/pricing.png" alt="Pricing settings" class="screenshot" />
@@ -53,7 +53,7 @@ The beneficiary address is the address of your wallet where you want to receive 
 
 ### Web UI security
 
-Your security is our top priority, therefore with the new release of the Testnet2 node, we made it mandatory to change your WebUI password.
+Your security is our top priority, therefore with the new release of the Testnet 2.0 node, we made it mandatory to change your WebUI password.
 For bounty payouts, claim your node in MMN by providing the Web UI with your MMN API key.
 
 <div style="text-align:center">

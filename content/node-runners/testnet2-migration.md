@@ -1,8 +1,7 @@
 ---
-title: Migration to Testnet2 
-description: How and why we're migrating the network to Testnet2
+title: Migration to Testnet 2.0 
+description: How and why we're migrating the network to Testnet 2.0
 ---
-
   
 ### Why we’re migrating into Testnet 2.0
 
@@ -40,7 +39,7 @@ Nodes can also store beneficiary (payout) wallet addresses on the Ethereum block
 We also discovered some node runners who were cheating the system. We therefore started a blacklist so they could not participate in any future bounty program.
 
 ### Earn in 2 networks during the migration
-  
+
 We’ve updated and deployed multiple versions of MMN, so users of Testnet 1.0 & Testnet 2.0 networks could get access to an aggregated node dashboards. 
 VPN services rendered on Testnet 2.0 will run alongside VPN services on Testnet 1.0 in January 2021. **Earn double while we migrate nodes across to Testnet 2.0!**
 
@@ -64,9 +63,8 @@ Once you go through it, if you find yourself needing to change anything, you can
 
 There are two ways of claiming your node:
 
-1.  By logging into the built-in Web UI and going through the onboarding process.
-    
-2.  By running the below commands via Mysterium CLI (CLI is a command line interface that allows you to manipulate a Mysterium node using just your terminal. It can be started using a myst cli command):
+1. By logging into the built-in Web UI and going through the onboarding process.
+2. By running the below commands via Mysterium CLI (CLI is a command line interface that allows you to manipulate a Mysterium node using just your terminal. It can be started using a myst cli command):
 
 *Agree to ToS (term of use)*: `myst cli --agreed-terms-and-conditions`
 

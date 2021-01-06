@@ -21,12 +21,12 @@ module.exports = {
     description:
       "Learn how to start running your own node and earn while you sleep."
   },
-  'Testnet2 Migration': {
+  'Testnet 2.0 Migration': {
     category: 'Node runners',
-    shortName: 'Migrating to Testnet2',
+    shortName: 'Migration to Testnet 2.0',
     url: '/node-runners/testnet2-migration',
     description:
-      "Migration instructions for Testnet2"
+      "Migration instructions for Testnet 2.0"
   },
   'Node runners (Raspberry Pi)': {
     category: 'Node runners',
