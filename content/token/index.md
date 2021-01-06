@@ -12,11 +12,11 @@ One of the primary issues in global incentivised networks is payments. <a href="
 
 ## Pre-mainnet bounty system
 
-Before we move towards blockchain based micropayments, we're incentivizing people to run Mysteriumn Nodes through the <a href="https://docs-v2.mysterium.network/token/bounty/">Mysterium Node Pilot</a>.
+Before we move towards blockchain based micropayments, we're incentivizing people to run Mysteriumn Nodes through the <a href="/token/bounty/">Mysterium Node Pilot</a>.
 
 ### Mysterium Node Pilot - ETH Bounties
 
-The <a href="https://docs-v2.mysterium.network/token/bounty/">Mysterium Node Pilot</a> is a Research and Development initiative to kickstart Mysterium Network in 2019. We are actively seeking testers willing to participate in exchange for a bounty. You can get paid up to $50 worth of ETH for renting your spare bandwidth.
+The <a href="/token/bounty/">Mysterium Node Pilot</a> is a Research and Development initiative to kickstart Mysterium Network in 2019. We are actively seeking testers willing to participate in exchange for a bounty. You can get paid up to $50 worth of ETH for renting your spare bandwidth.
 
 This is a R&D initiative to test incentive mechanics, network stability, NAT traversal and several other technical fundamentals. The bounties are subsidised by Mysterium Network, therefore there are limits to what you can earn. 
 

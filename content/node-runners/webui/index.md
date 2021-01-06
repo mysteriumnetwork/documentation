@@ -9,6 +9,10 @@ description: Control your node through the built-in Node UI
 </style>
 The built-in Node UI allows you to adjust your node's settings, manage services and payment details, view performance and real-time session metrics.
 
+<div style="text-align:center">
+  <img src="../../images/webui/node-ui-dashboard.png" alt="Dashboard" class="screenshot">
+</div>
+
 ## How to login
 
 Finding the UI when node is in a local network:
@@ -22,30 +26,52 @@ Finding the UI when node is in a data center:
 - You will have to configure your server's firewall to expose the 4449 TCP port then access the UI through http://public-ip:4449
 
 <div style="text-align:center">
-  <img src="../../images/webui/login.png" alt="Login" class="screenshot">
+  <img src="../../images/webui/welcome.png" alt="Welcome" class="screenshot">
 </div>
 
-## Default credentials
+## Node and service configuration
 
-|           | credential
-|-----------|-----------|
-| Username  | myst
-| Password  | mystberry
+Our onboarding wizard will walk you through the following steps to help you setup in no time.
 
-## Setting up your wallet
-To be eligible for the bounty program and receive ETH, you must set up a wallet for your node.
+To start running services and become eligible for the bounty program to receive MYST, you must set up a wallet for your node as well as claim your node in My Mysterium Network.
 
-Login to your node UI and go into the "Settings" page.
+### Service price settings
+
+We recommend keeping the defaults since they were fine tuned for Testnet2 and dVPN consumer apps. 
+
+<div style="text-align:center">
+  <img src="../../images/webui/pricing.png" alt="Pricing settings" class="screenshot" />
+</div>
+
+### Payout settings
+
+The beneficiary address is the address of your wallet where you want to receive your earnings.
+
+<div style="text-align:center">
+  <img src="../../images/webui/payout.png" alt="Payout settings" class="screenshot" />
+</div>
+
+### Web UI security
+
+Your security is our top priority, therefore with the new release of the Testnet2 node, we made it mandatory to change your WebUI password.
+For bounty payouts, claim your node in MMN by providing the Web UI with your MMN API key.
+
+<div style="text-align:center">
+  <img src="../../images/webui/password.png" alt="Password change" class="screenshot" />
+</div>
+
+
+### Adjusting settings
 
 <div style="text-align:center">
   <img src="../../images/webui/settings.png" alt="Settings" class="screenshot">
 </div>
 
-## Securing your node (recommended)
+### Reporting an issue
 
-For security purposes, we highly recommend that you change your Node UI's password.
+Occasionally you may need to send us your node logs for further investigation.
+Simply click on the "Bug" button at the bottom left sidebar, provide us with an email address and explain the issue. Once we receive your logs, we'll get in touch to help you resolve it.
 
 <div style="text-align:center">
-  <img src="../../images/webui/password-change.png" alt="Password change" class="screenshot">
+  <img src="../../images/webui/issue-report.png" alt="Report issue" class="screenshot" />
 </div>
-

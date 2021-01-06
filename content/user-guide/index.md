@@ -1,11 +1,11 @@
 ---
 title: Linux guide
-description: How to use mysterium dvpn on linux 
+description: How to run Mysterium dVPN on Linux 
 ---
 
 ## Introduction 
 
-Mysterium node comes with a built in command line tool `myst cli`
+Mysterium node comes with a built-in command line tool `myst cli`
 which can be used to connect to other nodes and use our `dvpn` service.
 
 It has been tested on:
@@ -51,7 +51,7 @@ sudo systemctl status mysterium-node.service
 
 If everything is working you should see similar output to this:
 
-```sh
+```shell
 mysterium@pop-os:~$ sudo systemctl status mysterium-node.service 
 ● mysterium-node.service - Server for Mysterium - decentralised VPN Network
      Loaded: loaded (/lib/systemd/system/mysterium-node.service; enabled; vendor preset: enabled)

@@ -5,23 +5,24 @@ module.exports = {
     "token/bounty",
     "node-runners/setup/index"
   ],
-  "Become a node runner": [
+  "Node runner guides": [
+    "node-runners/testnet2-migration",
     "node-runners/setup/docker",
     "node-runners/setup/raspberry-pi",
     "node-runners/setup/linux",
-    "node-runners/setup/postinstall",
-    "node-runners/webui/index"
+    "node-runners/webui/index",
+    "node-runners/setup/updating",
+    "node-runners/troubleshooting/index"
   ],
   "dVPN user guide": [
-      "userguide/index",
+      "user-guide/index",
   ],
   "Developer guide": [
     "developers/index",
     "developers/mobile"
   ],
   Resources: [
-    "node-runners/troubleshooting/index",
     "resources/faq",
-    "[MMN](https://my.mysterium.network)"
+    "[MMN](https://testnet2.mysterium.network)"
   ]
 }

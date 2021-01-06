@@ -1,9 +1,24 @@
 ---
-title: Network troubleshooting
+title: Troubleshooting
 weight: 10
 ---
 
-### Introduction to Network troubleshooting
+## Reporting an issue
+
+There may be a time when you encounter an issue with your node and we may ask you to submit your logs for further investigation.
+In order for us to understand what is happening we'd like you to submit your node logs.
+
+**Node logs do not include your node's traffic.**
+
+1. [Login to your Web UI](/node-runners/webui/) and click the "Bug" button on the left side panel.
+
+3. Report issue directly to Mysterium support using API service: 
+
+```bash
+curl -X POST --data '{"email":"your_email@gmail.com"}' localhost:4050/feedback/issue
+```
+
+## Introduction to Network troubleshooting
 
 NAT (Network Address Translation) is used to enable internet access for computers that do not have an external internet address (IP). Usually of the form like:
  - 10.0.0.0/8 (10.0.0.0 – 10.255.255.255)
@@ -65,7 +80,7 @@ If UPnP or NAT-PNP method doesn't help, you can try forwarding the port manually
 
 ## Port Forwarding Example
 
-Below is a screen shot of home router configuration which shows the manually forwarded ports.
+Below is a screenshot of home router configuration which shows the manually forwarded ports.
 
 ### TCP/UDP Ports
 

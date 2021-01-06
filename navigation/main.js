@@ -6,20 +6,27 @@ module.exports = {
       'Learn about Mysterium Network.',
     omitLandingPage: true
   },
-  'Network Topology': {
-    category: 'Mysterium Network',
-    url: '/network/topology',
-    description:
-      'Learn about Mysterium Network components.',
-    omitLandingPage: true
-  },
+  // 'Network Topology': {
+  //   category: 'Mysterium Network',
+  //   url: '/network/topology',
+  //   description:
+  //     'Learn about Mysterium Network components.',
+  //   omitLandingPage: true
+  // },
   /** Node runner guides **/
   'Node runners': {
     category: 'Node runners',
-    shortName: 'Introduction',
+    shortName: 'Mission',
     url: '/node-runners',
     description:
       "Learn how to start running your own node and earn while you sleep."
+  },
+  'Testnet2 Migration': {
+    category: 'Node runners',
+    shortName: 'Migrating to Testnet2',
+    url: '/node-runners/testnet2-migration',
+    description:
+      "Migration instructions for Testnet2"
   },
   'Node runners (Raspberry Pi)': {
     category: 'Node runners',
