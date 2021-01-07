@@ -31,7 +31,7 @@ sudo apt-get update
 sudo apt install myst
 ```
 
-If for some reason that fails or you can't do that we also provide an install script written in `bash`
+If for some reason that fails, or you can't do that we also provide an installation script written in `bash`
 which can be downloaded and executed using this command:
 
 ```bash
@@ -39,7 +39,7 @@ sudo -E bash -c "$(curl -s https://raw.githubusercontent.com/mysteriumnetwork/no
 ```
 
 In addition to downloading and installing our Node using either of these commands will also
-install additional required dependencies like WireGuard and OpenVPN if you dont have them already.
+install additional required dependencies like WireGuard and OpenVPN if you don't have them already.
 
 ### Configure the services
 
@@ -55,7 +55,7 @@ and provider features.
 If your plan is to use our `node` as a regular VPN client for data consumption a few additional steps have to be taken.
 The previously mention `mysterium-node.service` has to be stopped and replaced with `mysterium-consumer.service`.
 
-By default services are controlled using `systemctl`. A detailed guide on how it works can be found [here](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units).
+By default, services are controlled using `systemctl`. A detailed guide on how it works can be found [here](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units).
 
 To enable consumer only mode you will have to execute these commands in order:
 ```bash
@@ -95,7 +95,7 @@ we'll go through the steps required to do that.
 This section will touch on two commands `myst account` and `myst connection` together with
 their subcommands.
 
-These two commands expose the most basic and user friendly way to use your terminal in order
+These two commands expose the most basic and user-friendly way to use your terminal in order
 to connect to the dVPN. For more advanced user guide please follow the section below
 which explains how to use `myst cli`.
 
@@ -120,7 +120,7 @@ Each command has an output, if the output does not start with `[ERROR]` or `[WAR
 #### Register a new identity
 > Command: myst account register 
 
-First of all we will need to create and register and identity which is required 
+We will need to create and register an identity which is required 
 in order to identify yourself in the network.
 
 This can be done by executing:
@@ -224,7 +224,7 @@ myst connection up 0x6b3dfae79ef37495c84f8de590503f54d8a597ce
 This might take a few seconds and after that you should see a message `[CONNECTED]`.
 
 There is a possibility that the proposal you picked, cannot accept your connection
-in that case you should try and look for other proposals you can use.
+in that case you should try the other proposals.
 
 ### Managing your connection 
 
@@ -247,7 +247,7 @@ myst connection info
 `myst cli` is a tool that is more advanced than the basic `myst` commands
 used for connecting. While in some ways it's similar to `connection`
 and `account` commands gives greater control for an end user alongside some additional
-features inturn sacrificing some convenience.
+features in turn sacrificing some convenience.
 
 To get familiar with `myst cli` follow the below steps which detail initial set up
 and use of the Mysterium dVPN using the `cli`.
@@ -262,7 +262,7 @@ myst cli
 Once started your terminal window should change to the `myst cli` interface.
 To get help and see a list of possible commands execute:
 ```bash
-» help 
+help 
 ```
 
 Each command has an output, if the output does not start with `[ERROR]` or `[WARNING]` consider that command a success.
@@ -281,7 +281,7 @@ In order to identify yourself in the network you must have an identity, to creat
 execute the following command in the `cli`:
 
 ```bash
-» identities new
+identities new
 ```
 
 This command will create you a new identity which you can use.
@@ -289,13 +289,13 @@ It will be printed to your terminal, but in case you want to check it out later 
 will the following command:
 
 ```bash
-» identities list 
+identities list 
 ```
 
 #### Unlock the new identity 
-> Command: identities unclock [identity] 
+> Command: identities unlock [identity] 
 
-In order to use the created identity it has to be unclocked first.
+In order to use the created identity it has to be unlocked first.
 
 **Unlocking has to be done every time we launch the `myst cli` and want to use the created identity.**
 
@@ -304,7 +304,7 @@ which we'll use in all later steps.
 
 To unlock it we'd have to execute:
 ```bash
-» identities unlock 0x4570fe47a49af9ae9bd76f029818413ea18620000
+identities unlock 0x4570fe47a49af9ae9bd76f029818413ea18620000
 ```
 
 #### Register your identity
@@ -314,7 +314,7 @@ After creating and unlocking the identity it must be registered so that Mysteriu
 about it and it's balance, to do that execute the `identities register` command.
 
 ```bash
-» identities register 0x4570fe47a49af9ae9bd76f029818413ea18620000 0
+identities register 0x4570fe47a49af9ae9bd76f029818413ea18620000 0
 ```
 
 ### Managing your balance 
@@ -327,7 +327,7 @@ You must have some amount of `MYST` in your balance in order to use the dVPN.
 
 In order to get information about your identity you can execute:
 ```bash
-» identities get 0x4570fe47a49af9ae9bd76f029818413ea18620000
+identities get 0x4570fe47a49af9ae9bd76f029818413ea18620000
 ```
 
 It should output a few lines of text among them you should be able to find your balance: 
@@ -335,7 +335,7 @@ It should output a few lines of text among them you should be able to find your 
 [INFO] Balance: 6.900000MYST
 ```
 
-If your balance is not `0` and don't want to top up you can skip furhter to the `Connecting to other nodes`.
+If your balance is not `0` and don't want to top up you can skip further to the `Connecting to other nodes`.
 
 #### Adding balance 
 > Command: order create [identity] [amount] [pay currency]
@@ -345,7 +345,7 @@ To add additional `MYST` to the balance a payment order has to be created.
 To get the full list of currencies which can be used to pay execute:
 
 ```bash
-» order currencies
+order currencies
 ```
 
 Let's say that for example for our identity: `0x4570fe47a49af9ae9bd76f029818413ea18620000`
@@ -354,7 +354,7 @@ we would like to add `100 MYST` paying with `BTC`.
 We would execute the order command like this:
 
 ```bash
-»  order create 0x4570fe47a49af9ae9bd76f029818413ea18620000 100 BTC
+ order create 0x4570fe47a49af9ae9bd76f029818413ea18620000 100 BTC
 ```
 
 It's output should be similar to this:
@@ -375,12 +375,12 @@ provided `PaymentURL` and complete your order.
 
 To check your whole order history execute:
 ```bash
-» order get-all 
+order get-all 
 ```
 
 To inspect each order in more detail execute:
 ```bash
-» order get [ORDER_ID] 
+order get [ORDER_ID] 
 ```
 
 ### Connecting to other nodes
@@ -393,13 +393,13 @@ Connecting to other nodes on the network is easy using the `cli`.
 To list all possible exit nodes can be done using the proposals command
 
 ```bash
-» proposals 
+proposals 
 ```
 
-This commmand will output a list which is similar to this:
+This command will output a list which is similar to this:
 
 ```bash
-» proposals 
+proposals 
 Found proposals 
 provider id: 0x773783463adb681ad67052213ae1ae204e32dab1	type: wireguard	country: DE	access policies: 
 provider id: 0x80ec29bb58365aceb06be7558b05a789b9e6458a	type: wireguard	country: GB	access policies: 
@@ -415,8 +415,8 @@ provider id: 0x770c9ad96fe1843068e6100451d3282ce67c3596	type: wireguard	country:
 #### Connecting to a proposal 
 > Command: connect [consumer-identity] [provider-identity] [service-type]
 
-The last step that is left is to actually connect. First make sure you're identity is `unlocked`,
-intructions on how to do that are in the `Initial setup` section.
+The last step that is left is to actually connect. First make sure your identity is `unlocked`,
+instructions on how to do that are in the `Initial setup` section.
 
 First lets explore the connect command. It accepts three arguments which are required.
 
@@ -432,10 +432,10 @@ provider id: 0x773783463adb681ad67052213ae1ae204e32dab1 type: wireguard country:
 
 So we'll execute the connect command like this:
 ```bash
-» connect 0x4570fe47a49af9ae9bd76f029818413ea18620000 0x773783463adb681ad67052213ae1ae204e32dab1 wireguard
+connect 0x4570fe47a49af9ae9bd76f029818413ea18620000 0x773783463adb681ad67052213ae1ae204e32dab1 wireguard
 ```
 
-It should take a few seconds seconds to connect and once it finishes
+It should take a few seconds to connect and once it finishes
 you're done, you can now use the internet as if you're in a different location. 
 
 ### Managing your connection 
@@ -444,12 +444,12 @@ you're done, you can now use the internet as if you're in a different location.
 
 To disconnect from a node you can execute:
 ```bash
-» disconnect
+disconnect
 ```
 
 #### Check your connection status 
 
 To check your connection status you can execute:
 ```bash
-» status 
+status 
 ```

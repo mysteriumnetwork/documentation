@@ -1,79 +1,82 @@
 ---
-title: Node 
-description: Node developer guide
+title: Node development
+description: How to start working on Mysterium node
 ---
 
-In this section we'll talk about node only from a developers perspective. If you haven't yet setup your
-environment please follow the "Quick Start" guide first.
+This section will explain how to run, build and test node during development. If you haven't yet to set up your
+environment please follow the [Environment setup](/developers/) guide first.
 
-We'll touch briefly on getting, running, testing and building a [node](https://github.com/mysteriumnetwork/node).
-If after reading this you have more questions try exploring the code and the commands mentioned or reach to us and our community over at <a href="https://discord.com/invite/n3vtSwc">Discord.</a>
+If after reading this you have more questions try exploring the [code](https://github.com/mysteriumnetwork/node) and the commands mentioned or reach to us and our community over at <a href="https://discord.com/invite/n3vtSwc">Discord.</a>
 
-### Getting 
+### Forking
 
-Node is located at: https://github.com/mysteriumnetwork/node
-You will have to fork the repository to work on it can follow the official github [guide](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) on how to do that.
+Node repository is located at: https://github.com/mysteriumnetwork/node
+You will have to fork the repository in order to work on it.
+You can follow the official Github [guide](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/fork-a-repo) on how to do that.
 
 After creating a fork execute:
 
-```sh
-git clone https://github.com/YOUR_GITHUB_USERNAME/mattermost-server.git
+```bash
+git clone https://github.com/YOUR_GITHUB_USERNAME/node.git
 ```
-Make sure you've read our "Quick start" guide and you have
-[Mage](https://github.com/magefile/mage) installed and running as it will come in handly going further.
+Make sure you've read our [Environment setup](/developers/) guide and you have [Mage](https://github.com/magefile/mage) installed as it will come in handy going further.
 
 ### Building
 
-A node is easy to build using `mage`, to do that you can execute the a mage command:
+Mage makes it easy to build the project, to do that you execute the `mage build` command in project's root directory:
 
-```sh
+```bash
+cd node
 mage build
 ``` 
 
 After doing so you should see similar output to this:
 
-```sh
+```bash
 2020-11-12T17:29:07.178 INF ci/packages/build.go:83                  > Building cmd/mysterium_node/mysterium_node.go -> myst linux/amd64
 2020-11-12T17:29:07.178 ??? github.com/rs/zerolog@v1.17.2/log.go:403 > exec: go build -ldflags=-w -s  -o /home/tomas/go/src/github.com/mysteriumnetwork/node/build/myst/myst cmd/mysterium_node/mysterium_node.go
 2020-11-12T17:29:09.604 INF ci/packages/build.go:83                  > Building cmd/supervisor/supervisor.go -> myst_supervisor linux/amd64
 2020-11-12T17:29:09.604 ??? github.com/rs/zerolog@v1.17.2/log.go:403 > exec: go build -ldflags=-w -s  -o /home/tomas/go/src/github.com/mysteriumnetwork/node/build/myst_supervisor/myst_supervisor cmd/supervisor/supervisor.go
 ```
 
-If you dont have `mage` installed you can try and execute a `go build` command:
+If you don't have `mage` installed you can use the `go build` command to generate a binary:
 
-```sh
+```bash
 go build -o myst  cmd/mysterium_node/mysterium_node.go 
 ```
 
 ### Running
 
 A node can be started as a `daemon` by executing:
-```sh
+```bash
 mage daemon
 ```
 
 Or without mage:
-```sh
- build/myst/myst daemon
+```bash
+build/myst/myst daemon
 ```
 
-Interacting with the now running node can be done using it's `tequilaAPI`.
-For that we have built a `CLI` app which you can start by executing:
+### TequilAPI REST API
 
-```sh
+Interacting with node can be done using its `TequilaAPI` endpoints. This API allows us to control both consumer and provider sides of the running binary.
+
+Node comes with built-in CLI commands which call the API endpoints making it easy to interact, test and control your node from the command-line.
+
+```bash
 mage cli
 ```
 
 Or without mage:
-```sh
+```bash
 build/myst/myst cli
 ```
 
 For greater control you can skip the `CLI` step and interact with `tequilaAPI` yourself
-as if it was a rest service using `curl`, `postman` or any other tool you like.
-For example to check if a node is running you can send a healthcheck request:
+using `curl`, `postman` or any other HTTP based tool you like.
+For example to check if a node is running you can send a `healthcheck` request:
 
-```sh
+```bash
 curl http://localhost:4050/healthcheck
 
 {
@@ -88,43 +91,44 @@ curl http://localhost:4050/healthcheck
 }
 ```
 
-To explore everything that tequila can do, see swagger of an already deployed node: https://tequilapi.mysterium.network/
+To explore everything TequilAPI can do, we host its Swagger docs on: https://tequilapi.mysterium.network/
 
-Or check swagger of your own node which is avaiable on the same `http://localhost:4050/docs` after you run the daemon.
+Or check the Swagger docs of your own node which are available on the same port as the TequilAPI: http://localhost:4050/docs.
 
 ### Testing
 
 If you've added new features or changed old ones, make sure to cover them with tests as much as possible. 
 
-* Unit tests are all the `*_test.go` files oustide the `e2e` directory. They can be executed by running:
+* Unit tests are all the `*_test.go` files outside the `e2e` directory. They can be executed by running:
 
-```sh
+```bash
 mage test 
 ```
 
-* Long running or "e2e" tests can be found in the `e2e` directory. They can be executed by running:
+* Long-running or "e2e" tests can be found in the `e2e` directory. They can be executed by running:
 
-```sh
+```bash
 mage test-e2e-basic
 ```
 
-```sh
+```bash
 mage test-e2e-nat
 ```
 
-* To check if you haven't missed copyright notices or haven't made any linting mistakes executed:
+* To check if you haven't missed copyright notices or haven't made any linting mistakes run:
 
-```sh
+```bash
 mage checks
 ```
 
 ### Contributing 
 
-If you've made changes to the `tequilaAPI` make sure to generate new swagger documention:
-```sh
+If you've made changes to the `TequilaAPI` make sure to generate new Swagger documentation:
+```bash
 mage generateswagger
 mage generatedocs
 ```
 
+That's it! Once you're ready to publish your changes, please create a [pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) in the [official node repository](https://github.com/mysteriumnetwork/node).
 
-And that is it you're ready to create a [pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+Our developers are always happy to receive feedback and code contributions. We look forward to hearing from you!
