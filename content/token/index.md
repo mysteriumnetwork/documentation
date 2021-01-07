@@ -5,14 +5,14 @@ description: ETH bounties, MYST and more.
 
 In Mysterium Network, you earn for providing VPN services to a global user base. 
 
-A decentralised virtual private network is essentially peer to peer. People running VPN service are paid by people using VPN service. However getting there isn't a short and easy journey.
+A decentralised virtual private network is essentially peer to peer. People running VPN service are paid by people using VPN service. However, getting there isn't a short and easy journey.
 
-One of the primary issues in global incentivised networks is payments. <a href="https://mysterium.network/blog/">Track our journey towards blockchain micropayments for distributed networks.</a>
+One of the primary issues in global incentivised networks is payments. <a href="https://mysterium.network/blog/">Track our journey towards the blockchain micropayments for distributed networks.</a>
 
 
 ## Pre-mainnet bounty system
 
-Before we move towards blockchain based micropayments, we're incentivizing people to run Mysteriumn Nodes through the <a href="/token/bounty/">Mysterium Node Pilot</a>.
+Before we move towards blockchain based micropayments, we're incentivizing people to run Mysterium Nodes through the <a href="/token/bounty/">Mysterium Node Pilot</a>.
 
 ### Mysterium Node Pilot - ETH Bounties
 
@@ -20,7 +20,7 @@ The <a href="/token/bounty/">Mysterium Node Pilot</a> is a Research and Developm
 
 This is a R&D initiative to test incentive mechanics, network stability, NAT traversal and several other technical fundamentals. The bounties are subsidised by Mysterium Network, therefore there are limits to what you can earn. 
 
-Our technology stack is in early stages. We are working hard towards blockchain based micropayments - which will enable peer to peer payments within Mysterium Network.
+Our technology stack is in early stages. We are working hard towards the blockchain based micropayments - which will enable peer to peer payments within Mysterium Network.
 
     
 ## Mainnet payments - Micropayments in MYST
@@ -32,7 +32,7 @@ Your earnings will be based upon the consumption of your services, your nodes wi
 
 Mysterium (**MYST**) is a cryptocurrency **token** deployed as smart contract which operates on the Ethereum blockchain and allows users to perform activities within the Mysterium VPN network both as VPN clients or as a service provider (VPN Node).
 
-MYST is an integral part of Mysterium Network. It is the mechanism for value transfer between VPN consumers and VPN providers. In laymens terms, in Mysterium Network you pay as you go for VPN by the second with MYST. 
+MYST is an integral part of Mysterium Network. It is the mechanism for value transfer between VPN consumers and VPN providers. In layman's terms, in Mysterium Network you pay as you go for VPN by the second with MYST. 
 
 The biggest slice of those fees goes to the VPN node owner (service provider) the leftover will be dedicated to protocol development and support. As aforementioned node owners who run their nodes are incentivized for their support of the network. In such a way node owner essentially acts as a miner, with reward coming in MYST token form. We are different from typical blockchain networks in that in Mysterium, the node runner is rewarded not for his computing power (proof of work), ownership of the currency (proof of stake), but instead for <b>sharing their bandwidth</b>. 
 

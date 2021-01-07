@@ -8,13 +8,13 @@ The installed DEB package will be starting a node service automatically.
 
 You can check details using the following command:
 
-```shell
+```bash
 sudo systemctl status mysterium-node.service
 ```
 
 You can change the configuration of the service via `/etc/default/mysterium-node` file:
 
-```shell
+```bash
 root@raspberrypi:~# cat /etc/default/mysterium-node
 # Define additional args for `myst` service (see `myst --help` for full list)
 CONF_DIR="--config-dir=/etc/mysterium-node"
@@ -28,13 +28,13 @@ List of available options can be found using a help commands: `myst --help` or `
 
 For example, if you want to start only Wireguard service on 61920-62075 ports and serve Mysterium verified consumer only, change the `SERVICE_OPTS=` line to the following:
 
-```shell
+```bash
 SERVICE_OPTS="--wireguard.listen.ports=61920:62075 --access-policy.list=mysterium wireguard"
 ```
 
 To apply the changed service configuration you will need to restart service.
 
-```shell
+```bash
 sudo systemctl restart mysterium-node
 ```
 

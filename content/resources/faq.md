@@ -27,7 +27,7 @@ Sometimes hosting providers block most UDP ports altogether, even outgoing ones.
 ## I launched a node, how to know if it is working?
 Best is to test with a client. Still there are other ways to be reasonably sure.
 If you run your node via docker, check its status and logs:
-```shell
+```bash
 # docker ps -a
 # docker logs -f myst
 ```
@@ -42,7 +42,7 @@ It means that node successfully registered to discovery and its service proposal
 
 If you are running it as a service, you can do a service status check:
 
-```shell
+```bash
 sudo systemctl status mysterium-node.service
 ```
 
@@ -50,13 +50,13 @@ sudo systemctl status mysterium-node.service
 On the first run node generates its identity automatically. Later this identity is reused each time node is started. If You run Mysterium Network node from sources, binaries or deb packages You can find Your identity in `keystore` directory in Your data directory (i.e. `--data-dir=/var/lib/mysterium-node`).
 
 If You use docker image, it is strongly recommended **not** to store identity inside docker container (since You might need to remove container in order to upgrade), but to mount Your keystore from Your host to container using `-v host_volume:container_volume` option  as follows:
-```shell
+```bash
 docker run --cap-add NET_ADMIN --net host -v /home/mysterium-node:/var/lib/mysterium-node --name myst -d mysteriumnetwork/myst service --agreed-terms-and-conditions
 ```
 
 ## How should I set a passphrase for node identity?
 By default, generated identity is not protected with any password, that is password is an empty string. If You want to generate a password protected identity You can add `--identity.passphrase` to running command:
-```shell
+```bash
 docker run --cap-add NET_ADMIN --net host --name myst -d mysteriumnetwork/myst service --identity.passphrase=your_passphrase_here
 ```
 

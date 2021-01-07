@@ -6,7 +6,7 @@
 
     For macOS
     
-    ```shell
+    ```bash
     brew install node
     ```
     
@@ -16,12 +16,12 @@
 
     Install Gatsby CLI
     
-    ```shell
+    ```bash
     npm install -g gatsby-cli
     ```
     
     Clone repository
-    ```shell
+    ```bash
     git clone git@github.com:mysteriumnetwork/documentation.git
     ```
     
@@ -32,7 +32,7 @@
     
     Install project dependencies
     
-    ```shell
+    ```bash
     npm install
     ```
 
@@ -40,12 +40,12 @@
 
     To start the live-reload server run
 
-    ```shell
+    ```bash
     gatsby develop
     ```
     
     To build static pages run
-    ```shell
+    ```bash
     gatsby build
     ```
 
