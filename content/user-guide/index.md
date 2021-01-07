@@ -41,35 +41,51 @@ sudo -E bash -c "$(curl -s https://raw.githubusercontent.com/mysteriumnetwork/no
 In addition to downloading and installing our Node using either of these commands will also
 install additional required dependencies like WireGuard and OpenVPN if you dont have them already.
 
-### Check service health 
+### Configure the services
 
-After installation you can check the status of the Mysterium node
+After installation is complete two services are created:
+* `mysterium-node.service`
+* `mysterium-consumer.service`
 
+By default `mysterium-node.service` will be automatically started. It allows you to use both consumer
+and provider features. 
+
+#### Running in consumer only mode 
+
+If your plan is to use our `node` as a regular VPN client for data consumption a few additional steps have to be taken.
+The previously mention `mysterium-node.service` has to be stopped and replaced with `mysterium-consumer.service`.
+
+By default services are controlled using `systemctl`. A detailed guide on how it works can be found [here](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units).
+
+To enable consumer only mode you will have to execute these commands in order:
 ```bash
-sudo systemctl status mysterium-node.service
+sudo systemctl stop mysterium-node.service # stop current node service
+sudo systemctl disable mysterium-node.service # disable node service so it doesn't start again automatically
+sudo systemctl enable mysterium-consumer.service # enable consumer service
+sudo systemctl start mysterium-consumer.service # start consumer service
 ```
 
-If everything is working you should see similar output to this:
+#### Checking node health 
 
-```shell
-mysterium@pop-os:~$ sudo systemctl status mysterium-node.service 
-● mysterium-node.service - Server for Mysterium - decentralised VPN Network
-     Loaded: loaded (/lib/systemd/system/mysterium-node.service; enabled; vendor preset: enabled)
-     Active: active (running) since Fri 2020-11-20 00:00:00 GMT;
+After keeping the default `mysterium-node.service` or replacing it with the `consumer service` you should make sure
+everything actually started and is working. That can be done using `systemctl status [service-name]` for example:
+```bash
+systemctl status mysterium-consumer.service
+
+● mysterium-consumer.service - Consumer client for Mysterium - decentralised VPN Network
+     Loaded: loaded (/lib/systemd/system/mysterium-consumer.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2021-01-07 11:22:55 UTC; 7s ago
        Docs: https://mysterium.network/
-   Main PID: 1920 (myst)
-      Tasks: 30 (limit: 19009)
-     Memory: 73.0M
+   Main PID: 4286 (myst)
+      Tasks: 9 (limit: 1064)
+     Memory: 15.3M
+     ...
 ```
 
-If thats not the case, you can try and restart the mysterium service by running:
-
-```bash
-sudo systemctl restart mysterium-node.service
-```
+In case of service failing to start you can try and restart it using `systemctl restart [service-name]`.
 
 If your `mysterium.node` service is still refusing to start you can report an issue to our support team
-which will help you figure it out as best as they can. 
+which will help you figure it out as best as they can. Application logs can be found using `journalctl -u [service-name]`.
 
 ## Basic: Connect using myst commands
 
@@ -202,7 +218,7 @@ connect to it using the `up` sub-command.
 
 That can be done by executing:
 ```bash
-myst connection 0x6b3dfae79ef37495c84f8de590503f54d8a597ce
+myst connection up 0x6b3dfae79ef37495c84f8de590503f54d8a597ce
 ```
 
 This might take a few seconds and after that you should see a message `[CONNECTED]`.
