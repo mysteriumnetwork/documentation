@@ -32,6 +32,11 @@ We started working on our [integration with Matic Network](https://mysterium.net
 
 ### My.Mysterium.Network (MMN) updates
 
+For a short period of time, the Testnet 2.0 MMN will be hosted on https://testnet2.mysterium.network.
+Once we migrate the majority of nodes, the old https://my.mysterium.network will be replaced with the Testnet 2.0 version.
+
+**On 2020-01-08** - All of the accounts from https://my.mysterium.network are migrated to https://testnet2.mysterium.network.
+
 The Testnet 2.0 version of MMN will look a little different than the current version, and we hope it will solve a couple of usability problems we had before.
 
 Nodes can also store beneficiary (payout) wallet addresses on the Ethereum blockchain, instead of a database. The new MMN has been adapted so it can be used for bounty payments.
