@@ -35,6 +35,8 @@ module.exports = {
         // versions: {
         //   '1': 'version-1'
         // },
+        algoliaApiKey: '7d1f9c1330f6cdb93c7c0476d62573d6',
+        algoliaIndexName: 'docs',
         gatsbyRemarkPlugins: [],
         sidebarCategories: sidebarNavigation
       }
