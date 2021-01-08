@@ -15,12 +15,12 @@ module.exports = {
     "node-runners/troubleshooting/index"
   ],
   "dVPN user guide": [
-      "user-guide/index",
+    "user-guide/index"
   ],
   "Developer guide": [
     "developers/index",
     "developers/node",
-    "developers/mobile",
+    "developers/mobile"
   ],
   Resources: [
     "resources/faq",
