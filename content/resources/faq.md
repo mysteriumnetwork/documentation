@@ -9,7 +9,7 @@ Everyone has questions about how to properly run a Mysterium node, but not all q
 We are building a permissionless VPN Node Network to help rewire the fabric of the internet.
 
 Our node software is available on Linux (including Raspberry Pi) and Mac. We are currently running an incentivised research and development initiative.
-Live in the UK, US, Germany or Italy? [Find out more](https://mysterium.network/node/).
+Live in the UK, US, Italy, Germany, Australia or the Netherlands? [Find out more](https://mysterium.network/node/).
 
 ## What is the Mysterium Node Pilot?
 The Mysterium Node Pilot is an R&D initiative to help us with rigorous feedback loops while we build a global permissionless VPN network.
