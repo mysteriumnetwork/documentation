@@ -1,6 +1,6 @@
 ---
 title: Mobile SDK
-description: Available Mysterium node mobile components
+description: Mysterium node mobile components
 ---
 
 All SDK libraries available as pre-built packages on the GitHub [release page](https://github.com/mysteriumnetwork/node/releases).

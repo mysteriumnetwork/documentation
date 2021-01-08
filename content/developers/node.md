@@ -3,10 +3,10 @@ title: Node development
 description: How to start working on Mysterium node
 ---
 
-This section will explain how to run, build and test node during development. If you haven't yet to set up your
-environment please follow the [Environment setup](/developers/) guide first.
+This section will explain how to run, build and test node during development. If you are yet to set up your
+environment please follow the [environment setup](/developers/) guide first.
 
-If after reading this you have more questions try exploring the [code](https://github.com/mysteriumnetwork/node) and the commands mentioned or reach to us and our community over at <a href="https://discord.com/invite/n3vtSwc">Discord.</a>
+You can check out our source code on [Github](https://github.com/mysteriumnetwork/node) and talk to us and our community over at <a href="https://discord.com/invite/n3vtSwc">Discord.</a>
 
 ### Forking
 
@@ -19,7 +19,7 @@ After creating a fork execute:
 ```bash
 git clone https://github.com/YOUR_GITHUB_USERNAME/node.git
 ```
-Make sure you've read our [Environment setup](/developers/) guide and you have [Mage](https://github.com/magefile/mage) installed as it will come in handy going further.
+Make sure you've read our [environment setup](/developers/) guide and you have [Mage](/developers/#mage---golangs-task-automation-tool) installed as it will come in handy going further.
 
 ### Building
 
@@ -57,9 +57,12 @@ Or without mage:
 build/myst/myst daemon
 ```
 
-### TequilAPI REST API
+### TequilAPI REST API and CLI app
 
-Interacting with node can be done using its `TequilaAPI` endpoints. This API allows us to control both consumer and provider sides of the running binary.
+Interacting with node can be done using its `TequilaAPI` endpoints.
+This API allows us to control both consumer and provider sides of our node.
+
+**The default port is: `4050`**
 
 Node comes with built-in CLI commands which call the API endpoints making it easy to interact, test and control your node from the command-line.
 
@@ -72,7 +75,7 @@ Or without mage:
 build/myst/myst cli
 ```
 
-For greater control you can skip the `CLI` step and interact with `tequilaAPI` yourself
+For greater control you can skip the `CLI` step and interact with `TequilaAPI` yourself
 using `curl`, `postman` or any other HTTP based tool you like.
 For example to check if a node is running you can send a `healthcheck` request:
 
@@ -93,7 +96,7 @@ curl http://localhost:4050/healthcheck
 
 To explore everything TequilAPI can do, we host its Swagger docs on: https://tequilapi.mysterium.network/
 
-Or check the Swagger docs of your own node which are available on the same port as the TequilAPI: http://localhost:4050/docs.
+Feel free to check the Swagger docs of your own node which are available on the same port as the `TequilAPI`: http://localhost:4050/docs.
 
 ### Testing
 
