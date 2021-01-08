@@ -1,6 +1,6 @@
 // global docsearch
 export default () => {
-  if(typeof window.docsearch !== 'undefined') {
+  if(typeof window !== 'undefined' && typeof window.docsearch !== 'undefined') {
     let docSearch = window.docsearch
     window.docsearch = (options) => {
       options.appId = 'LOISNC3H67'
