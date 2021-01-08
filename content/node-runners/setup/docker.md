@@ -93,7 +93,7 @@ export YOUR_MYSTERIUM_DIR=~/.mysterium
 
 **_Recommended port mappings:_**
 
-- -p 4449:4449 The port to run Web UI on (default: 4449)
+- -p 4449:4449 The port to run Node UI on (default: 4449)
 - -p 27005:27005/udp. OpenVPN port to use (default: 1194)
 - -p 61920-62075:61920-62075/udp Range of WireGuard listen ports (e.g. 61920:62075)
 - -p 41920-42075:41920-42075/udp Range of P2P listen ports (e.g. 41920:42075)

@@ -180,7 +180,7 @@ To completely strip host of firewall rules and chains You can do:
 
 **Warning**: Your node should be accessible through built-in NAT hole punching capabilities. If that doesn't work, you can try the following.
 
-For Raspberry PI nodes, the OpenVPN service port can be set directly under Settings page in the WebUI (http://[node_ip]:4449). Once that is done, hit save and it will be automatically adjusted in the configuration file.
+For Raspberry PI nodes, the OpenVPN service port can be set directly under Settings page in the Node UI (http://[node_ip]:4449). Once that is done, hit save and it will be automatically adjusted in the configuration file.
 
 **For all other types of configuration, you will need to modify the `/etc/default/mysterium-node` configuration file and change the service options (OpenVPN and WireGuard) there.**
 

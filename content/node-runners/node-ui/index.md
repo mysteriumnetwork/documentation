@@ -2,15 +2,11 @@
 title: Node UI
 description: Control your node through the built-in Node UI
 ---
-<style>
-.screenshot {
-    width: 95%;
-}
-</style>
+
 The built-in Node UI allows you to adjust your node's settings, manage services and payment details, view performance and real-time session metrics.
 
 <div style="text-align:center">
-  <img src="../../images/webui/node-ui-dashboard.png" alt="Dashboard" class="screenshot">
+  <img src="../../images/node-ui/node-ui-dashboard.png" alt="Dashboard" class="screenshot">
 </div>
 
 ## How to login
@@ -26,7 +22,7 @@ Finding the UI when node is in a data center:
 - You will have to configure your server's firewall to expose the 4449 TCP port then access the UI through http://public-ip:4449
 
 <div style="text-align:center">
-  <img src="../../images/webui/welcome.png" alt="Welcome" class="screenshot">
+  <img src="../../images/node-ui/welcome.png" alt="Welcome" class="screenshot">
 </div>
 
 ## Node and service configuration
@@ -40,7 +36,7 @@ To start running services and become eligible for the bounty program to receive 
 We recommend keeping the defaults since they were fine tuned for Testnet 2.0 and dVPN consumer apps. 
 
 <div style="text-align:center">
-  <img src="../../images/webui/pricing.png" alt="Pricing settings" class="screenshot" />
+  <img src="../../images/node-ui/pricing.png" alt="Pricing settings" class="screenshot" />
 </div>
 
 ### Payout settings
@@ -48,23 +44,23 @@ We recommend keeping the defaults since they were fine tuned for Testnet 2.0 and
 The beneficiary address is the address of your wallet where you want to receive your earnings.
 
 <div style="text-align:center">
-  <img src="../../images/webui/payout.png" alt="Payout settings" class="screenshot" />
+  <img src="../../images/node-ui/payout.png" alt="Payout settings" class="screenshot" />
 </div>
 
-### Web UI security
+### Node UI security
 
-Your security is our top priority, therefore with the new release of the Testnet 2.0 node, we made it mandatory to change your WebUI password.
-For bounty payouts, claim your node in MMN by providing the Web UI with your MMN API key.
+Your security is our top priority, therefore with the new release of the Testnet 2.0 node, we made it mandatory to change your Node UI password.
+For bounty payouts, claim your node in MMN by providing the Node UI with your MMN API key.
 
 <div style="text-align:center">
-  <img src="../../images/webui/password.png" alt="Password change" class="screenshot" />
+  <img src="../../images/node-ui/password.png" alt="Password change" class="screenshot" />
 </div>
 
 
 ### Adjusting settings
 
 <div style="text-align:center">
-  <img src="../../images/webui/settings.png" alt="Settings" class="screenshot">
+  <img src="../../images/node-ui/settings.png" alt="Settings" class="screenshot">
 </div>
 
 ### Reporting an issue
@@ -73,5 +69,5 @@ Occasionally you may need to send us your node logs for further investigation.
 Simply click on the "Bug" button at the bottom left sidebar, provide us with an email address and explain the issue. Once we receive your logs, we'll get in touch to help you resolve it.
 
 <div style="text-align:center">
-  <img src="../../images/webui/issue-report.png" alt="Report issue" class="screenshot" />
+  <img src="../../images/node-ui/issue-report.png" alt="Report issue" class="screenshot" />
 </div>

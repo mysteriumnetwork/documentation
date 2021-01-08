@@ -1,0 +1,13 @@
+{
+  "index_name": "docs",
+  "start_urls": [
+    "https://docs.mysterium.network/"
+  ],
+  "stop_urls": [],
+  "selectors": {
+    "lvl0": "main h1",
+    "lvl1": "main h2",
+    "lvl2": "main h3",
+    "text": "main p, main li, main pre"
+  }
+}

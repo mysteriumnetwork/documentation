@@ -1,0 +1,7 @@
+.screenshot {
+    width: 95%;
+}
+.anchor.before {
+    top: inherit;
+    bottom: 0;
+}

@@ -19,7 +19,7 @@ We’ve been working hard to reverse [the ban of Mysterium VPN in China](https:/
 
 ### Cleaner UI
 
-We’ve updated the Web UI so it is far more stable, with fewer glitches.
+We’ve updated the Node UI so it is far more stable, with fewer glitches.
 
 We found and fixed lots of bugs found during ALPHA testing in preparation of our upcoming node release.
 
@@ -45,29 +45,29 @@ VPN services rendered on Testnet 2.0 will run alongside VPN services on Testnet 
 
 ## Ready to upgrade? Here's how.
 
-Firstly you will need to [update your nodes](/node-runners/setup/updating/) and [log into the Web UI](/node-runners/webui/).
+Firstly you will need to [update your nodes](/node-runners/setup/updating/) and [log into the Node UI](/node-runners/node-ui/).
 
-**How to update your current MMN/Web UI settings to be compatible with Testnet 2.0?**
+**How to update your current MMN/Node UI settings to be compatible with Testnet 2.0?**
 
-<img src="../images/webui/welcome.png" alt="Welcome!" class="screenshot">
+<img src="../images/node-ui/welcome.png" alt="Welcome!" class="screenshot">
 <br /><br />
 
 After a successful installation, you will be welcomed by our onboarding wizard. It will guide you through all the necessary steps to set things up.
 Once you go through it, if you find yourself needing to change anything, you can simply visit the settings page to make changes.
 <br /><br />
 
-<img src="../images/webui/settings.png" alt="Settings" class="screenshot">
+<img src="../images/node-ui/settings.png" alt="Settings" class="screenshot">
 <br /><br />
 
 **How to claim your Testnet 2.0 node in MMN**
 
 There are two ways of claiming your node:
 
-1. By logging into the built-in Web UI and going through the onboarding process.
+1. By logging into the built-in Node UI and going through the onboarding process.
 2. By running the below commands via Mysterium CLI (CLI is a command line interface that allows you to manipulate a Mysterium node using just your terminal. It can be started using a myst cli command):
 
 *Agree to ToS (term of use)*: `myst cli --agreed-terms-and-conditions`
 
 *Claim your node*: `mmn {api_key}`
 
-**Note:** You can find and copy your MMN API key in your [MMN profile](https://testnet2.mysterium.network/user/profile). Your API key allows you to claim your nodes via the node’s WebUI and CLI.
+**Note:** You can find and copy your MMN API key in your [MMN profile](https://testnet2.mysterium.network/user/profile). Your API key allows you to claim your nodes via the node’s Node UI and CLI.

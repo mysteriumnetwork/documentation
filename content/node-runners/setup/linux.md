@@ -66,7 +66,7 @@ sudo journalctl -fu mysterium-node.service
 ```
 
 ### Save logs to a file
-If your node is unable to report an issue through the built-in WebUI or TequilAPI, you may need to save the logs to a file and send them to us via [support@mysterium.network](mailto:support@mysterium.network).
+If your node is unable to report an issue through the built-in Node UI or TequilAPI, you may need to save the logs to a file and send them to us via [support@mysterium.network](mailto:support@mysterium.network).
 
 ```bash
 sudo journalctl -u mysterium-node.service > node.logs
