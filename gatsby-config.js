@@ -26,6 +26,8 @@ module.exports = {
         pageTitle: 'Mysterium Network Docs',
         menuTitle: 'Mysterium Platform',
         githubRepo: 'mysteriumnetwork/documentation',
+        twitterHandle: 'MysteriumNet',
+        youtubeUrl: 'https://www.youtube.com/c/MysteriumNetwork',
         description: "An example of how to set up Apollo's documentation theme",
         navConfig: mainNavigation,
         footerNavConfig: footerNavigation,

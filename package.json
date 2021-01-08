@@ -14,10 +14,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.24.76",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "gatsby": "^2.30.1",
     "gatsby-plugin-netlify-cms": "^4.3.16",
-    "gatsby-theme-apollo-core": "^3.0.19",
-    "gatsby-theme-apollo-docs": "^4.5.3",
+    "gatsby-theme-apollo-core": "^3.0.23",
+    "gatsby-theme-apollo-docs": "^4.5.12",
     "netlify-cms-app": "^2.12.27",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
