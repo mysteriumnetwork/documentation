@@ -45,7 +45,7 @@ docker rmi -f ImageID
 Use the latest docker image:
 
 ```bash
-mysteriumnetwork/myst:testnet2
+mysteriumnetwork/myst:latest
 ```
 
 If Docker is unable to find the required image locally, it will pull it from `mysteriumnetwork/myst` repository.
