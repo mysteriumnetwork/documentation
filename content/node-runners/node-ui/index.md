@@ -27,13 +27,13 @@ Finding the UI when node is in a data center:
 
 ## Node and service configuration
 
-Our onboarding wizard will walk you through the following steps to help you setup in no time.
+Our onboarding wizard will walk you through the following steps to help you set up in no time.
 
 To start running services and become eligible for the bounty program to receive MYST, you must set up a wallet for your node as well as claim your node in My Mysterium Network.
 
 ### Service price settings
 
-We recommend keeping the defaults since they were fine tuned for Testnet 2.0 and dVPN consumer apps. 
+We recommend keeping the defaults since they were fine-tuned for Testnet 2.0 and dVPN consumer apps. 
 
 <div style="text-align:center">
   <img src="../../images/node-ui/pricing.png" alt="Pricing settings" class="screenshot" />

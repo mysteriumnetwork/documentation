@@ -69,7 +69,7 @@ UPnP might be convenient, but it adds its own potential security issues. It assu
 
 It is a technique that is used to allow external devices access to computers services on private networks. It does this by mapping an external port to an internal IP address and port. Most online gaming Applications will require you to configure **port forwarding** on your home router. To understand port forwarding you need to understand what a TCP/IP port is and how ports and IP addresses are used together.
 
-If UPnP or NAT-PNP method doesn't help, you can try forwarding the port manually. Port forwards are setup in your router. You need to forward port `1194`. A summary of the steps to setup a port forward in your router are:
+If UPnP or NAT-PNP method doesn't help, you can try forwarding the port manually. Port forwards are set up in your router. You need to forward port `1194`. A summary of the steps to setup a port forward in your router are:
 
 1. Login to your router.
 2. Navigate to your routers port forwarding section, also frequently called virtual server.

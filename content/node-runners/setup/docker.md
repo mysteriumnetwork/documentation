@@ -104,3 +104,7 @@ You can use **_different values_** to change listed services' **_port_** numbers
 Your Windows Docker node is now ready to serve Mysterium Network users!
 
 Make sure to use volumes as in the example above to persist your node's identity through container and host system restarts or node image upgrades.
+
+## Complete installation
+
+Once the container is running please [log into the Node UI](/node-runners/node-ui/) to set up your service pricing, payout address and claim your node in [MMN](https://testnet2.mysterium.network) to receive bounties.

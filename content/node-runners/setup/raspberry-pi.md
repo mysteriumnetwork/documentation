@@ -65,3 +65,7 @@ passwd
 - A command prompt will come up, type in `su` to log in as root (no password needed).
 - Type in `passwd myst` and then follow the prompt to enter a new password.
 - Shut the machine down, pull the card out and put the `cmdline.txt` file back the way it was by removing the `init=/bin/sh` line. 
+
+## Complete installation
+
+Once the service is running please [log into the Node UI](/node-runners/node-ui/) to set up your service pricing, payout address and claim your node in [MMN](https://testnet2.mysterium.network) to receive bounties.

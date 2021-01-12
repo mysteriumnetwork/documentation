@@ -71,3 +71,7 @@ If your node is unable to report an issue through the built-in Node UI or Tequil
 ```bash
 sudo journalctl -u mysterium-node.service > node.logs
 ```
+
+## Complete installation
+
+Once the service is running please [log into the Node UI](/node-runners/node-ui/) to set up your service pricing, payout address and claim your node in [MMN](https://testnet2.mysterium.network) to receive bounties.
