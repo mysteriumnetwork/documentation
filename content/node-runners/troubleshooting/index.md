@@ -40,7 +40,7 @@ The shortage of IPv4 addresses and the very slow transition to IPv6 leads to pra
 
 ## Enable NAT traversal (hole punching) mechanism
 
-###### Currently, If port mapping succeeded, Mysterium is skipping the NAT hole punching. On the other hand, if port mapping process fails, we can skip it by adding a flag to disable NAT port mapping: **--nat-port-mapping=false*
+> Currently, If port mapping succeeded, Mysterium is skipping the NAT hole punching. On the other hand, if port mapping process fails, we can skip it by adding a flag to disable NAT port mapping: **--nat-port-mapping=false*
 
 Alternatively, providers can skip the process of manual port configuration and disable UPnP in their routers (if enabled). In this scenario, NAT hole punching will be prioritised and executed against port mapping processes.
 
@@ -53,7 +53,7 @@ If this approach does not work for you, you can try the following:
 2. Manually forward a port in your router.
 3. Add the following flag into service configuration file: *--experiment-natpunching=false*
 
-###### NAT (Network Address Translation) is used to enable internet access for computers that do not have an external internet address (IP). Usually of the form like 192.168.x.y or 10.x.y.z
+> NAT (Network Address Translation) is used to enable internet access for computers that do not have an external internet address (IP). Usually of the form like 192.168.x.y or 10.x.y.z
 
 If you are running a node on a computer behind NAT you will need some means to enable access to your node from outside your local network. Below are suggested methods to enable such external access.
 
@@ -63,7 +63,7 @@ Essentially you need to make ports on which node services run accessible from ou
 
 UPnP and NAT-PNP protocols provides automatic port configuration features for various routers (gateways). Some routers have these features enabled by default, some have not. It allows apps on your device to open ports on your router when needed and to close them when they are stopped.
 
-UPnP might be convenient but it adds its own potential security issues. It assumes that every device on your local network is trustworthy. So if you happen to get infected by malware that wants to initiate a direct connection with a remote attacked, your UPnP router will allow it without question. Such a connection would be much more difficult to open with UPnP disabled.
+UPnP might be convenient, but it adds its own potential security issues. It assumes that every device on your local network is trustworthy. So if you happen to get infected by malware that wants to initiate a direct connection with a remote attacked, your UPnP router will allow it without question. Such a connection would be much more difficult to open with UPnP disabled.
 
 ## Port forwarding
 
@@ -94,30 +94,30 @@ There might be many things, but most frequent is firewall. If You run node via d
 
 check ip_forward status:
 
-```
-# cat /proc/sys/net/ipv4/ip_forward
+```bash
+cat /proc/sys/net/ipv4/ip_forward
 ```
 
 enable ip_forward if disabled:
 
-```
-# sysctl -w net.ipv4.ip_forward=1
+```bash
+sysctl -w net.ipv4.ip_forward=1
 ```
 
 It also might be that default firewall forward policy is set to `DROP`. In that case try setting it to `ACCEPT`. Generic way to do it, provided there are no other interfering rules:
 
-```
-# iptables -P FORWARD ACCEPT
+```bash
+iptables -P FORWARD ACCEPT
 ```
 
-### Forgot TequilAPI password
+## Forgot password
 
-On the machine running Mysterium Node run the following to reset password: 
+To reset your Node UI password, run the following commands via the node CLI:
 
-```
-# myst reset --tequilapi
+```bash
+myst reset --tequilapi
 ```
 or
-```
-# myst reset
+```bash
+myst reset
 ```
