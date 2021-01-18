@@ -3,6 +3,7 @@ module.exports = {
     "node-runners/index",
     "token/index",
     "token/bounty",
+    "node-runners/testnet2-migration-news",
     "node-runners/setup/index"
   ],
   "Node runner guides": [
