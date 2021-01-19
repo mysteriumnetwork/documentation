@@ -3,7 +3,7 @@ title: Migration to Testnet 2.0
 description: How to migrate to Testnet 2.0
 ---
 
-**If you are running a Raspberry Pi or a Linux node it's likely that your node has migrated automatically.**
+**If you are running a Raspberry Pi node it's likely that your node has migrated automatically.**
 
 If your node becomes **"Offline"** in My Mysterium Network (MMN), that means it switched networks and is now running in Testnet 2.0.
 The new Testnet 2.0 uses a new version of My Mysterium Network to which your accounts were transferred, but your nodes were not.
@@ -43,29 +43,41 @@ sudo apt update; sudo apt install myst
 
 In order to update your Docker node, run the following commands.
 
-Check the Repository, Tag, Image ID, Creation date and size of the current build.
-
-```bash
-docker images
-```
-
-Delete the image that is already being used by your Docker container:
-
-```bash
-docker rmi -f ImageID
-```
-
 Use the latest docker image:
 
 ```bash
 docker pull mysteriumnetwork/myst:latest
 ```
 
+Restart your container and you should be up to date.
+
 ## Confirm your node is running
 
 To confirm that your node is running on Linux and RPi, check the service status:
 ```bash
 sudo systemctl status mysterium-node.service 
+```
+
+The output should look something like this:
+```bash
+mysterium@pop-os:~$ sudo systemctl status mysterium-node.service 
+● mysterium-node.service - Server for Mysterium - decentralised VPN Network
+     Loaded: loaded (/lib/systemd/system/mysterium-node.service; enabled; vendor preset: enabled)
+     Active: active (running) since Fri 2021-01-04 00:00:00 GMT;
+       Docs: https://mysterium.network/
+   Main PID: 1920 (myst)
+      Tasks: 30 (limit: 19009)
+     Memory: 73.0M
+```
+
+On Docker, list your active containers:
+```bash
+docker ps
+```
+Your container should be up and running:
+```bash
+CONTAINER ID   IMAGE                          COMMAND                  CREATED          STATUS
+074a8fcb572c   mysteriumnetwork/myst:latest   "/usr/local/bin/dock…"   44 seconds ago   Up 42 seconds  
 ```
 
 ## Claim your nodes
@@ -101,9 +113,15 @@ There are two ways of claiming your node:
 1. By logging into the built-in Node UI and going through the onboarding process.
 2. By running the below commands via Mysterium CLI (CLI is a command line interface that allows you to manipulate a Mysterium node using just your terminal. It can be started using a myst cli command):
 
-*Agree to ToS (term of use)*: `myst cli --agreed-terms-and-conditions`
+*Agree to Terms of Use (once)*: 
+```bash
+myst cli --agreed-terms-and-conditions`
+```
 
-*Claim your node*: `mmn {api_key}`
+*Claim your node*: 
+```bash
+mmn {api_key}
+```
 
 **Note:** You can find and copy your MMN API key in your [MMN profile](https://testnet2.mysterium.network/user/profile).
 
