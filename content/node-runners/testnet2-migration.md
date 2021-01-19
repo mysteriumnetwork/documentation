@@ -1,78 +1,143 @@
 ---
 title: Migration to Testnet 2.0 
-description: How and why we're migrating the network to Testnet 2.0
+description: How to migrate to Testnet 2.0
 ---
-  
-### Why we’re migrating into Testnet 2.0
 
-We’ve deployed the newest version of our smart contracts onto the Goerli testnet blockchain. With this network upgrade, node registration flow has changed. Providers will get free registration with zero stake (while still on Testnet 2.0) and will retain the same Testnet 1.0 identity. These new smart contracts are also using a new version of MYSTT token. It’s essentially the same as our real MYST token, but on Goerli testnet. It has 18 zeros after comma (instead of 8 ), which required us to refactor all payments-related code to account for micropayments as we transition to Ethereum Mainnet.
+**If you are running a Raspberry Pi node it's likely that your node has migrated automatically.**
 
-### Top up with your crypto of choice
+If your node becomes **"Offline"** in My Mysterium Network (MMN), that means it switched networks and is now running in Testnet 2.0.
+The new Testnet 2.0 uses a new version of My Mysterium Network to which your accounts were transferred, but your nodes were not.
 
-Top up Mysterium VPN balance using various cryptocurrencies (other than MYST), such as BTC, LTC, ETH, Dai and more! This functionality is supported by an upgraded Hermes protocol, with our micropayments hub now supporting multiple chains.
+The new Testnet 2.0 My Mysterium Network platform is hosted on https://testnet2.mysterium.network.
 
-Interested in finding out more? Deep dive into [how we evaluated and chose the right L2 scaling partner for Mysterium Network](https://mysterium.network/blog/layer-2-the-search-for-the-cheapest-and-fastest-microtransactions/).
+Your accounts from https://my.mysterium.network were migrated into https://testnet2.mysterium.network on January the 8th, so you should be able to login using the same credentials on both systems.
 
-### Mysterium is now unblocked in China!
+## Updating your node
 
-We’ve been working hard to reverse [the ban of Mysterium VPN in China](https://medium.com/mysterium-network/china-where-is-your-internet-e03824fea13c). The first iteration of our unblocking is done. Start using Testnet 2.0 apps (node v0.40+) to access Mysterium Network from China!
+If your node does not auto-update or something goes wrong. You can follow the following steps to update:
 
-### Cleaner UI
+### How to update your Raspberry Pi node
 
-We’ve updated the Node UI so it is far more stable, with fewer glitches.
+SSH into your Raspberry Pi using the following command:
 
-We found and fixed lots of bugs found during ALPHA testing in preparation of our upcoming node release.
+```bash
+ssh myst@ip-of-your-raspberry
+```
 
-We also created user-friendly consumer CLI commands.
-Now it’s much easier to use [Mysterium VPN for advanced Linux users](/user-guide/) and on servers.
+The default password is  `mystberry`.
 
-### Matic x Mysterium
+Then to update your RPI, run:
 
-We started working on our [integration with Matic Network](https://mysterium.network/blog/matic-network-powers-mysterium-p2p-payments/). Most of our infrastructure components are ready for Matic, so now we’re working on building the Matic<>Ethereum bridges needed before it’s public release.
+```bash
+sudo apt update; sudo apt install myst
+```
 
-### My.Mysterium.Network (MMN) updates
+### How to update your Linux node
 
-For a short period of time, the Testnet 2.0 MMN will be hosted on https://testnet2.mysterium.network.
-Once we migrate the majority of nodes, the old https://my.mysterium.network will be replaced with the Testnet 2.0 version.
+To update your Linux node, run:
+```bash
+sudo apt update; sudo apt install myst
+```
 
-**On 2020-01-08** - All of the accounts from https://my.mysterium.network are migrated to https://testnet2.mysterium.network.
+### How to update your Docker node
 
-The Testnet 2.0 version of MMN will look a little different than the current version, and we hope it will solve a couple of usability problems we had before.
+In order to update your Docker node, run the following commands.
 
-Nodes can also store beneficiary (payout) wallet addresses on the Ethereum blockchain, instead of a database. The new MMN has been adapted so it can be used for bounty payments.
+Use the latest docker image:
 
-We also discovered some node runners who were cheating the system. We therefore started a blacklist so they could not participate in any future bounty program.
+```bash
+docker pull mysteriumnetwork/myst:latest
+```
 
-### Earn in 2 networks during the migration
+Restart your container and you should be up to date.
 
-We’ve updated and deployed multiple versions of MMN, so users of Testnet 1.0 & Testnet 2.0 networks could get access to an aggregated node dashboards. 
-VPN services rendered on Testnet 2.0 will run alongside VPN services on Testnet 1.0 in January 2021. **Earn double while we migrate nodes across to Testnet 2.0!**
+## Confirm your node is running
 
-## Ready to upgrade? Here's how.
+To confirm that your node is running on Linux and RPi, check the service status:
+```bash
+sudo systemctl status mysterium-node.service 
+```
 
-Firstly you will need to [update your nodes](/node-runners/setup/updating/) and [log into the Node UI](/node-runners/node-ui/).
+The output should look something like this:
+```bash
+mysterium@pop-os:~$ sudo systemctl status mysterium-node.service 
+● mysterium-node.service - Server for Mysterium - decentralised VPN Network
+     Loaded: loaded (/lib/systemd/system/mysterium-node.service; enabled; vendor preset: enabled)
+     Active: active (running) since Fri 2021-01-04 00:00:00 GMT;
+       Docs: https://mysterium.network/
+   Main PID: 1920 (myst)
+      Tasks: 30 (limit: 19009)
+     Memory: 73.0M
+```
 
-**How to update your current MMN/Node UI settings to be compatible with Testnet 2.0?**
+On Docker, list your active containers:
+```bash
+docker ps
+```
+Your container should be up and running:
+```bash
+CONTAINER ID   IMAGE                          COMMAND                  CREATED          STATUS
+074a8fcb572c   mysteriumnetwork/myst:latest   "/usr/local/bin/dock…"   44 seconds ago   Up 42 seconds  
+```
 
-<img src="../images/node-ui/welcome.png" alt="Welcome!" class="screenshot">
-<br /><br />
+## Claim your nodes
 
-After a successful installation, you will be welcomed by our onboarding wizard. It will guide you through all the necessary steps to set things up.
-Once you go through it, if you find yourself needing to change anything, you can simply visit the settings page to make changes.
-<br /><br />
+The new 0.41.0 node has many new features including a new Node UI.
 
-<img src="../images/node-ui/settings.png" alt="Settings" class="screenshot">
-<br /><br />
+Once your node is updated, you must visit the Node UI to finish setting up your node.
+For a majority of nodes your payout (beneficiary) addresses were migrated to the new network.
+If you changed your address after the 4th of January, it's possible that the new network is using your old payout address.
 
-**How to claim your Testnet 2.0 node in MMN**
+For your nodes to appear in the new My Mysterium platform you must claim them via the new Node UI or CLI app.
+
+### How to login to the Node UI
+
+When your node is in a local network:
+- If you're using a Macbook (OSX) or have Bonjour service installed on your OS, you can access it through http://raspberrypi.local:4449/ URL.
+- On Windows, you should see a device in My Computer through the window explorer.
+- Visiting your node's IP address under the port 4449 e.g. http://192.168.1.10:4449
+- If the node is running locally on your computer you can access it through http://localhost:4449
+
+When your node is in a data center:
+- You will have to configure your server's firewall to expose the 4449 TCP port then access the UI through http://public-ip:4449
+
+<div style="text-align:center">
+  <img src="../images/node-ui/welcome.png" alt="Welcome" class="screenshot">
+</div>
+
+
+### How to claim your Testnet 2.0 node
 
 There are two ways of claiming your node:
 
 1. By logging into the built-in Node UI and going through the onboarding process.
 2. By running the below commands via Mysterium CLI (CLI is a command line interface that allows you to manipulate a Mysterium node using just your terminal. It can be started using a myst cli command):
 
-*Agree to ToS (term of use)*: `myst cli --agreed-terms-and-conditions`
+*Agree to Terms of Use (once)*: 
+```bash
+myst cli --agreed-terms-and-conditions`
+```
 
-*Claim your node*: `mmn {api_key}`
+*Claim your node*: 
+```bash
+mmn {api_key}
+```
 
-**Note:** You can find and copy your MMN API key in your [MMN profile](https://testnet2.mysterium.network/user/profile). Your API key allows you to claim your nodes via the node’s Node UI and CLI.
+**Note:** You can find and copy your MMN API key in your [MMN profile](https://testnet2.mysterium.network/user/profile).
+
+### Change payout (beneficiary) address
+
+You can change the beneficiary address once you earn at least a little bit of MYST. The amount varies, but it's somewhere between 1 and 2 MYST. 
+This is because a blockchain transaction will be made and you need to cover its fees.
+
+You can change it through the Node UI during the onboarding process or through the settings page.
+
+To change it via the CLI, run:
+
+```bash
+myst cli
+```
+
+```bash
+identities beneficiary <identity> <beneficiary>
+```
