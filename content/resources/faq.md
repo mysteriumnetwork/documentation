@@ -64,6 +64,10 @@ If You have multiple identities, You can choose exact identity using `--identity
 
 After node restart, if no `--identity` option is present, last one used will be reused.
 
+## My node is reporting it's country incorrectly
+
+The nodes location is detected automatically when the node is started. However, any location detection is always an estimate. We're using MaxMind for these estimates. If your node is showing an incorrect country, you can fill out the [MaxMind GeoIP correction form](https://support.maxmind.com/geoip-data-correction-request/correct-a-geoip-location/). After your correction is accepted your node location should start showing the correct country. To reload the location, please restart your node. Take note that it could take up to a week for the changes to be visible on our end.
+
 ## VPN speed through my node is really low, what can I do?
 
 Speed is affected by many things. What to check:
