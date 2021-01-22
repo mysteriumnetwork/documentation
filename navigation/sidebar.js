@@ -17,7 +17,8 @@ module.exports = {
     "node-runners/troubleshooting/index"
   ],
   "dVPN user guide": [
-    "user-guide/index"
+      "user-guide/index",
+      "user-guide/raspberry"
   ],
   "Developer guide": [
     "developers/index",

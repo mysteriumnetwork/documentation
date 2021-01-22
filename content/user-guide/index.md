@@ -5,7 +5,7 @@ description: How to run Mysterium dVPN on Linux
 
 ## Introduction 
 
-Mysterium node comes with a built-in command line tool `myst cli`
+Mysterium node comes with a built-in command line tools 
 which can be used to connect to other nodes and use our `dvpn` service.
 
 It has been tested on:
@@ -453,22 +453,3 @@ To check your connection status you can execute:
 ```bash
 status 
 ```
-
-## Spin-off Raspberry Pi node in consumer mode
-
-1.  SSH into your RaspberryPi and open editor of /lib/systemd/system/mysterium-node.service file.
-2.  Replace the following line:
-
-`ExecStart=/usr/bin/myst $CONF_DIR $SCRIPT_DIR $DATA_DIR $RUN_DIR $DAEMON_OPTS service --agreed-terms-and-conditions $SERVICE_OPTS`
-
-with:
-
-`ExecStart=/usr/bin/myst $CONF_DIR $SCRIPT_DIR $DATA_DIR $RUN_DIR $DAEMON_OPTS daemon`
-
-3. To apply the changed configuration you will need to reboot host or re-read configuration and restart it via terminal:
-
-`sudo systemctl daemon-reload`
-
-`sudo systemctl restart mysterium-node`
-
-**That’s it! Your device is ready to be used in the consumer mode and successfully establish a connection.**
