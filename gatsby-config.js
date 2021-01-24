@@ -35,6 +35,7 @@ module.exports = {
         // versions: {
         //   '1': 'version-1'
         // },
+        gaTrackingId: 'G-FPJCX33Y51',
         algoliaApiKey: 'ca9e0e82e9fbd9156e4827590f0802dd',
         algoliaIndexName: 'mysterium',
         gatsbyRemarkPlugins: [],
