@@ -31,8 +31,14 @@ Pis [preferred for Mysterium Network and a higher likelihood of earning], deskto
 
 ### Residential IP bounties with payout caps and rolling payments
 
-Our first node pilot bounty rule will only apply to **residential IPs in the following regions: UK, US, Italy, Germany,
-Australia and Netherlands.**
+Our first node pilot bounty rule will only apply to **residential IPs in the following regions:** 
+- United Kingdom
+- United States
+- Italy
+- India
+- Germany
+- Australia
+- Netherlands
 
 **You will earn by data transmitted through your node and session time**. As your node transmits data, you will begin to
 earn MYSTT.
@@ -48,7 +54,7 @@ payout, your accumulated MYSTT will be transferred to the next month.**<sup>**</
 of being one of the top nodes in your region in month two. Once you get paid, your MYSTT value will go back to zero for
 the following month.
 
-**We will have a total cap of 250 nodes paid out for the following regions: the UK, US, Italy, Germany, Australia,
+**We will have a total cap of 250 nodes paid out for the following regions: the UK, US, Italy, India, Germany, Australia,
 Netherlands.**
 
 When it comes to residential IPs, we may add more countries or change limits. We will provide you with 1-week notice in
