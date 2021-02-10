@@ -13,6 +13,7 @@ module.exports = {
     "node-runners/setup/linux",
     "node-runners/node-ui/index",
     "node-runners/setup/updating",
+    "node-runners/node-migration",
     "node-runners/troubleshooting/index"
   ],
   "dVPN user guide": [
