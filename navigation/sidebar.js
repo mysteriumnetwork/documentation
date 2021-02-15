@@ -18,6 +18,9 @@ module.exports = {
     "node-runners/service-monitoring",
     "node-runners/troubleshooting/index"
   ],
+  "Legal": [
+    "legal/index"
+  ],
   "dVPN user guide": [
       "user-guide/index",
       "user-guide/raspberry"
