@@ -80,18 +80,6 @@ Speed is affected by many things. What to check:
 To achieve best results, client (desktop computer) has to be as close (low delay) as possible.
 Try a different node if speed is constantly low.
 
-## Set a payout ETH address
-
-To add a payout ETH address to the identity use the following commands:
-
-```bash
-curl -X PUT -d '{"ethAddress":"0x000000000000000000000000000000000000000a"}' http://localhost:4050/identities/0x041e42becaa3a6f92e155a7a5cab62c49dcdc578/payout
-```
-
-```bash
-myst cli payout set 0x041e42becaa3a6f92e155a7a5cab62c49dcdc578 0x000000000000000000000000000000000000000a
-```
-
 ## Supported node runner platforms
 
 You can find the list [here](/#you-can-run-a-mysterium-node-on).
@@ -139,6 +127,10 @@ You can download Mysterium image from [DockerHub](https://hub.docker.com/r/myste
 docker pull mysteriumnetwork/myst
 ```
 It will download the latest version of node.
+
+### Launchpad repository
+
+Latest stable and developmenet releases are published on [launchpad](https://launchpad.net/~mysteriumnetwork)
 
 ### Packages and binaries
 
