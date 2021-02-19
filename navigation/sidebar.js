@@ -14,6 +14,8 @@ module.exports = {
     "node-runners/node-ui/index",
     "node-runners/setup/updating",
     "node-runners/node-migration",
+    "node-runners/service-management",
+    "node-runners/service-monitoring",
     "node-runners/troubleshooting/index"
   ],
   "dVPN user guide": [

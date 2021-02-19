@@ -19,7 +19,6 @@ There are two ways to install a stable release of Mysterium node.
 
 On  `Debian`/`Ubuntu`  systems you can use  `Aptitude`  and execute:
 
-
 ```bash
 sudo add-apt-repository ppa:mysteriumnetwork/node
 sudo apt-get update
@@ -156,3 +155,43 @@ After running the `restart` command make sure to check the service health and cu
 using previously mentioned commands.
 
 If node is refusing to restart and load the changes you've made, you can try to restart systemd daemon itself by running `systemctl daemon-reexec`
+
+## Install development (snapshot) version of the node
+
+Add node-dev repository:
+
+```bash
+sudo add-apt-repository ppa:mysteriumnetwork/node-dev
+sudo apt-get update
+sudo apt-cache policy myst
+```
+
+You'll see similar output to the following:
+
+```bash
+root@server:~# apt-cache policy myst
+myst:
+  Installed: 0.42.2+build254103644+focal
+  Candidate: 0.42.1+1snapshot+20210209T0736+c7e732d6+build253474985+focal
+  Version table:
+     0.42.2+build254103644+focal 500
+        500 http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal/main amd64 Packages
+ *** 0.42.1+1snapshot+20210209T0736+c7e732d6+build253474985+focal 500
+        500 http://ppa.launchpad.net/mysteriumnetwork/node-dev/ubuntu focal/main amd64 Packages
+        100 /var/lib/dpkg/status
+```
+
+Look for the version that has snapshot in its name such as:
+`0.42.1+1snapshot+20210209T0736+c7e732d6+build253474985+focal`
+
+Copy that name and run:
+```bash
+sudo apt install myst=<snapshot_name>
+```
+
+Your node should be running the snapshot version.
+
+To return to a stable version, run:
+```bash
+sudo apt install myst
+```

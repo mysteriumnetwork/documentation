@@ -39,6 +39,12 @@ We recommend keeping the defaults since they were fine-tuned for Testnet 2.0 and
   <img src="../../images/node-ui/pricing.png" alt="Pricing settings" class="screenshot" />
 </div>
 
+Change pricing for each service through the service settings.
+
+<div style="text-align:center">
+  <img src="../../images/node-ui/vpn-pricing.png" alt="Pricing settings" class="screenshot" />
+</div>
+
 ### Payout settings
 
 The beneficiary address is the address of your wallet where you want to receive your earnings.
