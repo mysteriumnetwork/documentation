@@ -3,13 +3,24 @@ title: Linux guide
 description: How install and run a node on Linux
 ---
 
-Hosting a node in a datacenter may ensure better throughput and higher earnings.
+A linux node can be installed and setup on a personal linux machine, in home server, or in a
+datacenter.
+
+## System requirements
+
+- CPU: 1 core
+- RAM: 1GB
+- DISK: 500MB free disk space
+
+As an example, a raspberry PI 3 or a VPS with 1core CPU and 1GB RAM is enough to run a node.
  
 ## Supported operating systems
+
 - Raspbian 9/10
 - Debian 9/10
 - Ubuntu 18.04/20.04
 
+Other debian based linux distributions should also be able to run node without any issues.
 
 ## Installation
 
@@ -42,6 +53,14 @@ for the whole user base and are not guaranteed to work. You should run these rel
 and should also consider backing up your `.mysterium` folder beforehand just in case.
 
 To get them checkout our [launchpad](https://launchpad.net/~mysteriumnetwork) or [github releases](https://github.com/mysteriumnetwork/node/tags).
+
+## Complete installation
+
+Once the service is installed and running to finish the node installation continue to the nodeUI, where you'll be able to configure prices, extra service settings and check node stats and connections. Instructions on how to find and use it can be found: [here](/node-runners/node-ui/).
+
+Also make sure to claim your node in MMN to receive bounties. It can be found [here](https://testnet2.mysterium.network). To receive your key, you'll have to create an account when following the nodeUI onboarding process or add it later in the node settings.
+
+If you can't access nodeUI or service is not working as expected, follow the below instructions on how to check service health, diagnose issues or add extra configuration.
 
 ## Service health 
 
@@ -83,10 +102,6 @@ If your node is unable to report an issue through the built-in Node UI or Tequil
 ```bash
 sudo journalctl -u mysterium-node.service > node.logs
 ```
-
-## Complete installation
-
-Once the service is running please [log into the Node UI](/node-runners/node-ui/) to set up your service pricing, payout address and claim your node in [MMN](https://testnet2.mysterium.network) to receive bounties.
 
 ## Advaned configuration (optional)
 
