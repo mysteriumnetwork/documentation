@@ -111,11 +111,11 @@ mage test
 * Long-running or "e2e" tests can be found in the `e2e` directory. They can be executed by running:
 
 ```bash
-mage test-e2e-basic
+mage teste2ebasic
 ```
 
 ```bash
-mage test-e2e-nat
+mage teste2enat
 ```
 
 * To check if you haven't missed copyright notices or haven't made any linting mistakes run:
