@@ -1,6 +1,6 @@
 ---
-title: Service management
-description: How to change service price and settings
+title: Payout guide
+description: How to change beneficiary (wallet) address
 ---
 
 You can change the beneficiary (wallet) address once you earn at least a little bit of MYST.
