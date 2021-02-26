@@ -4,23 +4,17 @@ weight: 1
 description: Mysterium Node Pilot
 ---
 
-## Bounty Rules
-
 **Updates 24/02/2021:**
 
 As we progress to mainnet, we are adding flexibility to our residential IP bounty program. This begins with an introduction of a cap of bounty rewards to 60,000 MYST/ month for the residential IP bounty program. We are also introducing a cap of 160 MYST/ country for each upcoming month. 
 
 Expect quick and iterative changes to the bounty program. Monthly changes to regions and the total amount top performing nodes will get paid will be introduced. Watch this space and our discord channels for updates. 
 
-
 **March 2021 updates:**
-
 #### Residential IP bounty
-
 * Maximum earnings of 150 MYST / Mysterium Node 
 * 400 nodes will earn in total
 * New region introduced: Canada 
-
 #### Global IP bounty
 * Maximum earnings of 40 MYST / Mysterium Node
 * 4 nodes / region in Global IP bounty 
