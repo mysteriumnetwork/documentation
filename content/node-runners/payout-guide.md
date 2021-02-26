@@ -26,3 +26,4 @@ docker exec -ti myst myst cli
 ```bash
 identities beneficiary <identity> <beneficiary>
 ```
+nm
