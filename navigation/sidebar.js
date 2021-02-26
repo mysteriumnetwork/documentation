@@ -17,6 +17,7 @@ module.exports = {
     "node-runners/service-management",
     "node-runners/service-monitoring",
     "node-runners/payout-guide",
+    "node-runners/payout-guide",
     "node-runners/troubleshooting/index"
   ],
   "Legal": [
