@@ -3,11 +3,11 @@ title: Updating your node
 description: How to update your node to the latest version
 ---
 
-## How to update your Raspberry Pi node
+## How to update your Raspberry Pi  123 123 1
 
 SSH into your Raspberry Pi using the following command:
 
-```bash
+```bash12312
 ssh myst@ip-of-your-raspberry
 ```
 
