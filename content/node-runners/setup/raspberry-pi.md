@@ -52,10 +52,13 @@ Generally you can avoid logging into the device, but in cases you do - here's ho
 ssh myst@ip-of-your-raspberry
 ```
 
-If this gives you _Permission denied (publickey,passorwd) try this:
+If this gives you _Permission denied (publickey,password)_ try this:
 ```bash
 ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no myst@ip-of-your-raspberry
 ```
+
+If you don't know what's the IP that your Raspberry Pi device obtained from the DHCP service running in your router, login into your router (usually [https://192.168.0.1](https://192.168.0.1)) and look for the _LAN Settings_ section.
+From there you should be able to find the _Clients list_ section where the IPs given to all the devices connected to your router are listed. Look for _raspberrypi_ among the listed devices: usually its IP will be something like _192.168.0.XY_
 
 ### Change your SSH password (recommended)
 Make sure to remember your new password.
