@@ -13,7 +13,7 @@ datacenter.
 - DISK: 500MB free disk space
 
 As an example, a raspberry PI 3 or a VPS with 1core CPU and 1GB RAM is enough to run a node.
- 
+
 ## Supported operating systems
 
 - Raspbian 9/10
@@ -24,7 +24,7 @@ Other debian based linux distributions should also be able to run node without a
 
 ## Installation
 
-### Stable release 
+### Stable release
 
 There are two ways to install a stable release of Mysterium node.
 
@@ -46,7 +46,7 @@ In addition to downloading and installing our Node, these commands will also ins
 
 Once the installation is complete, check your service status.
 
-### Latest non stable release 
+### Latest non stable release
 
 Latest non stable releases include bug fixes and improvements that have not yet been pushed
 for the whole user base and are not guaranteed to work. You should run these releases at your own risk
@@ -62,9 +62,9 @@ Also make sure to claim your node in MMN to receive bounties. It can be found [h
 
 If you can't access nodeUI or service is not working as expected, follow the below instructions on how to check service health, diagnose issues or add extra configuration.
 
-## Service health 
+## Service health
 
-### Check service health 
+### Check service health
 
 Post installation service check:
 ```bash
@@ -74,7 +74,7 @@ sudo systemctl status mysterium-node.service
 If everything is working you should see similar output to this:
 
 ```bash
-mysterium@pop-os:~$ sudo systemctl status mysterium-node.service 
+mysterium@pop-os:~$ sudo systemctl status mysterium-node.service
 ● mysterium-node.service - Server for Mysterium - decentralised VPN Network
      Loaded: loaded (/lib/systemd/system/mysterium-node.service; enabled; vendor preset: enabled)
      Active: active (running) since Fri 2021-01-04 00:00:00 GMT;
@@ -105,7 +105,7 @@ sudo journalctl -u mysterium-node.service > node.logs
 
 ## Advaned configuration (optional)
 
-### Get current config 
+### Get current config
 
 When your node is running you can print the config that it has currently loaded by executing:
 ```bash
@@ -124,7 +124,7 @@ indentation is very important. For further reading follow the official [toml gui
 
 ### Altering start up options
 
-Editing start up options instead of the `config.tml` file has one crutial benefit: start up service options
+Editing start up options instead of the `config.toml` file has one crutial benefit: start up service options
 overwrite any default or `config.toml` edited config values and become a single source of truth which cannot be changed at runtime.
 
 Node typically runs as a systemd service, you can find the `.service` file by inspecting the service, which you can do
@@ -159,11 +159,11 @@ Note that `$SERVICE_OPTS` variable should always finish with `openvpn,wireguard`
 
 **To get the full list of configuration options execute:** `myst --help`
 
-### Loading the new config 
+### Loading the new config
 
 In most cases a simple service reload should be enough. You can do that by running:
 ```bash
-sudo systemctl restart mysterium-node.service 
+sudo systemctl restart mysterium-node.service
 ```
 
 After running the `restart` command make sure to check the service health and currently running config
