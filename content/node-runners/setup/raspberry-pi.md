@@ -31,7 +31,7 @@ All you need to do is plug it in, claim your node and link your wallet to start 
 - Insert the microSD card into your Raspberry Pi.
 - Plug in the network cable into your router and then the power cord. It may take a few minutes before the Pi is fully up.
 
-## Install and start Mysterium Node service 
+## Install and start Mysterium Node service
 
 Follow [Linux](/node-runners/setup/linux/) installation instructions.
 
@@ -52,6 +52,11 @@ Generally you can avoid logging into the device, but in cases you do - here's ho
 ssh myst@ip-of-your-raspberry
 ```
 
+If this gives you _Permission denied (publickey,passorwd) try this:
+```bash
+ssh -o PreferredAuthentications=password -o PubkeyAuthentication=no myst@ip-of-your-raspberry
+```
+
 ### Change your SSH password (recommended)
 Make sure to remember your new password.
 ```bash
@@ -64,7 +69,7 @@ passwd
 - Place the SD card back into the Pi and boot.
 - A command prompt will come up, type in `su` to log in as root (no password needed).
 - Type in `passwd myst` and then follow the prompt to enter a new password.
-- Shut the machine down, pull the card out and put the `cmdline.txt` file back the way it was by removing the `init=/bin/sh` line. 
+- Shut the machine down, pull the card out and put the `cmdline.txt` file back the way it was by removing the `init=/bin/sh` line.
 
 ## Complete installation
 
