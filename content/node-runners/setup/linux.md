@@ -8,13 +8,16 @@ datacenter.
 
 ## System requirements
 
+Here is the list of system requirements that should be fulfilled to be able to install Mysterium Node.
+
+### Resources
 - CPU: 1 core
 - RAM: 1GB
 - DISK: 500MB free disk space
 
 As an example, a raspberry PI 3 or a VPS with 1core CPU and 1GB RAM is enough to run a node.
  
-## Supported operating systems
+### Operating systems
 
 - Raspbian 9/10
 - Debian 9/10
@@ -22,11 +25,17 @@ As an example, a raspberry PI 3 or a VPS with 1core CPU and 1GB RAM is enough to
 
 Other debian based linux distributions should also be able to run node without any issues.
 
+### Prerequisites
+
+In order to complete this setup, you should have a non-root user with ```sudo``` privileges.
+
 ## Installation
 
 ### Stable release 
 
-There are two ways to install a stable release of Mysterium node.
+There are 2 ways to install a stable release of Mysterium node:
+
+#### 1. Native install
 
 On  `Debian`/`Ubuntu`  systems you can use  `Aptitude`  and execute:
 
@@ -36,9 +45,12 @@ sudo apt-get update
 sudo apt install myst
 ```
 
-If for some reason it fails, or you can't use Aptitude we also provide an installation script written in `bash` which can be downloaded and executed using this command:
+#### 2. Script install
+
+We also provide an installation script written in `bash` which can be downloaded and executed using this command:
 
 ```bash
+sudo apt-get install curl
 sudo -E bash -c "$(curl -s https://raw.githubusercontent.com/mysteriumnetwork/node/master/install.sh)"
 ```
 
