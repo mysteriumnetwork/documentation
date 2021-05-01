@@ -4,6 +4,14 @@ weight: 1
 description: Mysterium Node Pilot
 ---
 
+**May 2021 updates:**
+#### Residential IP bounty
+* Maximum earnings of 100 MYST / Mysterium Node
+* 600 nodes will earn in total
+* New region introduced: Japan and Brasil
+#### Global IP bounty
+* Maximum earnings of 30 MYST / Mysterium Node
+* 5 nodes / region in Global IP bounty
 
 **March 2021 updates:**
 #### Residential IP bounty
@@ -39,14 +47,16 @@ Pis [preferred for Mysterium Network and a higher likelihood of earning], deskto
 ### Residential IP bounties with payout caps and rolling payments
 
 Our first node pilot bounty rule will only apply to **residential IPs in the following regions:** 
-- United Kingdom
-- United States
+- Australia
+- Brasil
+- Canada
+- Germany
 - Italy
 - India
-- Germany
-- Australia
+- Japan
 - Netherlands
-- Canada
+- United Kingdom
+- United States
 
 **You will earn by data transmitted through your node and session time**. As your node transmits data, you will begin to
 earn MYSTT.
