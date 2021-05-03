@@ -84,7 +84,7 @@ for the bounty. He will collect his payout in MYST and start month two with zero
 _Scenario B: If John does not earn enough MYSTT to be one of the top 600 in the UK, his 50 MYSTT will roll over to
 month two. Let's say John earns another 70 MYSTT in month two. This brings him to a total of 120 MYSTT accumulated over
 the two months. In month two John is within the top 600 nodes in the UK based on his total of 120 MYSTT._ **_He will be
-able to collect 120 MYST_** _as his payout for the month. Once he collects his payout, his MYSTT balance will fall to
+able to collect 100 MYST_** _as his payout for the month. Once he collects his payout, his MYSTT balance will fall to
 zero on month three._
 
 **To reiterate: MYSTT will be calculated such that 1 MYSTT = 1 MYST. Each payout will be capped at 100 MYST / node.**
@@ -99,21 +99,21 @@ Our second node pilot bounty rule will apply to **all types of IPs in all region
 eligible to earn [Residential IP, Data Centre IP, etc]. To be eligible you must have an identifiable IP address and
 verification of your geolocation checked against [Maxmind](https://www.maxmind.com/en/home).
 
-For this bounty, we will only pay the top 4 performing nodes per region. Top 5 node earnings are capped at 30 MYST. If
+For this bounty, we will only pay the top 5 performing nodes per region. Top 5 node earnings are capped at 30 MYST. If
 you are already participating in our "Residential IP bounties with payout caps and rolling payments" this is a way for
 you to earn an extra 30 MYST.
 
 How will this be calculated? Once you connect your node you will begin earning MYSTT in exchange for data usage. MYSTT
-functions like points. The three nodes with the highest number of MYSTT will earn for the month. **If you earn MYSTT but
-do not qualify as one of the top three, do not fear - you will be able to keep your MYSTT and continue to accumulate
-them in the following month**, which puts you in a better position to clinch the top 4 node position for your region in
+functions like points. The five nodes with the highest number of MYSTT will earn for the month. **If you earn MYSTT but
+do not qualify as one of the top five, do not fear - you will be able to keep your MYSTT and continue to accumulate
+them in the following month**, which puts you in a better position to clinch the top 5 node position for your region in
 the upcoming months.
 
-**For example** - _Jane begins running a node in Turkey. In month one she accumulates 80 MYSTT. This does not place her
+**For example** - _Jane begins running a node in Turkey. In month one she accumulates 20 MYSTT. This does not place her
 within the top 5 nodes within her region. She continues to run her node in month two. During this period she earns
-another 90 MYSTT. The total number of MYSTT in her balance is 170 at the end of month two. She is now one of the top
-three nodes for month two based on her total amount of MYSTT accumulated. This makes her eligible for a 30 MYST bounty
-payout. Once she chooses to get the bounty payout, her MYSTT balance will fall to zero and she will have to begin
+another 30 MYSTT. The total number of MYSTT in her balance is 50 at the end of month two. She is now one of the top
+five nodes for month two based on her total amount of MYSTT accumulated. This makes her eligible for a 30 MYST bounty
+payout. Once the bounty payout is made, her MYSTT balance will fall to zero and she will have to begin
 accumulating MYSTT starting from zero at month 3._
 
 Payouts happen at the beginning of each month.<sup>***</sup>
