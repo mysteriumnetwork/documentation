@@ -24,6 +24,8 @@ description: Mysterium Node Pilot
 * Maximum earnings of 40 MYST / Mysterium Node
 * 4 nodes / region in Global IP bounty
 
+**Note**: Please keep your node's software up-to-date (not older than 30 days), otherwise, you won't get paid! For the next payout cyle your node should be running at least v0.46.1 of node.
+
 ### Updates 24/02/2021:
 
 As we progress to mainnet, we are adding flexibility to our residential IP bounty program. This begins with an introduction of a cap of bounty rewards to 60,000 MYST/ month for the residential IP bounty program. We are also introducing a cap of 150 MYST/ country for each upcoming month.
