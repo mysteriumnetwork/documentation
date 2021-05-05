@@ -14,6 +14,8 @@ description: Mysterium Node Pilot
 * Maximum earnings of 30 MYST / Mysterium Node
 * 5 nodes / region in Global IP bounty
 
+**Note**! Please keep your node's software up-to-date (not older than 30 days), otherwise, you won't get paid! For the next payout cycle your node should be running at least v0.46.1 of node.
+
 ### March 2021 updates:
 **Residential IP bounty**
 * Maximum earnings of 150 MYST / Mysterium Node
@@ -23,8 +25,6 @@ description: Mysterium Node Pilot
 **Global IP bounty**
 * Maximum earnings of 40 MYST / Mysterium Node
 * 4 nodes / region in Global IP bounty
-
-**Note**: Please keep your node's software up-to-date (not older than 30 days), otherwise, you won't get paid! For the next payout cycle your node should be running at least v0.46.1 of node.
 
 ### Updates 24/02/2021:
 
