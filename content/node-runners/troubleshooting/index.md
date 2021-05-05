@@ -44,6 +44,15 @@ The shortage of IPv4 addresses and the very slow transition to IPv6 leads to pra
 
 Alternatively, providers can skip the process of manual port configuration and disable UPnP in their routers (if enabled). In this scenario, NAT hole punching will be prioritised and executed against port mapping processes.
 
+It is recommended to add the following flag into service configuration file **--nat-port-mapping=false** to force NAT hole punching mechanism to work. 
+
+In the end it would look like this:
+
+```bash
+DAEMON_OPTS="--nat-port-mapping=false --keystore.lightweight"
+SERVICE_OPTS="openvpn,wireguard"
+```
+
 ## Disable NAT traversal (hole punching) mechanism
 
 While in most cases NAT hole punch helps the Mysterium node runners to establish the connection with our network consumers, the technique is not applicable in all scenarios or with all types of NATs, as NAT operating characteristics are not standardized.
