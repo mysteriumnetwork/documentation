@@ -75,7 +75,20 @@ For **OpenVPN** protocol, you need to forward `27005` or any other custom port. 
 
 **WireGuard** uses UDP to transmit the encrypted IP packets. The port can be freely selected from the high ports range. You need to configure WireGuard service to listen on 52820:53075 range of ports (WireGuard starts at 51820/UDP).
 
-Note! It is required to set ports needed for **P2P communication** too (range of P2P listen ports (e.g. 51820:52075)).
+**Note!** 
+
+- It is required to set ports needed for **P2P communication** too (range of P2P listen ports (e.g. 51820:52075));
+- Disable NAT hole punching: add the following flag into service configuration file */etc/default/mysterium-node*: 
+
+```bash
+--experiment-natpunching=false
+```
+In the end it would look like this:
+
+```bash
+DAEMON_OPTS="--p2p.listen.ports=51820:52075 --experiment-natpunching=false --keystore.lightweight"
+SERVICE_OPTS="--openvpn.port=27005 --wireguard.listen.ports=52820:53075 openvpn,wireguard"
+```
 
 A summary of the steps to setup a port forward in your router are:
 
