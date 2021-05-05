@@ -24,7 +24,7 @@ description: Mysterium Node Pilot
 * Maximum earnings of 40 MYST / Mysterium Node
 * 4 nodes / region in Global IP bounty
 
-**Note**: Please keep your node's software up-to-date (not older than 30 days), otherwise, you won't get paid! For the next payout cyle your node should be running at least v0.46.1 of node.
+**Note**: Please keep your node's software up-to-date (not older than 30 days), otherwise, you won't get paid! For the next payout cycle your node should be running at least v0.46.1 of node.
 
 ### Updates 24/02/2021:
 
