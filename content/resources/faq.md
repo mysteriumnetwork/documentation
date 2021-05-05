@@ -188,7 +188,7 @@ For example, if you'd like your OpenVPN service to run on port `27005` and WireG
 ```
 
 ```bash
---wireguard.listen.ports=52820:53705
+--wireguard.listen.ports=52820:53075
 ```
 
 **Note!** It is required to set ports needed for P2P communication too (range of P2P listen ports (e.g. 51820:52075)):
@@ -201,7 +201,7 @@ In the end it would look like this:
 
 ```bash
 DAEMON_OPTS="--p2p.listen.ports=51820:52075 --keystore.lightweight"
-SERVICE_OPTS="--openvpn.port=27005 --wireguard.listen.ports=52820:53705 openvpn,wireguard"
+SERVICE_OPTS="--openvpn.port=27005 --wireguard.listen.ports=52820:53075 openvpn,wireguard"
 ```
 
 
