@@ -182,9 +182,9 @@ For Raspberry PI nodes, the OpenVPN service port can be set directly under Setti
 
 If you run a command line node, use the `service` command options.
 
-For example, if you'd like your OpenVPN service to run on port `1194` and WireGuard service to listen on `52820:53075` range of ports, then use the following flags:  
+For example, if you'd like your OpenVPN service to run on port `27005` and WireGuard service to listen on `52820:53075` range of ports, then use the following flags:  
 ```bash
---openvpn.port=1194
+--openvpn.port=27005
 ```
 
 ```bash
@@ -201,7 +201,7 @@ In the end it would look like this:
 
 ```bash
 DAEMON_OPTS="--p2p.listen.ports=51820:52075 --keystore.lightweight"
-SERVICE_OPTS="--openvpn.port=1194 --wireguard.listen.ports=52820:53705 openvpn,wireguard"
+SERVICE_OPTS="--openvpn.port=27005 --wireguard.listen.ports=52820:53705 openvpn,wireguard"
 ```
 
 
