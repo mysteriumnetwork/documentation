@@ -20,7 +20,7 @@ Find out more about how you can turn your wifi into a business here.
 
 ## I suspect that my hosting provider blocks ports, what to do?
 
-For some hosting providers it is common to open just some pre-defined ports that are commonly used. Try setting any random service to test if incoming UDP port (i.e. 1194) is open. You can try using custom port using `openvpn.port=1234` option.
+For some hosting providers it is common to open just some pre-defined ports that are commonly used. Try setting any random service to test if incoming UDP port (i.e. 1194) is open. You can try using custom port using `openvpn.port=27005` option.
 
 Sometimes hosting providers block most UDP ports altogether, even outgoing ones. In that case You can still run a node using TCP protocol. You can do that using `-openvpn.proto=TCP` option.
 
@@ -150,7 +150,7 @@ For routers without UPnP you do not need to do anything. Connectivity issues are
 
 If this approach does not work for you and you want to manually forward some port, you will also need to configure your node to run the service on that port.
 
-[How to configure OpenVPN & WireGuard services port.](https://help.mysterium.network/en/articles/3439738-openvpn-service-port-configuration)
+[How to configure OpenVPN & WireGuard services port.](https://docs.mysterium.network/resources/faq/#openvpn--wireguard-services-port-configuration)
 
 ## Every time I reboot a host, I see unneeded firewall rules
 
