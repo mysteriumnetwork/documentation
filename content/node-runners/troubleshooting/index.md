@@ -69,7 +69,15 @@ UPnP might be convenient, but it adds its own potential security issues. It assu
 
 It is a technique that is used to allow external devices access to computers services on private networks. It does this by mapping an external port to an internal IP address and port. Most online gaming Applications will require you to configure **port forwarding** on your home router. To understand port forwarding you need to understand what a TCP/IP port is and how ports and IP addresses are used together.
 
-If UPnP or NAT-PNP method doesn't help, you can try forwarding the port manually. Port forwards are set up in your router. You need to forward port `1194`. A summary of the steps to setup a port forward in your router are:
+If UPnP or NAT-PNP method doesn't help, you can try forwarding the port manually. Port forwards are set up in your router. 
+
+For **OpenVPN** protocol, you need to forward `27005` or any other custom port. OpenVPN by default uses UDP/TCP port 1194, so it is common for firewalls to monitor port 1194 (and other commonly used ports), rejecting encrypted traffic that tries to use it (or them).
+
+**WireGuard** uses UDP to transmit the encrypted IP packets. The port can be freely selected from the high ports range. You need to configure WireGuard service to listen on 52820:53075 range of ports (WireGuard starts at 51820/UDP).
+
+Note! It is required to set ports needed for **P2P communication** too (range of P2P listen ports (e.g. 51820:52075)).
+
+A summary of the steps to setup a port forward in your router are:
 
 1. Login to your router.
 2. Navigate to your routers port forwarding section, also frequently called virtual server.
@@ -77,10 +85,6 @@ If UPnP or NAT-PNP method doesn't help, you can try forwarding the port manually
 4. Test that your ports are forwarded correctly.
 
 [How to forward ports on your router | PCWorld](https://www.pcworld.com/article/244314/how_to_forward_ports_on_your_router.html)
-
-## Port Forwarding Example
-
-Below is a screenshot of home router configuration which shows the manually forwarded ports.
 
 ### TCP/UDP Ports
 
