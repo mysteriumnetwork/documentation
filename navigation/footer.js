@@ -10,7 +10,7 @@ module.exports = {
     rel: 'noopener noreferrer'
   },
   Github: {
-    href: 'https://github.com/mysteriummnetwork/'
+    href: 'https://github.com/mysteriumnetwork/'
   },
   'My Mysterium Network': {
     href: 'https://testnet2.mysterium.network',
