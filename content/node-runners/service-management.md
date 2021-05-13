@@ -12,8 +12,8 @@ we want to make sure that the network consumers are able to connect to your node
 
 The current pricing for the network consumers is:
 
-- Maximum price per Gb: **2 MYST**
-- Maximum price per hour: **0.006 MYST** / **0.0001 MYST** per minute
+- Maximum price per Gb: **0.5 MYST**
+- Maximum price per hour: **0.0018 MYST** / **0.00003 MYST** per minute
 - Hermes (accountant) fee: **15%**
 
 Mysterium node runners are able to fine-tune and set their own pricing.
