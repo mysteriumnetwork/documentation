@@ -80,7 +80,7 @@ Once the service is running please [log into the Node UI](/node-runners/node-ui/
 
 ## Install pre-release version of the node
 
-Add node-pre repository:
+Add pre-release repository:
 
 ```bash
 grep -qxF 'deb http://ppa.launchpad.net/mysteriumnetwork/node-pre/ubuntu focal main' /etc/apt/sources.list || echo 'deb http://ppa.launchpad.net/mysteriumnetwork/node-pre/ubuntu focal main' | sudo tee -a /etc/apt/sources.list > /dev/null
