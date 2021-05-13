@@ -77,3 +77,51 @@ passwd
 ## Complete installation
 
 Once the service is running please [log into the Node UI](/node-runners/node-ui/) to set up your service pricing, payout address and claim your node in [MMN](https://testnet2.mysterium.network) to receive bounties.
+
+## Install pre-release version of the node
+
+Add node-pre repository:
+
+```bash
+grep -qxF 'deb http://ppa.launchpad.net/mysteriumnetwork/node-pre/ubuntu focal main' /etc/apt/sources.list || echo 'deb http://ppa.launchpad.net/mysteriumnetwork/node-pre/ubuntu focal main' | sudo tee -a /etc/apt/sources.list > /dev/null
+```
+
+Download package information from the sources and update local cache with available versions:
+
+```bash
+sudo apt-get update
+sudo apt-cache policy myst
+```
+
+You'll see similar output to the following:
+
+```bash
+myst:
+  Installed: 0.46.2~rc0+build295039394+focal
+  Candidate: 0.47.0~rc0+build301789769+focal
+  Version table:
+     0.47.0~rc0+build301789769+focal 500
+        500 http://ppa.launchpad.net/mysteriumnetwork/node-pre/ubuntu focal/main armhf Packages
+ *** 0.46.2~rc0+build295039394+focal 500
+        500 http://ppa.launchpad.net/mysteriumnetwork/node/ubuntu focal/main armhf Packages
+        100 /var/lib/dpkg/status
+```
+
+Look for the "Candidate" newer version:
+`0.47.0~rc0+build301789769+focal`
+
+Copy that name and run:
+```bash
+sudo apt install myst=<snapshot_name>
+```
+
+Your node should be running the pre-released version.
+
+If you want to return to the latest released version, check the output of `apt-cache` command and take the "Installed" name:
+`0.42.1+1snapshot+20210209T0736+c7e732d6+build253474985+focal`
+
+Please run
+
+```bash
+sudo apt install myst=<previously_installed_name>
+```
