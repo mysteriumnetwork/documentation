@@ -4,8 +4,9 @@ description: How to change beneficiary (wallet) address
 ---
 
 You can change the beneficiary (wallet) address once you earn at least a little bit of MYST.
-The amount varies, but it's somewhere between 1 and 2 MYST. 
-This is because a blockchain transaction will be made and you need to cover its fees.
+
+Because the beneficiary is stored on the blockchain, in order to change it a tranasction has to be made for which fees are paid.
+Check a rought estimate of the fee in MYST [here](https://testnet2-transactor.mysterium.network/api/v1/fee/5/settle). Keep in mind that to get a human readable number you have to devide the "fee" by 1000000000000000000 or use a [converter](https://eth-converter.com/).
 
 You can change it through the Node UI during the onboarding process or through the settings page.
 
