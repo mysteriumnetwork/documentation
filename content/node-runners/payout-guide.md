@@ -48,7 +48,7 @@ MYST is a standard ERC-20 token, if wallet supports ERC-20 tokens (has possibili
 
 Ether (ETH) is already added to your MetaMask by default. You won’t need to go through this process to start depositing and withdrawing ETH. For other ERC-20 based tokens, you need to add them to your MetaMask asset tab.
 
-ERC-20 tokens are the standard protocol for smart contracts on Ethereum. You may recognize many of these like Uniswap, VeChain, Chainlink, and several others. This guide will show you how to add them to your Assets tab to purchase them later. To add tokens to your MetaMask, go to the main MetaMask account page. Click on the assets tab, where you’ll see Add Token at the bottom.
+To add tokens to your MetaMask, go to the main MetaMask account page. Click on the assets tab, where you’ll see Add Token at the bottom.
 
 <div style="text-align:center">
   <img src="../images/platforms/metamask.png" alt="Check connection button" class="screenshot"/>
