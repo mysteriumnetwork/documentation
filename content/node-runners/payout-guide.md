@@ -27,3 +27,44 @@ docker exec -ti myst myst cli
 ```bash
 identities beneficiary <identity> <beneficiary>
 ```
+
+## Supported wallets
+
+There are two "types" of wallets that you can use: 
+
+ 
+a) Crypto exchange wallets. A user-specific deposit wallet address to facilitate transfers to the exchange (**we currently support HitBTC and Bittrex deposit addresses only**). Always use the exchange's dedicated deposit workflow! If you think you sent assets to the wrong exchange account, please reach out to the exchange's customer support team.
+
+b) Direct Blockchain wallets (such as Metamask, Trust wallet, Atomic, MEW, MyCrypto, Trezor, Ledger ...). 
+
+ 
+
+MYST is a standard ERC-20 token, if wallet supports ERC-20 tokens (has possibility to add any custom ERC-20 token), then MYST can be added there.
+
+ 
+
+## Adding MYST token to MetaMask 
+
+
+Ether (ETH) is already added to your MetaMask by default. You won’t need to go through this process to start depositing and withdrawing ETH. For other ERC-20 based tokens, you need to add them to your MetaMask asset tab.
+
+ERC-20 tokens are the standard protocol for smart contracts on Ethereum. You may recognize many of these like Uniswap, VeChain, Chainlink, and several others. This guide will show you how to add them to your Assets tab to purchase them later. To add tokens to your MetaMask, go to the main MetaMask account page. Click on the assets tab, where you’ll see Add Token at the bottom.
+
+<div style="text-align:center">
+  <img src="../images/platforms/metamask.png" alt="Check connection button" class="screenshot" width="300" height="400" />
+</div>
+
+
+After you click Add Token, navigate to the Custom Token tab and manually enter the MYST token details. Copy the Token Contract Address (please find below) and paste that onto the Custom Token tab on MetaMask. After this, you will be able to view your earned MYST tokens on the Assets tab. You will also have the option of swapping your chosen token for ETH or other ERC-20 tokens on the blockchain or sending them to Bittrex or HitBTC exchanges!
+
+**MYST token details: Contract : https://etherscan.io/address/0x4Cf89ca06ad997bC732Dc876ed2A7F26a9E7f361 
+
+**Symbol: MYST
+
+**Decimals: 18**
+
+
+On mobile, the process is exactly the same. However, you might find it a bit harder to copy and paste the Contract Token Address on the mobile app.
+
+And that’s it! You’ve learned how to add your tokens and are a step closer to plunging into the decentralized ecosystem. Any time that you need to add MYST into your wallet, you can refer to this guide’s steps to do so.
+
