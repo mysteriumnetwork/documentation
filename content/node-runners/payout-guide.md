@@ -67,5 +67,5 @@ After this, you will be able to view your earned MYST tokens on the Assets tab. 
 
 On mobile, the process is exactly the same. However, you might find it a bit harder to copy and paste the Contract Token Address on the mobile app.
 
-And that’s it! You’ve learned how to add your tokens and are a step closer to plunging into the decentralized ecosystem. Any time that you need to add MYST into your wallet, you can refer to this guide’s steps to do so.
+And that’s it. You’ve learned how to add your tokens and are a step closer to plunging into the decentralized ecosystem!
 
