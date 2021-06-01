@@ -96,7 +96,7 @@ In the end, it would look like this:
 
 ```bash
 DAEMON_OPTS="--p2p.listen.ports=51820:52075 --experiment-natpunching=false --keystore.lightweight"
-SERVICE_OPTS="--openvpn.port=27005 --wireguard.listen.ports=52820:53075 openvpn,wireguard"
+SERVICE_OPTS="--wireguard.listen.ports=52820:53075 wireguard"
 ```
 
 A summary of the steps to setup a port forward in your router are:
