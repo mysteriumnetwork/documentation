@@ -13,7 +13,7 @@ This makes it easy to run applications without worrying about the operating syst
 
 
 ```bash
-docker run --cap-add NET_ADMIN -d -p 4449:4449 --name myst -v $YOUR_MYSTERIUM_DIR:/var/lib/mysterium-node mysteriumnetwork/myst:latest service --agreed-terms-and-conditions openvpn,wireguard
+docker run --cap-add NET_ADMIN -d -p 4449:4449 --name myst -v $YOUR_MYSTERIUM_DIR:/var/lib/mysterium-node mysteriumnetwork/myst:latest service --agreed-terms-and-conditions wireguard
 ```
 
 **_Note 1:_** Replace `$YOUR_MYSTERIUM_DIR` with the path where you'd like to store the node's configuration and keystore files, e.g.
@@ -62,7 +62,7 @@ in the notification area indicates that Docker is running, and accessible from a
 2.  Open a command-line terminal and type the following command:
 
 ```bash
-docker run --cap-add NET_ADMIN -p 4449:4449 -p 27005:27005/udp -p 41920-42075:41920-42075/udp -p 61920-62075:61920-62075/udp --name myst -v $YOUR_MYSTERIUM_DIR:/var/lib/mysterium-node mysteriumnetwork/myst:latest --experiment-natpunching=false --p2p.listen.ports=41920:42075 service --agreed-terms-and-conditions --wireguard.listen.ports=61920:62075 --openvpn.port=27005 openvpn,wireguard
+docker run --cap-add NET_ADMIN -p 4449:4449 -p 41920-42075:41920-42075/udp -p 61920-62075:61920-62075/udp --name myst -v $YOUR_MYSTERIUM_DIR:/var/lib/mysterium-node mysteriumnetwork/myst:latest --experiment-natpunching=false --p2p.listen.ports=41920:42075 service --agreed-terms-and-conditions --wireguard.listen.ports=61920:62075 wireguard
 ```
 
 **_Note 1:_** Replace `$YOUR_MYSTERIUM_DIR` with the path where you'd like to store the node's configuration and keystore files, e.g.
@@ -80,7 +80,6 @@ export YOUR_MYSTERIUM_DIR=~/.mysterium
 **_Recommended port mappings:_**
 
 - -p 4449:4449 The port to run Node UI on (default: 4449)
-- -p 27005:27005/udp. OpenVPN port to use (default: 1194)
 - -p 61920-62075:61920-62075/udp Range of WireGuard listen ports (e.g. 61920:62075)
 - -p 41920-42075:41920-42075/udp Range of P2P listen ports (e.g. 41920:42075)
 - --experiment-natpunching=false Disables NAT hole punching
