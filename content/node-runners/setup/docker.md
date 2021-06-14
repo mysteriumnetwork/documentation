@@ -103,7 +103,7 @@ Another requirement was to map the necessary custom port(s) from the router to y
 
 ### Solution
 
-The Mysterium team created a workaround to bypass these recognized problems and known limitations, implementing a STUN (Simple Traversal of UDP over NAT or Session Traversal Utilities for NAT) server to automatically determine the IP address and correct port(s) allocated to it by a NAT. This helped minimze the effort required, simplifying the process as much as possible for Windows & Mac users.
+The Mysterium team created a workaround to bypass these recognized problems and known limitations, implementing a STUN (Simple Traversal of UDP over NAT or Session Traversal Utilities for NAT) server to automatically determine the IP address and correct port(s) allocated to it by a NAT. This helped minimize the effort required, simplifying the process as much as possible for Windows & Mac users.
 
 ### Installation
 
