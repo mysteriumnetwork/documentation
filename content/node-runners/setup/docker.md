@@ -90,6 +90,64 @@ Your Windows Docker node is now ready to serve Mysterium Network users!
 
 Make sure to use volumes as in the example above to persist your node's identity through container and host system restarts or node image upgrades.
 
+## Docker on Windows and MacOS (Updated and simplified version)
+
+### Known limitations and our workarounds:
+
+- Because of the way networking is implemented in Docker Desktop for Windows, you cannot see a docker0 interface on the host. This interface is actually within the virtual machine.
+- Docker Desktop for Windows can’t route traffic to Linux containers. 
+- The docker (Linux) bridge network is not reachable from the Windows host.
+
+In the previous Docker implementations it was mandatory to set up a Port forwarding so that ports exposed from Linux are forwarded to the host. Another requirement was to map the necessary custom port(s) from router to your local machine: [YOUR_PUBLIC_IP]:PORT to -> [YOUR_LOCAL_NETWORK_IP]:PORT so it become publicly exposed via router. This all was needed to override certain limitations and make it usable.
+
+### Solution
+
+Mysterium team made a workaround to bypass a recognized problem and known limitations and implemented a STUN (Simple Traversal of UDP over NAT or Session Traversal Utilities for NAT) servers to automatically determine the IP address and correct port(s) allocated to it by a NAT. It helped us to minimze the efforts needed and make it as simple as possible for Windows & Mac users.
+
+### Installation
+
+[Download](https://www.docker.com/products/docker-desktop) and install Docker Desktop executable for Windows/Mac.
+
+When the installation finishes, Docker starts automatically. The "whale" icon in the notification area indicates that Docker is running, and accessible from a terminal. We now assume that Docker Desktop for Windows or Mac has been successfully installed and Docker Service is up and running.
+
+#### For WINDOWS users: Open a command-line terminal and type the following command:
+
+```bash
+docker run --cap-add NET_ADMIN -p 4449:4449 --name myst -v $YOUR_MYSTERIUM_DIR:/var/lib/mysterium-node mysteriumnetwork/myst:latest service --agreed-terms-and-conditions wireguard
+```
+
+**_Note 1:_** Replace `$YOUR_MYSTERIUM_DIR` with the path where you'd like to store the node's configuration and keystore files, e.g.
+
+```bash
+export YOUR_MYSTERIUM_DIR=~/.mysterium
+```
+
+**_Note2:_** By adding `--agreed-terms-and-conditions` command line option you accept our Terms & Conditions.
+
+**_Note3:_** You can use Docker detached mode by adding the option `--detach` or `-d`.
+
+
+#### For MacOS users: Open a command-line terminal and type the following command:
+
+```bash
+docker run --cap-add NET_ADMIN -p 4449:4449 --name myst -v $YOUR_MYSTERIUM_DIR:/var/lib/mysterium-node --device /dev/net/tun:/dev/net/tun mysteriumnetwork/myst:latest service --agreed-terms-and-conditions wireguard
+```
+
+**_Note 1:_** Replace `$YOUR_MYSTERIUM_DIR` with the path where you'd like to store the node's configuration and keystore files, e.g.
+
+```bash
+export YOUR_MYSTERIUM_DIR=~/.mysterium
+```
+
+**_Note2:_** By adding `--agreed-terms-and-conditions` command line option you accept our Terms & Conditions.
+
+**_Note3:_** You can use Docker detached mode by adding the option `--detach` or `-d`.
+
+
+Your Windows/Mac Docker node is now ready to serve Mysterium Network users!
+
+
+
 ## Complete installation
 
 Once the container is running please [log into the Node UI](/node-runners/node-ui/) to set up your service pricing, payout address and claim your node in [MMN](https://testnet2.mysterium.network) to receive bounties.
