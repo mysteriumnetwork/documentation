@@ -90,7 +90,7 @@ Your Windows Docker node is now ready to serve Mysterium Network users!
 
 Make sure to use volumes as in the example above to persist your node's identity through container and host system restarts or node image upgrades.
 
-## Docker on Windows and MacOS (Updated)
+## Docker on Windows and MacOS (Updated and simplified way)
 
 ### Known limitations:
 
