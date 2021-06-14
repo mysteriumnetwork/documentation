@@ -1,5 +1,5 @@
 ---
-title: Docker guide
+title: Docker guide (Mac & Windows)
 description: How to spin up a node on Docker
 ---
 
