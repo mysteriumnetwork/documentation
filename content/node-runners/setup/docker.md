@@ -94,9 +94,9 @@ Make sure to use volumes as in the example above to persist your node's identity
 
 ### Known limitations:
 
-- Because of the way networking is implemented in Docker Desktop for Windows, you cannot see a docker0 interface on the host. This interface is actually within the virtual machine.
-- Docker Desktop for Windows can’t route traffic to Linux containers. 
-- The docker (Linux) bridge network is not reachable from the Windows host.
+- Because of the way networking is implemented in Docker Desktop for Windows/Mac, you cannot see a docker0 interface on the host. This interface is actually within the virtual machine.
+- Docker Desktop for Windows/Mac can’t route traffic to Linux containers. 
+- The docker (Linux) bridge network is not reachable from the Windows/Mac hosts.
 
 In the previous Docker implementations it was mandatory to set up a Port forwarding so that ports exposed from Linux are forwarded to the host. Another requirement was to map the necessary custom port(s) from router to your local machine: [YOUR_PUBLIC_IP]:PORT to -> [YOUR_LOCAL_NETWORK_IP]:PORT so it become publicly exposed via router. This all was needed to override certain limitations and make it usable.
 
