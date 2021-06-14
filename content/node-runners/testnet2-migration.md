@@ -1,5 +1,5 @@
 ---
-title: Migration to Testnet 2.0 
+title: Testnet 2.0 
 description: How to migrate to Testnet 2.0
 ---
 
