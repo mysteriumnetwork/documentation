@@ -102,7 +102,7 @@ In the previous Docker implementations it was mandatory to set up a Port forward
 
 ### Solution
 
-Mysterium team made a workaround to bypass a recognized problem and known limitations and implemented a STUN (Simple Traversal of UDP over NAT or Session Traversal Utilities for NAT) servers to automatically determine the IP address and correct port(s) allocated to it by a NAT. It helped us to minimze the efforts needed and make it as simple as possible for Windows & Mac users.
+Mysterium team made a workaround to bypass a recognized problem and known limitations and implemented a STUN (Simple Traversal of UDP over NAT or Session Traversal Utilities for NAT) servers to automatically determine the IP address and correct port(s) allocated to it by a NAT. It helped us to minimize the efforts needed and make it as simple as possible for Windows & Mac users.
 
 ### Installation
 
