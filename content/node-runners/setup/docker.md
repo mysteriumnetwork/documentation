@@ -144,9 +144,6 @@ export YOUR_MYSTERIUM_DIR=~/.mysterium
 **_Note3:_** You can use Docker detached mode by adding the option `--detach` or `-d`.
 
 
-No manual port forwarding is needed. Your Windows/Mac Docker node is now ready to serve Mysterium Network users!
-
-
 
 ## Complete installation
 
