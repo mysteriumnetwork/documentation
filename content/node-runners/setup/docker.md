@@ -92,7 +92,7 @@ Make sure to use volumes as in the example above to persist your node's identity
 
 ## Docker on Windows and MacOS (Updated and simplified version)
 
-### Known limitations and our workarounds:
+### Known limitations:
 
 - Because of the way networking is implemented in Docker Desktop for Windows, you cannot see a docker0 interface on the host. This interface is actually within the virtual machine.
 - Docker Desktop for Windows can’t route traffic to Linux containers. 
