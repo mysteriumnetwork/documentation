@@ -98,11 +98,12 @@ Make sure to use volumes as in the example above to persist your node's identity
 - Docker Desktop for Windows/Mac can’t route traffic to Linux containers. 
 - The docker (Linux) bridge network is not reachable from the Windows/Mac hosts.
 
-In the previous Docker implementations it was mandatory to set up a Port forwarding so that ports exposed from Linux are forwarded to the host. Another requirement was to map the necessary custom port(s) from router to your local machine: [YOUR_PUBLIC_IP]:PORT to -> [YOUR_LOCAL_NETWORK_IP]:PORT so it become publicly exposed via router. This all was needed to override certain limitations and make it usable.
+In previous Docker implementations, it was mandatory to set up Port forwarding so that ports exposed from Linux are forwarded to the host.
+Another requirement was to map the necessary custom port(s) from the router to your local machine: [YOURPUBLICIP]:PORT to -> [YOURLOCALNETWORK_IP]:PORT so it becomes publicly exposed via the router. This was necessary to override certain limitations and make it usable.
 
 ### Solution
 
-Mysterium team made a workaround to bypass a recognized problem and known limitations and implemented a STUN (Simple Traversal of UDP over NAT or Session Traversal Utilities for NAT) servers to automatically determine the IP address and correct port(s) allocated to it by a NAT. It helped us to minimize the efforts needed and make it as simple as possible for Windows & Mac users.
+The Mysterium team created a workaround to bypass these recognized problems and known limitations, implementing a STUN (Simple Traversal of UDP over NAT or Session Traversal Utilities for NAT) server to automatically determine the IP address and correct port(s) allocated to it by a NAT. This helped minimze the effort required, simplifying the process as much as possible for Windows & Mac users.
 
 ### Installation
 
