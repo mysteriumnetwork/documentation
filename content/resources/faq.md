@@ -53,6 +53,33 @@ If You use docker image, it is strongly recommended **not** to store identity in
 ```bash
 docker run --cap-add NET_ADMIN --net host -v /home/mysterium-node:/var/lib/mysterium-node --name myst -d mysteriumnetwork/myst service --agreed-terms-and-conditions
 ```
+## I want to backup / restore my identity using CLI, how should I do that?
+
+You can backup / restore your identity using the __CLI__.
+The result will be protected by a passphrase you provide. The passphrase should be at least 12 symbols.
+
+On Linux setup run
+```bash
+sudo myst cli
+identities export 0x4570fe47a49af9ae9bd76f029818413ea18620000 passphrase
+```
+
+On Docker setup run 
+```bash
+docker exec -it e18090529c1e myst cli 
+identities export 0x4570fe47a49af9ae9bd76f029818413ea18620000 passphrase
+```
+Where 0x4570fe47a49af9ae9bd76f029818413ea18620000 is an ID of identity and
+e18090529c1e is a real docker container id of myst. To find the id run `docker ps`.
+
+Now copy the output.
+
+To restore an identity on a target node run
+```bash
+myst cli
+identities import passphrase <output>
+```
+Where the <output> is the result of an export command and passphrase is a respective passphrase. 
 
 ## How should I set a passphrase for node identity?
 By default, generated identity is not protected with any password, that is password is an empty string. If You want to generate a password protected identity You can add `--identity.passphrase` to running command:
