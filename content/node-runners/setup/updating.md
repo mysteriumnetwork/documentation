@@ -30,22 +30,20 @@ sudo apt update; sudo apt install myst
 
 In order to update your Docker node, run the following commands.
 
-Check the Repository, Tag, Image ID, Creation date and size of the current build.
+**_Note 1:_** Make sure that you have your data in the persistent storage like `myst-data`.
+
+**_Note 2:_** You can backup your keys before trying to update node version [FAQ](https://docs.mysterium.network/resources/faq/).
+
+Pull the latest node image.
 
 ```bash
-docker images
+docker pull mysteriumnetwork/myst
 ```
 
-Delete the image that is already being used by your Docker container:
+Delete the container that is already being used for running node:
 
 ```bash
-docker rmi -f ImageID
+docker rm -f myst
 ```
 
-Use the latest docker image:
-
-```bash
-mysteriumnetwork/myst:latest
-```
-
-If Docker is unable to find the required image locally, it will pull it from `mysteriumnetwork/myst` repository.
+Follow the running a docker node [guide](https://docs.mysterium.network/node-runners/setup/docker/) to start a new container.
