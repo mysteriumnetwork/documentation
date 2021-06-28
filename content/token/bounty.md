@@ -4,36 +4,9 @@ weight: 1
 description: Mysterium Node Pilot
 ---
 
-### May 2021 updates:
-**Residential IP bounty**
-* Maximum earnings of 100 MYST / Mysterium Node
-* 600 nodes will earn in total
-* New region introduced: Japan and Brasil
-
-**Global IP bounty**
-* Maximum earnings of 30 MYST / Mysterium Node
-* 5 nodes / region in Global IP bounty
-
-**Note**! Please keep your node's software up-to-date (not older than 30 days), otherwise, you won't get paid! For the next payout cycle your node should be running at least v0.46.1 of node.
-
-### March 2021 updates:
-**Residential IP bounty**
-* Maximum earnings of 150 MYST / Mysterium Node
-* 400 nodes will earn in total
-* New region introduced: Canada
-
-**Global IP bounty**
-* Maximum earnings of 40 MYST / Mysterium Node
-* 4 nodes / region in Global IP bounty
-
-### Updates 24/02/2021:
-
-As we progress to mainnet, we are adding flexibility to our residential IP bounty program. This begins with an introduction of a cap of bounty rewards to 60,000 MYST/ month for the residential IP bounty program. We are also introducing a cap of 150 MYST/ country for each upcoming month.
-
-Expect quick and iterative changes to the bounty program. Monthly changes to regions and the total amount top performing nodes will get paid will be introduced. Watch this space and our discord channels for updates.
-
 ## General info
-Being a part of the Mysterium Network Node Pilot means you join us in the research phase of our project. So expect rapid changes to bounty rules.
+Being a part of the Mysterium Network Node Pilot means you join us in the research phase of our project. So expect rapid changes to bounty rules.  
+All updates are listed below!
 
 Here are the two current bounties running within the Mysterium Node Pilot:
 
@@ -144,3 +117,31 @@ see the following criteria as abuse:
 
 This list of abuse criteria will grow - we know hackers out there will continue to game the system. We’re a hacktivist
 team, so we expect it, but don’t expect to get paid 🤣🤣🤣
+
+### May 2021 updates:
+**Residential IP bounty**
+* Maximum earnings of 100 MYST / Mysterium Node
+* 600 nodes will earn in total
+* New region introduced: Japan and Brasil
+
+**Global IP bounty**
+* Maximum earnings of 30 MYST / Mysterium Node
+* 5 nodes / region in Global IP bounty
+
+**Note**! Please keep your node's software up-to-date (not older than 30 days), otherwise, you won't get paid! For the next payout cycle your node should be running at least v0.46.1 of node.
+
+### March 2021 updates:
+**Residential IP bounty**
+* Maximum earnings of 150 MYST / Mysterium Node
+* 400 nodes will earn in total
+* New region introduced: Canada
+
+**Global IP bounty**
+* Maximum earnings of 40 MYST / Mysterium Node
+* 4 nodes / region in Global IP bounty
+
+### Updates 24/02/2021:
+
+As we progress to mainnet, we are adding flexibility to our residential IP bounty program. This begins with an introduction of a cap of bounty rewards to 60,000 MYST/ month for the residential IP bounty program. We are also introducing a cap of 150 MYST/ country for each upcoming month.
+
+Expect quick and iterative changes to the bounty program. Monthly changes to regions and the total amount top performing nodes will get paid will be introduced. Watch this space and our discord channels for updates.
