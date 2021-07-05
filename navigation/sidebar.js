@@ -19,6 +19,12 @@ module.exports = {
     "node-runners/payout-guide",
     "node-runners/troubleshooting/index"
   ],
+  "Node runner guides translations": [
+    "node-runners/japanese",
+    "node-runners/portugese",
+    "node-runners/spanish",
+    "node-runners/french",
+  ],
   "Legal": [
     "legal/index"
   ],
