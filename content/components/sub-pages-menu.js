@@ -3,10 +3,10 @@ import styled from "@emotion/styled"
 import Linux from "../images/platforms/linux.png"
 import RPI from "../images/platforms/rpi.jpg"
 import Docker from "../images/platforms/docker.png"
-import Japanese from "../images/flags/japanese.png"
-import Portugese from "../images/flags/portugese.png"
-import Spanish from "../images/flags/spanish.png"
-import French from "../images/flags.french.png"
+import Japanese from "../images/platforms/japanese.png"
+import Portugese from "../images/platforms/portugese.png"
+import Spanish from "../images/platforms/spanish.png"
+import French from "../images/platforms/french.png"
 import {
   NavItemsContext,
   NavItemDescription
