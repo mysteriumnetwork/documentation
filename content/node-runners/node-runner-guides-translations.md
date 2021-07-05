@@ -1,5 +1,5 @@
 ---
-title: Node runner guides translations
+title: Node runner guides translation
 description: Join our continuously growing network of nodes
 ---
 
