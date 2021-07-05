@@ -3,13 +3,9 @@ title: Node runner guides translations
 description: Join our continuously growing network of nodes
 ---
 
-import SubPagesMenu from "../../components/sub-pages-menu";
-
-Node runner guide translations:
-
-<SubPagesMenu items={[
-  {title: 'Japanese', icon: 'japan', description: 'A complete guide for Japanese node operators', url: '/node-runners/setup/docker/'},
-  {title: 'Portugese', icon: 'portugal', description: 'A complete guide for Portugese node operators', url: '/node-runners/setup/raspberry-pi/'},
-  {title: 'Spanish', icon: 'spain', description: 'A complete guide for Spanish node operators', url: '/node-runners/setup/linux/'},
-  {title: 'French', icon: 'france', description: 'A complete guide for Japanese node operators', url: '/node-runners/setup/docker/'},
-]}/>
+| Language  	| Download links                                                                                          	|
+|-----------	|---------------------------------------------------------------------------------------------------------	|
+| Portugese 	| [Click to download](https://drive.google.com/file/d/1C3YU9Qwvae-WJfxbCit494bA3qcYxylY/view?usp=sharing) 	|
+| Japanese  	| [Click to download](https://drive.google.com/file/d/15rhi_RqFhlSK88E1Xp6avu0CgirRIHee/view?usp=sharing) 	|
+| Spanish   	| [Click to download](https://drive.google.com/file/d/15rhi_RqFhlSK88E1Xp6avu0CgirRIHee/view)             	|
+| French    	| [Click to download](https://drive.google.com/file/d/15rhi_RqFhlSK88E1Xp6avu0CgirRIHee/view)             	|
