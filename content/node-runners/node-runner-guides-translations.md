@@ -5,7 +5,7 @@ description: Join our continuously growing network of nodes
 
 import SubPagesMenu from "../../components/sub-pages-menu";
 
-Node runner guides translations:
+Node runner guide translations:
 
 <SubPagesMenu items={[
   {title: 'Japanese', icon: 'japan', description: 'A complete guide for Japanese node operators', url: '/node-runners/setup/docker/'},
