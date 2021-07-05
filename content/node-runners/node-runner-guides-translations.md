@@ -1,1 +1,14 @@
+---
+title: Supported platforms
+description: Join our continuously growing network of nodes
+---
 
+import SubPagesMenu from "../../components/sub-pages-menu";
+
+Mysterium Network Node software supports the following platforms:
+
+<SubPagesMenu items={[
+  {title: 'Docker', icon: 'docker', description: 'Start a containerised Docker node on Mac & Windows', url: '/node-runners/setup/docker/'},
+  {title: 'Raspberry Pi', icon: 'rpi', description: 'Run on a Raspberry Pi device', url: '/node-runners/setup/raspberry-pi/'},
+  {title: 'Linux', icon: 'linux', description: 'Install and run on Linux', url: '/node-runners/setup/linux/'},
+]}/>
