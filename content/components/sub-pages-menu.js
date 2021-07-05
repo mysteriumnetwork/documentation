@@ -5,7 +5,7 @@ import RPI from "../images/platforms/rpi.jpg"
 import Docker from "../images/platforms/docker.png"
 import Japanese from "../images/platforms/japanese.png"
 import Portugese from "../images/platforms/portugese.png"
-import Spanish from "../images/platforms/spanish.png"
+import Spanish from "../images/platforms/spanish-flag.png"
 import French from "../images/platforms/french.png"
 import {
   NavItemsContext,
@@ -41,6 +41,10 @@ const icons = {
   docker: Docker,
   rpi: RPI,
   linux: Linux
+  spain: Spanish,
+  portugal: portugese,
+  france: french,
+  japan: japanese,
 }
 
 export default function SubPagesMenu ({ items }) {
