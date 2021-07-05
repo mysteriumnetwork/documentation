@@ -42,9 +42,9 @@ const icons = {
   rpi: RPI,
   linux: Linux
   spain: Spanish,
-  portugal: portugese,
-  france: french,
-  japan: japanese,
+  portugal: Portugese,
+  france: French,
+  japan: Japanese,
 }
 
 export default function SubPagesMenu ({ items }) {
