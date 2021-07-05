@@ -23,7 +23,7 @@ All you need to do is plug it in, claim your node and link your wallet to start 
 
 > **Warning! This will erase any existing software on your Raspberry PI device!**
 
-- Download the Mysterium Node RPI image: [mystberry.zip](https://github.com/mysteriumnetwork/node/releases/download/0.48.0/mystberry.zip)
+- Download the Mysterium Node RPI image: [mystberry.zip](https://github.com/mysteriumnetwork/node/releases/download/0.52.0/mystberry.zip)
 - Download Balena Etcher if you haven’t already got it: https://www.balena.io/etcher/
 - Insert the microSD into the provided SD card reader and connect it to your computer.
 - Open BalenaEtcher and select mystberry.zip as the image. Select the SD card file as the target.
