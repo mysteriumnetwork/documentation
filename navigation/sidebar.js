@@ -8,10 +8,10 @@ module.exports = {
   ],
   "Node runner guides": [
     "node-runners/testnet2-migration",
-    "node-runners/node-runner-guides-translations",
     "node-runners/setup/docker",
     "node-runners/setup/raspberry-pi",
     "node-runners/setup/linux",
+    "node-runners/node-runner-guides-translations",
     "node-runners/node-ui/index",
     "node-runners/setup/updating",
     "node-runners/node-migration",
