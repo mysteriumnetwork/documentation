@@ -11,7 +11,7 @@ module.exports = {
     "node-runners/setup/docker",
     "node-runners/setup/raspberry-pi",
     "node-runners/setup/linux",
-    "node-runners/node-runner-guides-translation",
+    "node-runners/node-runner-guides-translations",
     "node-runners/node-ui/index",
     "node-runners/setup/updating",
     "node-runners/node-migration",
