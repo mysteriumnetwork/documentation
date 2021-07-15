@@ -6,6 +6,8 @@ description: How to install and run a node on Linux
 A linux node can be installed and setup on a personal linux machine, in home server, or in a
 datacenter.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oWCO2bxJfYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## System requirements
 
 Here is the list of system requirements that should be fulfilled to be able to install Mysterium Node.
@@ -32,8 +34,6 @@ Other debian based linux distributions should also be able to run node without a
 In order to complete this setup, you should have a non-root user with ```sudo``` privileges.
 
 ## Installation
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oWCO2bxJfYQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Stable release
 
