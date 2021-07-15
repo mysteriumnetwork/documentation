@@ -33,6 +33,10 @@ Make sure to use volumes as in the example above to persist your node's identity
 
 ## Docker on Windows and MacOS
 
+Video guide: 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/C1Msfv0yNRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 > While this guide is focused on Windows, the same instructions apply to macOS.
 
 Docker Desktop for Windows is Docker designed to run on Windows 10 and macOS.
