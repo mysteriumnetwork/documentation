@@ -1,43 +1,13 @@
 ---
-title: Docker guide (Linux, Mac & Windows)
+title: Docker guide (Mac, Windows & Linux)
 description: How to spin up a node on Docker
 ---
 
-## Docker on Linux
-
-[Docker](https://www.docker.com/) is a tool that enables developers to ship and run applications such as a Mysterium Node by the use of containers.
-A container holds all the required libraries, services and other application dependencies and ships it as a single package.
-
-The advantage of docker is that it requires a lot less computing power when compared to virtual machines as it reuses the kernel of the operating system on the host machine and isolates the containerized application from global system settings and environmental factors.
-This makes it easy to run applications without worrying about the operating system compatibility issues, as well as collisions with other installed software or system configuration.
-
-
-```bash
-docker run --cap-add NET_ADMIN -d -p 4449:4449 --name myst -v myst-data:/var/lib/mysterium-node mysteriumnetwork/myst:latest service --agreed-terms-and-conditions
-```
-
-**_Note 1:_** Replace `myst-data` with the path where you'd like to store the node's configuration and keystore files, e.g.
-
-**_Note2:_** By adding `--agreed-terms-and-conditions` command line option you accept our Terms & Conditions.
-
-**_Note3:_** Use Docker detached mode by adding the option `--detach` or `-d`.
-
-```
-docker run -d IMAGE
-```
-
-It will run a Docker container in the background of your terminal.
-If you run containers in the background, you can find out their details using `docker ps` and then reattach your terminal to its input and output.
-
-Make sure to use volumes as in the example above to persist your node's identity through container and host system restarts or node image upgrades.
-
-## Docker on Windows and MacOS
-
-Video guide: 
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/C1Msfv0yNRQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> While this guide is focused on Windows, the same instructions apply to macOS.
+> While this video guide is focused on MacOS, the same instructions apply to Windows.
+
+## Docker on Windows and MacOS
 
 Docker Desktop for Windows is Docker designed to run on Windows 10 and macOS.
 It is a native application that provides an easy-to-use development environment for building, shipping, and running dockerized apps.
@@ -82,6 +52,35 @@ docker run --cap-add NET_ADMIN -d -p 4449:4449 --name myst -v myst-data:/var/lib
 **_Note 1:_** Replace `myst-data` with the path where you'd like to store the node's configuration and keystore files, e.g.
 
 **_Note2:_** By adding `--agreed-terms-and-conditions` command line option you accept our Terms & Conditions.
+
+## Docker on Linux
+
+[Docker](https://www.docker.com/) is a tool that enables developers to ship and run applications such as a Mysterium Node by the use of containers.
+A container holds all the required libraries, services and other application dependencies and ships it as a single package.
+
+The advantage of docker is that it requires a lot less computing power when compared to virtual machines as it reuses the kernel of the operating system on the host machine and isolates the containerized application from global system settings and environmental factors.
+This makes it easy to run applications without worrying about the operating system compatibility issues, as well as collisions with other installed software or system configuration.
+
+
+```bash
+docker run --cap-add NET_ADMIN -d -p 4449:4449 --name myst -v myst-data:/var/lib/mysterium-node mysteriumnetwork/myst:latest service --agreed-terms-and-conditions
+```
+
+**_Note 1:_** Replace `myst-data` with the path where you'd like to store the node's configuration and keystore files, e.g.
+
+**_Note2:_** By adding `--agreed-terms-and-conditions` command line option you accept our Terms & Conditions.
+
+**_Note3:_** Use Docker detached mode by adding the option `--detach` or `-d`.
+
+```
+docker run -d IMAGE
+```
+
+It will run a Docker container in the background of your terminal.
+If you run containers in the background, you can find out their details using `docker ps` and then reattach your terminal to its input and output.
+
+Make sure to use volumes as in the example above to persist your node's identity through container and host system restarts or node image upgrades.
+
 
 ## Complete installation
 
