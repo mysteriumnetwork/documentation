@@ -1,6 +1,6 @@
 ---
 title: Linux guide
-description: How install and run a node on Linux
+description: How to install and run a node on Linux
 ---
 
 A linux node can be installed and setup on a personal linux machine, in home server, or in a
