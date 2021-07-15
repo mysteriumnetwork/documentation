@@ -3,6 +3,7 @@ import styled from "@emotion/styled"
 import Linux from "../images/platforms/linux.png"
 import RPI from "../images/platforms/rpi.jpg"
 import Docker from "../images/platforms/docker.png"
+import Avado from "../images/platforms/avado.png"
 import {
   NavItemsContext,
   NavItemDescription
@@ -36,7 +37,8 @@ const StyledLink = styled.a({
 const icons = {
   docker: Docker,
   rpi: RPI,
-  linux: Linux
+  linux: Linux,
+  avado: Avado
 }
 
 export default function SubPagesMenu ({ items }) {
