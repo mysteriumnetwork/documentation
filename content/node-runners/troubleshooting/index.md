@@ -80,8 +80,6 @@ It is a technique that is used to allow external devices access to computer serv
 
 If UPnP or NAT-PNP method doesn't help, you can try forwarding the port manually. Port forwards are set up in your router.
 
-For **OpenVPN** protocol, you need to forward `27005` or any other custom port. OpenVPN by default uses UDP/TCP port 1194, so it is common for firewalls to monitor port 1194 (and other commonly used ports), rejecting encrypted traffic that tries to use it (or them).
-
 **WireGuard** uses UDP to transmit the encrypted IP packets. The port can be freely selected from the high ports range. You need to configure the WireGuard service to listen on 52820:53075 range of ports (WireGuard starts at 51820/UDP).
 
 **Note!**
