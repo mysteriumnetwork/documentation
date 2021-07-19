@@ -60,4 +60,7 @@ If you click on balance you see an Etherscan screen with all Transactions of thi
 
 If you have any more questions on running the VPN or need help with this package, please get in touch with Mysterium Network support team at *help@mysterium.network or find us on Discord: https://discord.gg/uu8Z4BgrG4! 
 
+<div style="text-align:center">
+  <img src="../images/platforms/metamask.png" alt="Check connection button" class="screenshot"/>
+</div>
 
