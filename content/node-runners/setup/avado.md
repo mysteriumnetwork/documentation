@@ -1,5 +1,5 @@
 ---
-title: AVADO guide
+title: Avado guide
 description: How to install and run a node on AVADO Box
 ---
 
