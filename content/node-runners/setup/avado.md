@@ -28,7 +28,7 @@ First of all, you need an [AVADO Box](https://ava.do/earn-crypto) because we ens
 You can find the Mysterium Package in your AvadOS DAppstore.
 
 <div style="text-align:center">
-  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/platforms/avado2.png" alt="" class="screenshot"/>
+  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/platforms/avado1.png" alt="" class="screenshot"/>
 </div>
 
 If you don't have the AvadOS yet, you can use this **IPFS Hash** to download the Mysterium package onto your device.
@@ -40,13 +40,13 @@ QmfNqsa79iSpXt9URQNPzD8bCn5Hysed3U8q6NGgJ5u9Md
 Once done you see the package like this:
 
 <div style="text-align:center">
-  <img src="../images/platforms/testt.png" alt="" class="screenshot"/>
+  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/platforms/avado2.png" alt="" class="screenshot"/>
 </div>
 
 You can install the package. Once it is installed, go to my DApps and click on the package and it will take you to the onboarding wizard. The onboarding wizard asks you all the relevant questions for you to earn cryptocurrencies.
 
 <div style="text-align:center">
-  <img src="../images/platforms/avado3.png" alt="" class="screenshot"/>
+  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/platforms/avado3.png" alt="" class="screenshot"/>
 </div>
 
 It is effortless, and you only need to do two things:
@@ -58,9 +58,6 @@ Once you have done that you can click on save and start earning cryptocurrency. 
 
 If you click on balance you see an Etherscan screen with all Transactions of this address.
 
-If you have any more questions on running the VPN or need help with this package, please get in touch with Mysterium Network support team at *help@mysterium.network or find us on Discord: https://discord.gg/uu8Z4BgrG4! 
+If you have any more questions on running the VPN or need help with this package, please get in touch with Mysterium Network support team at *help@mysterium.network* or find us on Discord: https://discord.gg/uu8Z4BgrG4! 
 
-<div style="text-align:center">
-  <img src="../images/platforms/metamask.png" alt="Check connection button" class="screenshot"/>
-</div>
 
