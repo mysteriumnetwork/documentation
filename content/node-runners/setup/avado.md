@@ -40,7 +40,7 @@ QmfNqsa79iSpXt9URQNPzD8bCn5Hysed3U8q6NGgJ5u9Md
 Once done you see the package like this:
 
 <div style="text-align:center">
-  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/platforms/avado2.png" alt="" class="screenshot"/>
+  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/platforms/avado2.png" width="200" height="200" alt="" class="screenshot"/>
 </div>
 
 You can install the package. Once it is installed, go to my DApps and click on the package and it will take you to the onboarding wizard. The onboarding wizard asks you all the relevant questions for you to earn cryptocurrencies.
