@@ -3,6 +3,9 @@ title: AVADO guide
 description: How to install and run a node on AVADO Box
 ---
 
+![MarineGEO circle logo](../images/platforms/avado1.png "MarineGEO logo")
+<img src="../images/platforms/avado1.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NUf_nGWte8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br />
