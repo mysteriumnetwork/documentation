@@ -13,7 +13,7 @@ Your [AVADO Box](https://ava.do/earn-crypto) is top-notch hardware and has a pow
 
 **You can rent out your processing power, or your storage, or even your bandwidth.**
 
-The first Smart Mining Application that we want to share with you is called Mysterium Network. By selecting the Mysterium Network package from the AVADO DAppstore, you can rent out your bandwidth and earn up to 130 MYST every month. Mysterium Network has created a VPN for private internet access, and it is all peer to peer. Why use a VPN? Simply because information should be available to anyone and Firewalls, geo-blocks and censorship erode democracy and freedom of expression. 
+By selecting the Mysterium Network package from the AVADO DAppstore, you can rent out your bandwidth and earn up to 130 MYST every month. Mysterium Network has created a VPN for private internet access, and it is all peer to peer. Why use a VPN? Simply because information should be available to anyone and Firewalls, geo-blocks and censorship erode democracy and freedom of expression. 
 
 *"You help the internet to be great again and deserve the name World Wide Web."
 
