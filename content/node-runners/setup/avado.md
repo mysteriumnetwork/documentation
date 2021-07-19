@@ -28,7 +28,7 @@ First of all, you need an [AVADO Box](https://ava.do/earn-crypto) because we ens
 You can find the Mysterium Package in your AvadOS DAppstore.
 
 <div style="text-align:center">
-  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/platforms/avado1.png" alt="" class="screenshot"/>
+  <a href="https://ibb.co/DD6JcQX"><img src="https://i.ibb.co/1fpgyTV/avado1.png" alt="avado1" border="0"></a>
 </div>
 
 If you don't have the AvadOS yet, you can use this **IPFS Hash** to download the Mysterium package onto your device.
