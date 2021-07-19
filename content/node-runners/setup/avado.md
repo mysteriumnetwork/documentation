@@ -5,6 +5,7 @@ description: How to install and run a node on AVADO Box
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NUf_nGWte8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 AVADO is your plug & play solution giving you access to the WEB3 by running a Blockchain Node. Until today it was mainly a tool for developers to access a blockchain or for users that value privacy and want to have control over who can track their transactions.
 
 Today we add another use case to our Box and show you how to make money with cryptocurrency. 
