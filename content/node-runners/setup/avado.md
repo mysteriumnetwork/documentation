@@ -7,14 +7,14 @@ description: How to install and run a node on AVADO Box
 <img src="../images/platforms/avado1.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/NUf_nGWte8c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<br>
 <br />
 
-AVADO is your plug & play solution giving you access to the WEB3 by running a Blockchain Node. Until today it was mainly a tool for developers to access a blockchain or for users that value privacy and want to have control over who can track their transactions.
+[AVADO](https://ava.do/earn-crypto) is your plug & play solution giving you access to the WEB3 by running a Blockchain Node. Until today it was mainly a tool for developers to access a blockchain or for users that value privacy and want to have control over who can track their transactions.
 
 Today we add another use case to our Box and show you how to make money with cryptocurrency. 
 
-Your AVADO Box is top-notch hardware and has a powerful CPU, huge RAM, ample Disk space, Internet access, and more. All these features of your Box allow you to earn cryptocurrency. We call utilizing these features, "Smart Mining"!
+Your [AVADO Box](https://ava.do/earn-crypto) is top-notch hardware and has a powerful CPU, huge RAM, ample Disk space, Internet access, and more. All these features of your Box allow you to earn cryptocurrency. We call utilizing these features, "Smart Mining"!
 
 **You can rent out your processing Power, or your storage, or even your bandwidth.**
 
