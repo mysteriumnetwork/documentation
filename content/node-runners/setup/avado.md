@@ -51,7 +51,7 @@ You can install the package. Once it is installed, go to my DApps and click on t
 
 It is effortless, and you only need to do two things:
 
-1. Enter the Ethereum Adress you want to have the earned tokens sent to
+1. Enter the Ethereum Adress you want to have the earned tokens sent to;
 2. Agree to the terms and conditions of the Mysterium Network.
 
 Once you have done that you can click on save and start earning cryptocurrency. You can click on show stats, and it shows your stats within the Mysterium Network.
