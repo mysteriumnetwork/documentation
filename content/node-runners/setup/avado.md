@@ -28,7 +28,7 @@ First of all, you need an [AVADO Box](https://ava.do/earn-crypto) because we ens
 You can find the Mysterium Package in your AvadOS DAppstore.
 
 <div style="text-align:center">
-  <a href="https://ibb.co/DD6JcQX"><img src="https://i.ibb.co/1fpgyTV/avado1.png" alt="avado1" border="0"></a>
+  <img src="https://i.ibb.co/1fpgyTV/avado1.png" alt="avado1" border="0">
 </div>
 
 If you don't have the AvadOS yet, you can use this **IPFS Hash** to download the Mysterium package onto your device.
@@ -40,13 +40,13 @@ QmfNqsa79iSpXt9URQNPzD8bCn5Hysed3U8q6NGgJ5u9Md
 Once done you see the package like this:
 
 <div style="text-align:center">
-  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/platforms/avado2.png" width="200" height="200" alt="" class="screenshot"/>
+  <img src="https://i.ibb.co/x8xQhn0/avado2.png" alt="avado2" border="0">
 </div>
 
 You can install the package. Once it is installed, go to my DApps and click on the package and it will take you to the onboarding wizard. The onboarding wizard asks you all the relevant questions for you to earn cryptocurrencies.
 
 <div style="text-align:center">
-  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/platforms/avado3.png" alt="" class="screenshot"/>
+  <img src="https://i.ibb.co/xChPsk7/avado3.png" alt="avado3" border="0">
 </div>
 
 It is effortless, and you only need to do two things:
