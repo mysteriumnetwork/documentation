@@ -16,11 +16,11 @@ Today we add another use case to our Box and show you how to make money with cry
 
 Your [AVADO Box](https://ava.do/earn-crypto) is top-notch hardware and has a powerful CPU, huge RAM, ample Disk space, Internet access, and more. All these features of your Box allow you to earn cryptocurrency. We call utilizing these features, "Smart Mining"!
 
-**You can rent out your processing Power, or your storage, or even your bandwidth.**
+**You can rent out your processing power, or your storage, or even your bandwidth.**
 
-The first Smart Mining Application that we want to share with you is called Mysterium Network. By selecting the Mysterium Network package from the AVADO DAppstore, you can rent out your bandwidth and earn up to 50 USD worth of Ether every month. Mysterium Network has created a VPN for private internet access, and it is all peer to peer. Why use a VPN? Simply because information should be available to anyone and Firewalls, geo-blocks and censorship erode democracy and freedom of expression. 
+The first Smart Mining Application that we want to share with you is called Mysterium Network. By selecting the Mysterium Network package from the AVADO DAppstore, you can rent out your bandwidth and earn up to 130 MYST every month. Mysterium Network has created a VPN for private internet access, and it is all peer to peer. Why use a VPN? Simply because information should be available to anyone and Firewalls, geo-blocks and censorship erode democracy and freedom of expression. 
 
-"You help the internet to be great again and deserve the name World Wide Web."
+*"You help the internet to be great again and deserve the name World Wide Web."
 
 By opening your AVADO Box as a secure VPN connection, people in certain countries that buy VPN services from Mysterium Network can gain access to Wikipedia, as an example. 
 
@@ -28,7 +28,7 @@ You help the internet to be great again and deserve the name World Wide Web. Mor
 
 **I want to earn crypto, what do I need to do?**
 
-First of all, you need an AVADO Box because we ensured that the Mysterium Network package runs frictionless on this hardware.
+First of all, you need an [AVADO Box](https://ava.do/earn-crypto) because we ensured that the **Mysterium Network** package runs frictionless on this hardware.
 
 You can find the Mysterium Package in your AvadOS DAppstore.
 
@@ -54,7 +54,10 @@ You can install the package. Once it is installed, go to my DApps and click on t
   <img src="../images/platforms/avado3.png" alt="" class="screenshot"/>
 </div>
 
-It is effortless, and you only need to do two things. 1. Enter the Ethereum Adress you want to have the ETH sent to, and 2. agree to the terms and conditions of the Mysterium Network.
+It is effortless, and you only need to do two things:
+
+1. Enter the Ethereum Adress you want to have the earned tokens sent to
+2. Agree to the terms and conditions of the Mysterium Network.
 
 Once you have done that you can click on save and start earning cryptocurrency. You can click on show stats, and it shows your stats within the Mysterium Network.
 
