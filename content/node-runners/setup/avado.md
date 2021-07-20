@@ -43,20 +43,19 @@ Once done you see the package like this:
   <img src="https://i.ibb.co/x8xQhn0/avado2.png" alt="avado2" border="0">
 </div>
 
-You can install the package. Once it is installed, go to my DApps and click on the package and it will take you to the onboarding wizard. The onboarding wizard asks you all the relevant questions for you to earn cryptocurrencies.
+You can install the package. Once it is installed, go to my DApps and click on the package and it will take you to the welcome screen. The welcome screen will ask you to agree to the terms and conditions of the Mysterium Network.
 
 <div style="text-align:center">
-  <img src="https://i.ibb.co/xChPsk7/avado3.png" alt="avado3" border="0">
+  <img src="https://i.ibb.co/z2fV4GX/avado4.png" alt="avado2" border="0">
 </div>
 
-It is effortless, and you only need to do two things:
+Once you have done that you will be directed to the Mysterium onboarding screen (NodeUI) - > http://mysteriumnode.avadopackage.com:4449/#/login. The built-in Node UI allows you to adjust your node's settings, manage services and payment details, view performance and real-time session metrics.
 
-1. Enter the Ethereum Adress you want to have the earned tokens sent to;
-2. Agree to the terms and conditions of the Mysterium Network.
+<div style="text-align:center">
+  <img src="https://i.ibb.co/W6xFtX9/nodeui.png" alt="NodeUI" border="0">
+</div>
 
-Once you have done that you can click on save and start earning cryptocurrency. You can click on show stats, and it shows your stats within the Mysterium Network.
-
-If you click on balance you see an Etherscan screen with all Transactions of this address.
+**Note!** It's important to link the NodeUI dashboard to my.mysterium.network by filling out the API key under Settings > MMN Integration. You can get your API key at https://my.mysterium.network/user/profile.  
 
 If you have any more questions on running the VPN or need help with this package, please get in touch with Mysterium Network support team at *help@mysterium.network* or find us on Discord: https://discord.gg/uu8Z4BgrG4! 
 
