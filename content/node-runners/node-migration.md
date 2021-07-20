@@ -57,6 +57,9 @@ Find your data directory (keystore, testnet2 folders & nodeui-pass file):
 
 **Note!** As of July 2021, Docker Desktop for Mac has announced that users will be able to access volumes directly from the GUI, but only with Pro and Team accounts.
 
+<div style="text-align:center">
+  <img src="https://i.ibb.co/kcs2GRZ/docker.png" alt="docker-interface" border="0">
+</div>
 
 ## Finding `data-dir` in docker node (Windows host)
 
