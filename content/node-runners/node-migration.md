@@ -52,7 +52,7 @@ nc -U ~/Library/Containers/com.docker.docker/Data/debug-shell.sock
 Find your data directory (keystore, testnet2 folders & nodeui-pass file):
 
 ```bash
-ls /var/lib/docker/volumes/myst-data/_data/
+/ # ^[[34;5Rls /var/lib/docker/volumes/myst-data/_data/
 ```
 
 **Note!** As of July 2021, Docker Desktop for Mac has announced that users will be able to access volumes directly from the GUI, but only with Pro and Team accounts.
