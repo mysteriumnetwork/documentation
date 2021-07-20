@@ -9,10 +9,10 @@ Migrating a currently running node to a different machine is a fairly straightfo
 
 To install a node on a new machine please follow our initial set up tutorials for linux, raspberry or docker.
 
-## Finding `data-dir` in docker node
+## Finding `data-dir` in docker node (Linux host)
 
-When creating a docker node we recommend you create one using a volume flag for the `data-dir` for example: `-v /tmp/mnode:/var/lib/mysterium-node`.
-If you followed our docker instructions then your `data-dir` is the directory given when creating the volume (in the example case its `/tmp/mnode`).
+When creating a docker node we recommend you create one using a volume flag for the `data-dir` for example: `-v myst-data:/var/lib/mysterium-node`.
+If you followed our docker instructions then your `data-dir` is the directory given when creating the volume (in the example case its `myst-data`).
 
 You can also find it by executing:
 ```bash
@@ -24,14 +24,43 @@ And locating the `Binds`:
 ...
         "HostConfig": {
             "Binds": [
-                "/home/dir/myst:/var/lib/mysterium-node" # "/home/dir/myst" is our data-dir
+                "myst-data:/var/lib/mysterium-node" # "myst-data" is our data-dir
             ],
             "ContainerIDFile": "",
+             "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "4449/tcp": [
+                    {
 ...
 ```
 
 If you cannot find it or you didn't create a volume for the data dir, you will have to [exec](https://docs.docker.com/engine/reference/commandline/exec/) in to the
-docker container and follow our linux/raspberry instructions on how to retreive it.
+docker container and follow our linux/raspberry instructions on how to retrieve it.
+
+## Finding `data-dir` in docker node (MacOS host)
+
+When using Docker Desktop for MacOS, the containers and all data are stored within the Linux VM. Since the new version of Docker (mine is 20.10.7) uses socket instead of TTY to communicate with the VM, we will use the NC command and open the debug shell socket to interact with the virtual machine:
+
+```bash
+nc -U ~/Library/Containers/com.docker.docker/Data/debug-shell.sock
+```
+
+Find your data directory (keystore, testnet2 folders & nodeui-pass file):
+
+```bash
+ls /var/lib/docker/volumes/myst-data/_data/
+```
+
+**Note!** As of July 2021, Docker Desktop for Mac has announced that users will be able to access volumes directly from the GUI, but only with Pro and Team accounts.
+
+
+## Finding `data-dir` in docker node (Windows host)
+
+To be updated..
 
 ## Finding `data-dir` in linux/raspberry node 
 
