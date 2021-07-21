@@ -31,12 +31,6 @@ You can find the Mysterium Package in your AvadOS DAppstore.
   <img src="https://i.ibb.co/1fpgyTV/avado1.png" alt="avado1" border="0">
 </div>
 
-If you don't have the AvadOS yet, you can use this **IPFS Hash** to download the Mysterium package onto your device.
-
-```bash
-QmfNqsa79iSpXt9URQNPzD8bCn5Hysed3U8q6NGgJ5u9Md
-```
-
 Once done you see the package like this:
 
 <div style="text-align:center">
