@@ -51,6 +51,6 @@ Once you have done that you will be directed to the Mysterium onboarding screen 
 
 **Note!** It's important to link the NodeUI dashboard to my.mysterium.network by filling out the API key under Settings > MMN Integration. You can get your API key at https://my.mysterium.network/user/profile.  
 
-If you have any more questions on running the VPN or need help with this package, please get in touch with Mysterium Network support team at *help@mysterium.network* or find us on Discord: https://discord.gg/uu8Z4BgrG4! 
+If you have any more questions on running the VPN or need help with this package, please get in touch with Mysterium Network support team at *help@mysterium.network* or find us on Discord: https://discord.gg/uu8Z4BgrG4
 
 
