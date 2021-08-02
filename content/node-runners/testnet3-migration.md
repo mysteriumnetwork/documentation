@@ -1,6 +1,6 @@
 ---
 title: Pre-mainnet migration 
-description: How to migrate to Testnet 3.0
+description: How to migrate to Pre-mainnet
 ---
 
 The new Testnet 3.0 My Mysterium Network platform is hosted on https://my.mysterium.network. 
