@@ -3,7 +3,7 @@ title: Pre-mainnet migration
 description: How to migrate to Pre-mainnet
 ---
 
-The new Testnet 3.0 My Mysterium Network platform is hosted on https://my.mysterium.network. 
+The new version of My Mysterium Network platform is hosted on https://my.mysterium.network. 
 
 Your accounts from old https://my.mysterium.network were migrated into new https://my.mysterium.network on July the 27th, so you should be able to login using the same credentials & claim your new nodes using the same API key. Please note that your earnings were also not affected and you should keep the same amount with you!
 
