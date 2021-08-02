@@ -3,14 +3,11 @@ title: Pre-mainnet migration
 description: How to migrate to Testnet 3.0
 ---
 
-**If you are running a Raspberry Pi node it's likely that your node has migrated automatically.**
-
-If you are running a Raspberry Pi node with the official mystberry package - it will be upgraded automatically with no additional input from your side.
-The new network uses a new version of My Mysterium Network to which your accounts and all other data were transferred.
-
 The new Testnet 3.0 My Mysterium Network platform is hosted on https://my.mysterium.network. 
 
-Your accounts from old https://my.mysterium.network were migrated into new https://my.mysterium.network on July the 27th, so you should be able to login using the same credentials & claim your new nodes using the same API key. Please note that your earnings were also not affected and you should keep the same amount with you! 
+Your accounts from old https://my.mysterium.network were migrated into new https://my.mysterium.network on July the 27th, so you should be able to login using the same credentials & claim your new nodes using the same API key. Please note that your earnings were also not affected and you should keep the same amount with you!
+
+If you are running a Raspberry Pi node (with pre-configured mystberry package) it's likely that your node has been migrated automatically.
 
 ## Updating your node
 
