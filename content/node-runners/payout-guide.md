@@ -37,11 +37,12 @@ a) Crypto exchange wallets. A user-specific deposit wallet address to facilitate
 
 b) Direct Blockchain wallets (such as Metamask, Trust wallet, Atomic, MEW, MyCrypto, Trezor, Ledger ...). 
 
- 
 
 MYST is a standard ERC-20 token, if wallet supports ERC-20 tokens (has possibility to add any custom ERC-20 token), then MYST can be added there.
 
- 
+*Important Notice* Always do your own due diligence and research when dealing with exchanges or wallets. Most wallets do not support MYST token. We encourage providers to create a wallet mainly with the suggestions listed above. If you wish to add a wallet that was not listed above, we suggest that you first confirm with their respective support team if their wallet is capable of supporting MYST token. If you input a beneficiary address that is not supported, your funds will be lost forever.
+We take no responsibility for the results and outcomes of using third-party software or platforms. We only recommend to hold/trade our tokens for the future purpose of using the Mysterium platform.
+
 
 ## Adding MYST token to MetaMask 
 
