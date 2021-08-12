@@ -98,6 +98,45 @@ To explore everything TequilAPI can do, we host its Swagger docs on: https://teq
 
 Feel free to check the Swagger docs of your own node which are available on the same port as the `TequilAPI`: http://localhost:4050/docs.
 
+### Starting noop service
+
+With the daemon running, you can now register an identity and start a service. 
+
+For beginners, noop service is a good starting point as it allow for local sessions to be established. It doesn't tunnel your traffic, just starts a new session and can be used to test session mechanics locally.
+
+First, with daemon running on one terminal, start a new terminal and run a myst cli on by runnin `build/myst/myst cli`
+
+In the cli, create and register an identity.
+
+To create:
+```
+identities new
+```
+
+Then unlock the identity:
+```
+identities unlock {your_identity} 
+```
+
+Finally, start a noop service.
+```
+service start {your_identity} noop
+```
+
+We will call this the provider identity.
+
+### Connecting to your noop service
+
+To establish a connection from your local machine to the noop service you started above, use the same myst cli to create and register a new identity.
+
+You should now have 2 identities one created in the step above and both of them should be unlocked and registered. 
+
+To connect from your freshly created consumer to the provider, use the following commmand:
+
+```
+connect {consumer_identity} {provider_identity} noop
+```
+
 ### Testing
 
 If you've added new features or changed old ones, make sure to cover them with tests as much as possible. 
