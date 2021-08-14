@@ -119,7 +119,7 @@ If your node is unable to report an issue through the built-in Node UI or Tequil
 sudo journalctl -u mysterium-node.service > node.logs
 ```
 
-## Advaned configuration (optional)
+## Advanced configuration (optional)
 
 ### Get current config
 
