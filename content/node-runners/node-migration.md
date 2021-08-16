@@ -61,10 +61,6 @@ Find your data directory (keystore, testnet2 folders & nodeui-pass file):
   <img src="https://i.ibb.co/kcs2GRZ/docker.png" alt="docker-interface" border="0">
 </div>
 
-## Finding `data-dir` in docker node (Windows host)
-
-To be updated..
-
 ## Finding `data-dir` in linux/raspberry node 
 
 With the `node` service running you can execute:
