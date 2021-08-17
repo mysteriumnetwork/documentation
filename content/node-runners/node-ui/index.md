@@ -45,6 +45,34 @@ Change pricing for each service through the service settings.
   <img src="../../images/node-ui/vpn-pricing.png" alt="Pricing settings" class="screenshot" />
 </div>
 
+### Understanding Different NAT Types and Hole-Punching
+
+A brief explanation of Network Address Translation (NAT) types, how they work with hole-punching and can affect the ability to create tunnels.
+
+#### Normal (Full Cone) NAT
+A full cone NAT is one where all requests from the same internal IP address and port are mapped to the same external IP address and port. Furthermore, any external host can send a packet to the internal host, by sending a packet to the mapped external address.
+
+#### Restricted Cone NAT
+A restricted cone NAT is one where all requests from the same internal IP address and port are mapped to the same external IP address and port. Unlike a full cone NAT, an external host (with IP address X) can send a packet to the internal host only if the internal host had previously sent a packet to IP address X.
+
+#### Port Restricted Cone NAT
+A port restricted cone NAT is like a restricted cone NAT, but the restriction includes port numbers. Specifically, an external host can send a packet, with source IP address X and source port P, to the internal host only if the internal host had previously sent a packet to IP address X and port P.
+
+#### Symmetric NAT
+A symmetric NAT is one where all requests from the same internal IP address and port, to a specific destination IP address and port, are mapped to the same external IP address and port. If the same host sends a packet with the same source address and port, but to a different destination, a different mapping is used. Furthermore, only the external host that receives a packet can send a UDP packet back to the internal host.
+
+#### Hole-Punching
+Using a previously established association to permit an arbitrary external address/port to send data to an internal address/port is referred to as hole-punching. Hole-punching is possible with normal (full-cone), restricted and port-restricted NATs, which map the same internal address/port consistently to an external address/port.
+
+*NOTE: Hole-punching is not possible with purely symmetric NATs, due to their inconsistent destination-specific port mapping behavior.
+
+
+
+#### NAT Test
+Click the link below to run the DH2i NAT Test to determine whether your site is behind a Symmetric NAT device.
+DH2i NAT Test: https://clients.dh2i.com/NatTest/
+
+
 ### Payout settings
 
 The beneficiary address is the address of your wallet where you want to receive your earnings.
@@ -77,3 +105,6 @@ Simply click on the "Bug" button at the bottom left sidebar, provide us with an 
 <div style="text-align:center">
   <img src="../../images/node-ui/issue-report.png" alt="Report issue" class="screenshot" />
 </div>
+
+
+
