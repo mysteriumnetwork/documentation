@@ -199,36 +199,6 @@ To completely strip host of firewall rules and chains You can do:
 # iptables -F # iptables -t nat -F # iptables -X
 ```
 
-## WireGuard service port configuration
-
-**Warning**: Your node should be accessible through built-in NAT hole punching capabilities. If that doesn't work, you can try the following.
-
-**For all other types of configuration, you will need to modify the `/etc/default/mysterium-node` configuration file and change the WireGuard service options there.**
-
-If you run a command line node, use the `service` command options.
-
-For example, if you'd like your WireGuard service to listen on `52820:53075` range of ports, then use the following flag:  
-
-```bash
---wireguard.listen.ports=52820:53075
-```
-
-**Note!** It is required to set ports needed for P2P communication too (range of P2P listen ports (e.g. 51820:52075)):
-
-```bash
---p2p.listen.ports=51820:52075
-```
-
-In the end it would look like this:
-
-```bash
-DAEMON_OPTS="--p2p.listen.ports=51820:52075 --keystore.lightweight"
-SERVICE_OPTS="--wireguard.listen.ports=52820:53075 wireguard"
-```
-
-
-**IMPORTANT**: Don't forget to set selected port forwarding on your router.
-
 ## Installing a Mysterium node using prebuilt DEB package
 
 Prebuilt DEB packages are available for downloading from the Mysterium node repository release page: [https://github.com/mysteriumnetwork/node/releases](https://github.com/mysteriumnetwork/node/releases)
