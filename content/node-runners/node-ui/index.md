@@ -46,7 +46,6 @@ Change pricing for each service through the service settings.
 </div>
 
 ### Understanding Different NAT Types and Hole-Punching
-
 A brief explanation of Network Address Translation (NAT) types, how they work with hole-punching and can affect the ability to create tunnels.
 
 #### Normal (Full Cone) NAT
@@ -91,11 +90,9 @@ For bounty payouts, claim your node in MMN by providing the Node UI with your MM
 </div>
 
 
-### Adjusting settings
+### Advanced settings
 
-<div style="text-align:center">
-  <img src="../../images/node-ui/settings.png" alt="Settings" class="screenshot">
-</div>
+Will be updated shortly.
 
 ### Reporting an issue
 
