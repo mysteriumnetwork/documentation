@@ -43,7 +43,7 @@ In order to update your Docker node, run the following commands.
 Pull the testnet3 node image:
 
 ```bash
-docker pull mysteriumnetwork/myst:testnet3
+docker pull mysteriumnetwork/myst:latest
 ```
 
 Delete the container that is already being used for running node: 
@@ -52,7 +52,7 @@ Delete the container that is already being used for running node:
 docker rm -f myst
 ```
 
-Follow the running a docker node guide (https://docs.mysterium.network/node-runners/setup/docker/) to start a new container using :testnet3 tag.
+Follow the running a docker node guide (https://docs.mysterium.network/node-runners/setup/docker/) to start a new container.
 
 
 ## Confirm your node is running
