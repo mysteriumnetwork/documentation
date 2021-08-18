@@ -67,7 +67,9 @@ To add tokens to your MetaMask, go to the main MetaMask account page. Click on t
 After you click Add Token, navigate to the Custom Token tab and manually enter the MYST token details. Copy the Token Contract Address (please find below) and paste that onto the Custom Token tab on MetaMask. 
 After this, you will be able to view your earned MYST tokens on the Assets tab. You will also have the option of swapping your chosen token for ETH or other ERC-20 tokens on the blockchain or sending them to Bittrex or HitBTC exchanges!
 
-**MYST token details: Contract : https://etherscan.io/address/0x4Cf89ca06ad997bC732Dc876ed2A7F26a9E7f361**
+**MYST token details:**
+
+**Contract : https://etherscan.io/address/0x4Cf89ca06ad997bC732Dc876ed2A7F26a9E7f361**
 
 **Symbol: MYST**
 
