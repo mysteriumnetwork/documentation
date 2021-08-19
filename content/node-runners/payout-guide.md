@@ -69,7 +69,7 @@ After this, you will be able to view your earned MYST tokens on the Assets tab. 
 
 **MYST token details:**
 
-**Contract : https://etherscan.io/address/0x4Cf89ca06ad997bC732Dc876ed2A7F26a9E7f361**
+**Contract : 0x4Cf89ca06ad997bC732Dc876ed2A7F26a9E7f361**
 
 **Symbol: MYST**
 
