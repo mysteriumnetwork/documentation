@@ -41,6 +41,46 @@ sudo -E bash -c "$(curl -s https://raw.githubusercontent.com/mysteriumnetwork/no
 In addition to downloading and installing our Node using either of these commands will also
 install additional required dependencies like WireGuard and OpenVPN if you don't have them already.
 
+### Complete installation with Mysterium CLI (if there is no access to the NodeUI)
+
+Mysterium CLI allows you to register node identity, claim your node into my.mysterium.network, set bounty payout address, view NAT traversal status & NAT type, manually start/stop mysterium-node.service (WG) and more.
+
+Unlock and register your identity.
+
+```bash
+identities list # get your node identity address
+identities unlock <your-identity> # unlock your identity before using it
+identities register <your-identity> # register your identity, must be done only once
+```
+
+Claim your node into my.mysterium.network.
+
+```bash
+mmn <your-api-key>
+```
+**Note**: You can find and copy your MMN API key in your [MMN profile](https://my.mysterium.network/user/profile).
+
+Set payout wallet address.
+
+```bash
+identities set-payout-address <providerIdentity> <beneficiary>
+```
+
+### Manage node service with MysteriumCLI (if there is no access to the NodeUI)
+
+```bash
+service start <your-identity> wireguard # start wireguard service
+service stop <your-identity> wireguard # stop wireguard service
+service list # get ID and status of your running WireGuard service
+service sessions # get a list of sessions
+```
+
+If you are seeing the similar output to the one below - your service is up and running!
+
+`[Running] ID: 7b4652a8-2021-4b9d-aeea-da7a60709678 ProviderID: 0x00f735d4ad380b56b92cd6c9f078763bbfeab3e8 Type: wireguard`
+
+Type `help` to get a full list of Mysterium CLI commands.
+
 ### Configure the services
 
 After installation is complete two services are created:
@@ -49,6 +89,7 @@ After installation is complete two services are created:
 
 By default `mysterium-node.service` will be automatically started. It allows you to use both consumer
 and provider features. 
+
 
 #### Running in consumer only mode 
 
