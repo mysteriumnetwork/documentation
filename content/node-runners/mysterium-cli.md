@@ -104,7 +104,7 @@ identities get-payout-address <providerIdentity>
 
 ### Managing node service
 
-##### To start WireGuard service we'd have to execute:
+##### To start WireGuard service we'd have to execute (note that WireGuard service is started automatically upon installation, therefore you don't need to start it manually):
 ```bash
 service start <your-identity> wireguard
 ```
