@@ -56,7 +56,7 @@ identities unlock 0x4570fe47a49af9ae9bd76f029818413ea18620000
 
 #### Register your identity
 ```bash
-iidentities register <providerIdentity> <stake>
+identities register <providerIdentity> <stake>
 ```
 
 After creating and unlocking the identity it must be registered so that Mysterium services are aware
