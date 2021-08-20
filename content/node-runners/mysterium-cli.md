@@ -60,7 +60,7 @@ After creating and unlocking the identity it must be registered so that Mysteriu
 about it and it's balance, to do that execute the `identities register` command.
 
 ```bash
-identities register 0x4570fe47a49af9ae9bd76f029818413ea18620000 0
+identities register 0x4570fe47a49af9ae9bd76f029818413ea18620000
 ```
 
 #### Claim your node into my.mysterium.network
