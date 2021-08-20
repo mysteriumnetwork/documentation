@@ -30,7 +30,6 @@ If you have already installed a Mysterium node but have no access to the NodeUI 
 Go ahead and fire up the cli application and follow the steps below. 
 
 #### Check your identity 
-> Command: identities list
 
 In order to identify yourself in the network you must have an identity which was created during the installation process. Use the command below to print your node identity address to your terminal.
 
@@ -39,7 +38,9 @@ identities list
 ```
 
 #### Unlock the new identity 
-> Command: identities unlock [identity] 
+```bash
+identities unlock <providerIdentity>
+```
 
 In order to use the created identity it has to be unlocked first.
 
@@ -54,7 +55,9 @@ identities unlock 0x4570fe47a49af9ae9bd76f029818413ea18620000
 ```
 
 #### Register your identity
-> Command: identities register [identity] [stake]
+```bash
+iidentities register <providerIdentity> <stake>
+```
 
 After creating and unlocking the identity it must be registered so that Mysterium services are aware
 about it and it's balance, to do that execute the `identities register` command.
