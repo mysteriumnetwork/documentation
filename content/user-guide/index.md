@@ -41,46 +41,6 @@ sudo -E bash -c "$(curl -s https://raw.githubusercontent.com/mysteriumnetwork/no
 In addition to downloading and installing our Node using either of these commands will also
 install additional required dependencies like WireGuard and OpenVPN if you don't have them already.
 
-### Complete installation with Mysterium CLI (if there is no access to the NodeUI)
-
-Mysterium CLI allows you to register node identity, claim your node into my.mysterium.network, set bounty payout address, view NAT traversal status & NAT type, manually start/stop mysterium-node.service (WG) and more.
-
-Unlock and register your identity.
-
-```bash
-identities list # get your node identity address
-identities unlock <your-identity> # unlock your identity before using it
-identities register <your-identity> # register your identity, must be done only once
-```
-
-Claim your node into my.mysterium.network.
-
-```bash
-mmn <your-api-key>
-```
-**Note**: You can find and copy your MMN API key in your [MMN profile](https://my.mysterium.network/user/profile).
-
-Set payout wallet address.
-
-```bash
-identities set-payout-address <providerIdentity> <beneficiary>
-```
-
-### Manage node service with MysteriumCLI (if there is no access to the NodeUI)
-
-```bash
-service start <your-identity> wireguard # start wireguard service
-service stop <your-identity> wireguard # stop wireguard service
-service list # get ID and status of your running WireGuard service
-service sessions # get a list of sessions
-```
-
-If you are seeing the similar output to the one below - your service is up and running!
-
-`[Running] ID: 7b4652a8-2021-4b9d-aeea-da7a60709678 ProviderID: 0x00f735d4ad380b56b92cd6c9f078763bbfeab3e8 Type: wireguard`
-
-Type `help` to get a full list of Mysterium CLI commands.
-
 ### Configure the services
 
 After installation is complete two services are created:
@@ -281,81 +241,6 @@ myst connection down
 To see your connection information you can execute:
 ```bash
 myst connection info 
-```
-
-## Advanced: connect using myst CLI
-
-`myst cli` is a tool that is more advanced than the basic `myst` commands
-used for connecting. While in some ways it's similar to `connection`
-and `account` commands gives greater control for an end user alongside some additional
-features in turn sacrificing some convenience.
-
-To get familiar with `myst cli` follow the below steps which detail initial set up
-and use of the Mysterium dVPN using the `cli`.
-
-### How to use the CLI
-
-To start open your terminal and execute:
-```bash
-myst cli
-```
-
-Once started your terminal window should change to the `myst cli` interface.
-To get help and see a list of possible commands execute:
-```bash
-help 
-```
-
-Each command has an output, if the output does not start with `[ERROR]` or `[WARNING]` consider that command a success.
-
-Commands can be autocompleted using the `tab` key on your keyboard.
-
-### Initial setup 
-
-If you've never used mysterium dVPN you'll have to create, unlock and register your identity.
-Go ahead and fire up the cli application and follow the steps below. 
-
-#### Create a new identity 
-> Command: identities new
-
-In order to identify yourself in the network you must have an identity, to create it
-execute the following command in the `cli`:
-
-```bash
-identities new
-```
-
-This command will create you a new identity which you can use.
-It will be printed to your terminal, but in case you want to check it out later you can do that
-will the following command:
-
-```bash
-identities list 
-```
-
-#### Unlock the new identity 
-> Command: identities unlock [identity] 
-
-In order to use the created identity it has to be unlocked first.
-
-**Unlocking has to be done every time we launch the `myst cli` and want to use the created identity.**
-
-For the sake of simplicity let's say we've received an identity: `0x4570fe47a49af9ae9bd76f029818413ea18620000`,
-which we'll use in all later steps.
-
-To unlock it we'd have to execute:
-```bash
-identities unlock 0x4570fe47a49af9ae9bd76f029818413ea18620000
-```
-
-#### Register your identity
-> Command: identities register [identity] [stake]
-
-After creating and unlocking the identity it must be registered so that Mysterium services are aware
-about it and it's balance, to do that execute the `identities register` command.
-
-```bash
-identities register 0x4570fe47a49af9ae9bd76f029818413ea18620000 0
 ```
 
 ### Managing your balance 
