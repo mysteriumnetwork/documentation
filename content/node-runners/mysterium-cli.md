@@ -35,7 +35,7 @@ Go ahead and fire up the cli application and follow the steps below.
 In order to identify yourself in the network you must have an identity which was created during the installation process. Use the command below to print your node identity address to your terminal.
 
 ```bash
-identities new
+identities list
 ```
 
 #### Unlock the new identity 
