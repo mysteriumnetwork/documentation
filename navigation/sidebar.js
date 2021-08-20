@@ -13,6 +13,7 @@ module.exports = {
     "node-runners/setup/avado",
     "node-runners/node-runner-guides-translations",
     "node-runners/node-ui/index",
+    "node-runners/mysterium-cli",
     "node-runners/setup/updating",
     "node-runners/node-migration",
     "node-runners/service-management",
