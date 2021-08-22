@@ -55,15 +55,12 @@ identities unlock 0x4570fe47a49af9ae9bd76f029818413ea18620000
 ```
 
 #### Register your identity
-```bash
-identities register <providerIdentity> <stake>
-```
 
 After creating and unlocking the identity it must be registered so that Mysterium services are aware
 about it and it's balance, to do that execute the `identities register` command.
 
 ```bash
-identities register 0x4570fe47a49af9ae9bd76f029818413ea18620000
+identities register <providerIdentity>
 ```
 
 #### Claim your node into my.mysterium.network
@@ -89,7 +86,7 @@ There are two types of wallets that you can use:
  
 MYST is a standard ERC20 token, if wallet supports ERC-20 tokens (has possibility to add any custom ERC-20 token), then MYST can be added there.
 
-##### MYST token details: 
+#### MYST token details: 
 
 > Contract: 0x4Cf89ca06ad997bC732Dc876ed2A7F26a9E7f361
 
@@ -107,17 +104,17 @@ identities get-payout-address <providerIdentity>
 
 ### Managing node service
 
-##### To start WireGuard service we'd have to execute (note that WireGuard service is started automatically upon installation, therefore you don't need to start it manually):
+#### To start WireGuard service we'd have to execute (note that WireGuard service is started automatically upon installation, therefore you don't need to start it manually):
 ```bash
 service start <your-identity> wireguard
 ```
 
-##### To stop WireGuard service:
+#### To stop WireGuard service:
 ```bash
 service stop <your-identity> wireguard
 ```
 
-##### To get ID and status of your currently active service:
+#### To get ID and status of your currently active service:
 ```bash
 service list
 ```
@@ -125,17 +122,17 @@ If you are seeing the similar output to the one below - your service is up and r
 
 `[Running] ID: 7b4652a8-2021-4b9d-aeea-da7a60709678 ProviderID: 0x00f735d4ad380b56b92cd6c9f078763bbfeab3e8 Type: wireguard`
 
-##### To get a list of sessions:
+#### To get a list of sessions:
 ```bash
 service sessions
 ```
 
-##### To get NAT Traversal status and NAT type:
+#### To get NAT Traversal status and NAT type:
 ```bash
 nat
 ```
 
-##### To view your current node version and uptime execute:
+#### To view your current node version and uptime execute:
 ```bash
 healthcheck
 ```
