@@ -81,7 +81,7 @@ docker ps
 Your container should be up and running:
 ```bash
 CONTAINER ID   IMAGE                          COMMAND                  CREATED          STATUS
-074a8fcb572c   mysteriumnetwork/myst:testnet3   "/usr/local/bin/dock…"   44 seconds ago   Up 42 seconds  
+074a8fcb572c   mysteriumnetwork/myst:latest   "/usr/local/bin/dock…"   44 seconds ago   Up 42 seconds  
 ```
 
 ## Claim your nodes
