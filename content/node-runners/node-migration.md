@@ -41,25 +41,6 @@ And locating the `Binds`:
 If you cannot find it or you didn't create a volume for the data dir, you will have to [exec](https://docs.docker.com/engine/reference/commandline/exec/) in to the
 docker container and follow our linux/raspberry instructions on how to retrieve it.
 
-## Finding `data-dir` in docker node (MacOS host)
-
-When using Docker Desktop for MacOS, the containers and all data are stored within the Linux VM. Since the new version of Docker (mine is 20.10.7) uses socket instead of TTY to communicate with the VM, we will use the NC command and open the debug shell socket to interact with the virtual machine:
-
-```bash
-nc -U ~/Library/Containers/com.docker.docker/Data/debug-shell.sock
-```
-
-Find your data directory (keystore, testnet2 folders & nodeui-pass file):
-
-```bash
-/ # ^[[34;5Rls /var/lib/docker/volumes/myst-data/_data/
-```
-
-**Note!** As of July 2021, Docker Desktop for Mac has announced that users will be able to access volumes directly from the GUI, but only with Pro and Team accounts.
-
-<div style="text-align:center">
-  <img src="https://i.ibb.co/kcs2GRZ/docker.png" alt="docker-interface" border="0">
-</div>
 
 ## Finding `data-dir` in linux/raspberry node 
 
