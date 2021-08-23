@@ -11,7 +11,7 @@ To install a node on a new machine please follow our initial set up tutorials fo
 
 ## Finding `data-dir` in docker node (Linux host)
 
-When creating a docker node we recommend you create one using a volume flag for the `data-dir` for example: `-v myst-data:/var/lib/mysterium-node`.
+When creating a docker node we recommend you create one using a volume flag for the `data-dir` for example: `-v myst-data:/var/lib/mysterium-node`. Using volumes is how you store data in a Dockerized application, so it survives beyond the life of a container. You run your myst node container with a volume for the data files. When you replace your container from a new image (to deploy an update), you use the same volume, and the new container has all the data from the original container.
 If you followed our docker instructions then your `data-dir` is the directory given when creating the volume (in the example case its `myst-data`).
 
 You can also find it by executing:
@@ -41,6 +41,45 @@ And locating the `Binds`:
 If you cannot find it or you didn't create a volume for the data dir, you will have to [exec](https://docs.docker.com/engine/reference/commandline/exec/) in to the
 docker container and follow our linux/raspberry instructions on how to retrieve it.
 
+## Finding `data-dir` in dockerized node (MacOS host)
+
+When using Docker Desktop for MacOS, the containers and all data are stored within the Linux VM. Since the new version of Docker (mine is 20.10.7) uses socket instead of TTY to communicate with the VM, we will use the NC command and open the debug shell socket to interact with the virtual machine:
+
+```bash
+nc -U ~/Library/Containers/com.docker.docker/Data/debug-shell.sock
+```
+
+Find your data directory (keystore, testnet2 folders & nodeui-pass file):
+
+```bash
+/ # ^[[34;5Rls /var/lib/docker/volumes/myst-data/_data/
+```
+
+**Note!** As of July 2021, Docker Desktop for Mac has announced that users will be able to access volumes directly from the GUI, but only with Pro and Team accounts.
+
+<div style="text-align:center">
+  <img src="https://i.ibb.co/kcs2GRZ/docker.png" alt="docker-interface" border="0">
+</div>
+
+## Finding `data-dir` in dockerized node (Windows host)
+
+By running `docker inspect <container-name>` you will see that there is a mount point listed for the volume:
+
+```bash
+"Mounts": [
+            {
+                "Type": "bind",
+                "Name": "myst-data",
+                "Source": "C:\\Users\\akork\\.mysterium-node",
+                "Destination": "/var/lib/mysterium-node",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ]
+ ```
+
+The source location of the mount shows the physical path on the Docker host where the files for the volume are written - in C:\\Users\\your-user\\.mysterium-node. Navigate to the source path where the Mysterium node files are located & migrate the content in to your new node.
 
 ## Finding `data-dir` in linux/raspberry node 
 
