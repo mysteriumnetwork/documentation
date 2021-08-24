@@ -82,8 +82,8 @@ It is a technique that is used to allow external devices access to computer serv
 In the end, it would look like this:
 
 ```bash
-DAEMON_OPTS="--keystore.lightweight"
-SERVICE_OPTS="--udp.ports=30000:60000 wireguard"
+DAEMON_OPTS="--keystore.lightweight --udp.ports=30000:60000"
+SERVICE_OPTS="wireguard"
 ```
 
 A summary of the steps to setup a port forward in your router are:
