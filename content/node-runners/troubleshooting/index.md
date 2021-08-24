@@ -40,26 +40,28 @@ The shortage of IPv4 addresses and the very slow transition to IPv6 leads to pra
 
 ## Enable NAT traversal (hole punching) mechanism
 
-> Currently, If port mapping succeeded, Mysterium is skipping the NAT hole punching. On the other hand, if the port mapping process fails or it's not configured, then the NAT hole punching is used. 
+> Currently, If port mapping succeeded, Mysterium is skipping the NAT hole punching. On the other hand, if the port mapping process fails or it's not configured, then the NAT hole punching is used.  
 
-Alternatively, providers can skip the process of manual port configuration and disable UPnP in their routers (if enabled). In this scenario, NAT hole punching will be prioritized and executed against port mapping processes.
+The default comma separated order of NAT traversal methods to be used for providing service (default: "manual,upnp,holepunching").
 
-It is recommended to add the following flag: **--nat-port-mapping=false** into service configuration file **/etc/default/mysterium-node** to force NAT hole punching mechanism to work.
+Providers can change the ordering of NAT traversal methods and prioritize NAT hole punching. In this case *--traversal="holepunching,manual,upnp"* flag  should be added into the *DAEMON_OPTS=""* in the service configuration file: */etc/default/mysterium-node*. 
 
 In the end it would look like this:
 
 ```bash
-DAEMON_OPTS="--nat-port-mapping=false --keystore.lightweight"
-SERVICE_OPTS="openvpn,wireguard"
+DAEMON_OPTS="--traversal=\"holepunching,manual,upnp\" --keystore.lightweight"
+SERVICE_OPTS="wireguard"
 ```
+
 
 ## Disable NAT traversal (hole punching) mechanism
 
-While in most cases NAT hole punch helps the Mysterium node runners to establish the connection with our network consumers, the technique is not applicable in all scenarios or with all types of NATs, as NAT operating characteristics are not standardized. If this approach does not work for you, you can try the following:
+While in most cases NAT hole punch helps the Mysterium node runners to establish the connection with our network consumers, the technique is not applicable in all scenarios or with all types of NATs, as NAT operating characteristics are not standardized.
 
-1. Enable the UPnP feature. UPnP and NAT-PNP protocols provide automatic port configuration features for various routers (gateways). Some routers have these features enabled by default, some have not.
-2. Manually forward a port in your router.
-3. Add the following flag into the service configuration file: **--experiment-natpunching=false**
+If this approach does not work for you, you can try the following:
+
+1. Manually forward a port in your router.
+2. Enable the UPnP feature. UPnP and NAT-PNP protocols provide automatic port configuration features for various routers (gateways). Some routers have these features enabled by default, some have not.
 
 > NAT (Network Address Translation) is used to enable internet access for computers that do not have an external internet address (IP). Usually of the form like 192.168.x.y or 10.x.y.z
 
@@ -67,33 +69,21 @@ If you are running a node on a computer behind NAT you will need some means to e
 
 Essentially you need to make ports on which node services run accessible from outside. This can be achieved by enabling the automatic port configuration feature (UPnP) or manually forwarding ports on your router.
 
-## UPnP or NAT-PNP support
-
-UPnP and NAT-PNP protocols provide automatic port configuration features for various routers (gateways). Some routers have these features enabled by default, some have not. It allows apps on your device to open ports on your router when needed and to close them when they are stopped.
-
-UPnP might be convenient, but it adds its potential security issues. It assumes that every device on your local network is trustworthy. So if you happen to get infected by malware that wants to initiate a direct connection with a remote attack, your UPnP router will allow it without question. Such a connection would be much more difficult to open with UPnP disabled.
-
 ## Port forwarding
 
-It is a technique that is used to allow external devices access to computer services on private networks. It does this by mapping an external port to an internal IP address and port. Most online gaming Applications will require you to configure port forwarding on your home router. To understand port forwarding you need to understand what a TCP/IP port is and how ports and IP addresses are used together.
+It is a technique that is used to allow external devices access to computer services on private networks. It does this by mapping an external port to an internal IP address and port. Most online gaming Applications will require you to configure **port forwarding** on your home router. To understand port forwarding you need to understand what a TCP/IP port is and how ports and IP addresses are used together.
 
-If UPnP or NAT-PNP method doesn't help, you can try forwarding the port manually. Port forwards are set up in your router.
-
-**WireGuard** uses UDP to transmit the encrypted IP packets. The port can be freely selected from the high ports range. You need to configure the WireGuard service to listen on 52820:53075 range of ports (WireGuard starts at 51820/UDP).
+**WireGuard** uses UDP to transmit the encrypted IP packets. Use `--udp.ports=""` to set range of listen ports (default: "10000:60000"). E.g. You can freely specify the range between 10000 and 60000: `--udp.ports="30000:60000"`
 
 **Note!**
 
-1. It is required to set ports needed for P2P communication too (range of P2P listen ports (e.g. 51820:52075));
-2. Disable NAT hole punching: add the following flag into service configuration file /etc/default/mysterium-node:
+* `--wireguard.listen.ports` & `--p2p.listen.ports*` has been deprecated starting from the Testnet3+, use above flag to manually set range of listen ports.
 
-```bash
---experiment-natpunching=false
-```
 In the end, it would look like this:
 
 ```bash
-DAEMON_OPTS="--p2p.listen.ports=51820:52075 --experiment-natpunching=false --keystore.lightweight"
-SERVICE_OPTS="--wireguard.listen.ports=52820:53075 wireguard"
+DAEMON_OPTS="--keystore.lightweight --udp.ports=30000:60000"
+SERVICE_OPTS="wireguard"
 ```
 
 A summary of the steps to setup a port forward in your router are:
@@ -103,8 +93,7 @@ A summary of the steps to setup a port forward in your router are:
 3. Create the port forward entries in your router.
 4. Test that your ports are forwarded correctly.
 
-How to forward ports on your router | PCWorld: https://www.pcworld.com/article/244314/how_to_forward_ports_on_your_router.html
-
+[How to forward ports on your router | PCWorld](https://www.pcworld.com/article/244314/how_to_forward_ports_on_your_router.html)
 
 
 ### UPnP or NAT-PNP support
