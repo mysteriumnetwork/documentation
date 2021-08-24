@@ -73,7 +73,7 @@ Essentially you need to make ports on which node services run accessible from ou
 
 It is a technique that is used to allow external devices access to computer services on private networks. It does this by mapping an external port to an internal IP address and port. Most online gaming Applications will require you to configure **port forwarding** on your home router. To understand port forwarding you need to understand what a TCP/IP port is and how ports and IP addresses are used together.
 
-**WireGuard** uses UDP to transmit the encrypted IP packets. Use ```bash--udp.ports=""``` to set range of listen ports (default: "0:0"). E.g. You can freely specify the range between 10000 and 60000: ```bash--udp.ports="30000:60000"```
+**WireGuard** uses UDP to transmit the encrypted IP packets. Use `--udp.ports=""` to set range of listen ports (default: "10000:60000"). E.g. You can freely specify the range between 10000 and 60000: `--udp.ports="30000:60000"`
 
 **Note!**
 
