@@ -404,10 +404,8 @@ Found proposals
 provider id: 0x773783463adb681ad67052213ae1ae204e32dab1	type: wireguard	country: DE	access policies: 
 provider id: 0x80ec29bb58365aceb06be7558b05a789b9e6458a	type: wireguard	country: GB	access policies: 
 provider id: 0xfa7855e183c3474eddd9d3a0088d2b1abddde837	type: wireguard	country: GB	access policies: 
-provider id: 0x043107c1ec68ef73cb4a184fe19fdff836eebbe6	type: openvpn	country: NL	access policies: 
 provider id: 0x09b3c5f0ecc61a28ea5cd91ac2b6edd4cd90f50c	type: wireguard	country: AU	access policies: 
 provider id: 0x0da444370166e0c2decb744122fcc2d07b8be4ce	type: wireguard	country: MD	access policies: 
-provider id: 0xbb3dd5828ecb040c23e80ec7ccda16066bc1bc9f	type: openvpn	country: EE	access policies: 
 provider id: 0x2f4ec475c42677b2b37a8831de456c43cadda89b	type: wireguard	country: GB	access policies: 
 provider id: 0x770c9ad96fe1843068e6100451d3282ce67c3596	type: wireguard	country: US	access policies: 
 ```
@@ -422,7 +420,7 @@ First lets explore the connect command. It accepts three arguments which are req
 
 * "consumer-identity" which is your identity that you created using the `identities new`
 * "provider-identity" which you can get from the `proposals` command 
-* "service-type" which is either `wireguard` or `openvpn` which you also get from the `proposals` command
+* "service-type" which you also get from the `proposals` command typically `wireguard` 
 
 So lets say our identity is `0x4570fe47a49af9ae9bd76f029818413ea18620000` and we'll connect to proposal:
 
