@@ -74,7 +74,7 @@ To get them checkout our [launchpad](https://launchpad.net/~mysteriumnetwork) or
 
 Once the service is installed and running to finish the node installation continue to the nodeUI, where you'll be able to configure prices, extra service settings and check node stats and connections. Instructions on how to find and use it can be found: [here](/node-runners/node-ui/).
 
-Also make sure to claim your node in MMN to receive bounties. It can be found [here](https://testnet2.mysterium.network). To receive your key, you'll have to create an account when following the nodeUI onboarding process or add it later in the node settings.
+Also make sure to claim your node in MMN to receive bounties. It can be found [here](https://my.mysterium.network). To receive your key, you'll have to create an account when following the nodeUI onboarding process or add it later in the node settings.
 
 If you can't access nodeUI or service is not working as expected, follow the below instructions on how to check service health, diagnose issues or add extra configuration.
 
