@@ -110,7 +110,7 @@ A **TCP/UDP port** identifies an **application or service** on a machine in a TC
 
 #### Logs show client attempts, but it does not fully connect
 
-There might be many things, but the most frequent is a firewall. If You run node via docker image, check that *ip_forwarding* is enabled on a host and that UDP service port (specified by `--openvpn.port` flag) is allowed from outside.
+There might be many things, but the most frequent is a firewall. If You run node via docker image, check that *ip_forwarding* is enabled on a host and that UDP service port is allowed from outside.
 
 check ip_forward status:
 
