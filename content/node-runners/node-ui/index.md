@@ -31,20 +31,6 @@ Our onboarding wizard will walk you through the following steps to help you set 
 
 To start running services and become eligible for the bounty program to receive MYST, you must set up a wallet for your node as well as claim your node in My Mysterium Network.
 
-### Service price settings
-
-We recommend keeping the defaults since they were fine-tuned for Testnet 2.0 and dVPN consumer apps. 
-
-<div style="text-align:center">
-  <img src="../../images/node-ui/pricing.png" alt="Pricing settings" class="screenshot" />
-</div>
-
-Change pricing for each service through the service settings.
-
-<div style="text-align:center">
-  <img src="../../images/node-ui/vpn-pricing.png" alt="Pricing settings" class="screenshot" />
-</div>
-
 ### Understanding Different NAT Types and Hole-Punching
 A brief explanation of Network Address Translation (NAT) types, how they work with hole-punching and can affect the ability to create tunnels.
 
@@ -72,12 +58,12 @@ Click the link below to run the DH2i NAT Test to determine whether your site is 
 DH2i NAT Test: https://clients.dh2i.com/NatTest/
 
 
-### Payout settings
+### Bounty Payout settings
 
-The beneficiary address is the address of your wallet where you want to receive your earnings.
+The bounty payout address (ERC-20) is the address of your wallet where you want to receive your earnings.
 
 <div style="text-align:center">
-  <img src="../../images/node-ui/payout.png" alt="Payout settings" class="screenshot" />
+  <img src="../../images/node-ui/bounty-payout-settings.png" alt="Bounty Payout settings" class="screenshot" />
 </div>
 
 ### Node UI security

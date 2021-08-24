@@ -130,7 +130,7 @@ If you are running a Mysterium node on the same machine that will be used for ac
 SSDP based protocol is used for Mysterium Node discovery on Windows systems. Once you have a Mysterium Node with enabled UI running in your local network, it will be possible to see it automatically in the Network section of the Windows Explorer:
 
 <div style="text-align:center">
-  <img src="../../images/postinstall/discovery.jpeg" alt="Login" class="screenshot">
+  <img src="../../images/postinstall/discovery.jpeg" alt="Discovery" class="screenshot">
 </div>
 
 You just need to double click on the device icon to open the UI in the default browser.
