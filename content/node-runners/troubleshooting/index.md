@@ -77,7 +77,7 @@ It is a technique that is used to allow external devices access to computer serv
 
 **Note!**
 
-*--wireguard.listen.ports & bash --p2p.listen.ports* has been deprecated starting from the Testnet3+, use above flag to manually set range of listen ports.
+* `--wireguard.listen.ports` & `--p2p.listen.ports*` has been deprecated starting from the Testnet3+, use above flag to manually set range of listen ports.
 
 In the end, it would look like this:
 
