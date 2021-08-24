@@ -33,7 +33,7 @@ All you need to do is plug it in, claim your node and link your wallet to start 
 
 ## Complete installation
 
-Once the service is installed and running to finish the node installation continue to the NodeUI, where you'll be able to set payout address, manage service settings and check node stats and connections. Instructions on how to find and use it can be found: [here](/node-runners/node-ui/).
+Once the service is installed and running to finish the node installation continue to the NodeUI, where you'll be able to set payout address, manage service settings and check node stats and connections. Instructions on how to find and use it can be found: [here](https://docs.mysterium.network/node-runners/node-ui/).
 
 Also make sure to claim your node in MMN to receive bounties. It can be found [here](https://my.mysterium.network). To receive your key, you'll have to create an account when following the NodeUI onboarding process or add it later in the node settings.
 
