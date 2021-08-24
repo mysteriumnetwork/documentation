@@ -18,15 +18,6 @@ The current pricing for the network consumers is:
 
 Mysterium node runners are able to fine-tune and set their own pricing.
 
-## Change service pricing
-
-To change service pricing [log into the Node UI](/node-runners/node-ui/).
-Your VPN services will be listed at the bottom with an option to adjust pricing settings.
-
-<div style="text-align:center">
-  <img src="../images/node-ui/vpn-pricing.png" alt="Pricing settings" class="screenshot" />
-</div>
-
 ## Global service settings
 
 Your Node UI allows you to change service settings for all of your VPN services.
