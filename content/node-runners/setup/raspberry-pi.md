@@ -31,9 +31,13 @@ All you need to do is plug it in, claim your node and link your wallet to start 
 - Insert the microSD card into your Raspberry Pi.
 - Plug in the network cable into your router and then the power cord. It may take a few minutes before the Pi is fully up.
 
-## Install and start Mysterium Node service
+## Complete installation
 
-Follow [Linux](/node-runners/setup/linux/) installation instructions.
+Once the service is installed and running to finish the node installation continue to the nodeUI, where you'll be able to configure prices, extra service settings and check node stats and connections. Instructions on how to find and use it can be found: [here](/node-runners/node-ui/).
+
+Also make sure to claim your node in MMN to receive bounties. It can be found [here](https://my.mysterium.network). To receive your key, you'll have to create an account when following the nodeUI onboarding process or add it later in the node settings.
+
+If you can't access nodeUI or service is not working as expected, follow the below instructions on how to check service health, diagnose issues or add extra configuration.
 
 ## Raspberry Pi device security
 
