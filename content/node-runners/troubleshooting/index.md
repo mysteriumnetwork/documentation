@@ -49,7 +49,7 @@ Providers can change the ordering of NAT traversal methods and prioritize NAT ho
 In the end it would look like this:
 
 ```bash
-DAEMON_OPTS="--traversal="holepunching,manual,upnp" --keystore.lightweight"
+DAEMON_OPTS="--traversal=\"holepunching,manual,upnp\" --keystore.lightweight"
 SERVICE_OPTS="wireguard"
 ```
 
