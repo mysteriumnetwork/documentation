@@ -23,7 +23,11 @@ Mysterium node runners are able to fine-tune and set their own pricing.
 Your Node UI allows you to change service settings for all of your VPN services.
 
 <div style="text-align:center">
-  <img src="../images/node-ui/global-service-settings.png" alt="Pricing settings" class="screenshot" />
+  <img src="../images/node-ui/global-service-settings.png" alt="Global Service Settings" class="screenshot" />
+</div>
+
+<div style="text-align:center">
+  <img src="../images/node-ui/bandiwdth-control.png" alt="Bandwidth control modal" class="screenshot" />
 </div>
 
 >Enabling verified partner traffic option will prevent access to your nodes by everyone except our verified partners. 
