@@ -1,22 +1,11 @@
 ---
 title: Service management
-description: How to change service price and settings
+description: How to change service settings, automatic pricing
 ---
 
-The default pricing range changes with certain node releases.
+## Automatic pricing
 
-Our node network is constantly growing and while we prepare for our MainNet release
-we want to make sure that the network consumers are able to connect to your node using properly adjusted price filtering.
-
-#### Current VPN service pricing
-
-The current pricing for the network consumers is:
-
-- Maximum price per Gb: **0.5 MYST**
-- Maximum price per hour: **0.0018 MYST** / **0.00003 MYST** per minute
-- Hermes (accountant) fee: **15%**
-
-Mysterium node runners are able to fine-tune and set their own pricing.
+Starting from testnet3 pricing model for Node runners is automatic. By providing automatic pricing we aim to make them competitive across all node runners and improve Node visibility.  
 
 ## Global service settings
 
