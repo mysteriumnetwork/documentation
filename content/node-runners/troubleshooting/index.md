@@ -71,13 +71,18 @@ Essentially you need to make ports on which node services run accessible from ou
 
 ## Port forwarding
 
-It is a technique that is used to allow external devices access to computer services on private networks. It does this by mapping an external port to an internal IP address and port. Most online gaming Applications will require you to configure **port forwarding** on your home router. To understand port forwarding you need to understand what a TCP/IP port is and how ports and IP addresses are used together.
+It is a technique that is used to allow external devices access to computer services on private networks. It does this by mapping an external port to an internal IP address and port. Most online gaming Applications will require you to configure **port forwarding** on your home router. 
 
-**WireGuard** uses UDP to transmit the encrypted IP packets. Use `--udp.ports=""` to set range of listen ports (default: "10000:60000"). E.g. You can freely specify the range between 10000 and 60000: `--udp.ports="30000:60000"`
+Since **WireGuard** uses UDP to transmit the encrypted IP packets, you will have to manually forward the range of UDP ports. 
 
-**Note!**
+1. Open the terminal window and navigate to the following file (located in `/etc/default` directory):
 
-* `--wireguard.listen.ports` & `--p2p.listen.ports*` has been deprecated starting from the Testnet3+, use above flag to manually set range of listen ports.
+```bash
+nano /etc/default/mysterium-node
+```
+This file holds the default myst service configuration information.
+
+2. Use `--udp.ports=""` flag to set range of listen ports (default: "10000:60000"). You can freely specify the range between 10000 and 60000. In the below example, we will use the following range: `--udp.ports="30000:60000"`. This flag `--udp.ports="30000:60000"` should be added into DAEMON_OPTS="" line.
 
 In the end, it would look like this:
 
@@ -85,6 +90,16 @@ In the end, it would look like this:
 DAEMON_OPTS="--keystore.lightweight --udp.ports=30000:60000"
 SERVICE_OPTS="wireguard"
 ```
+
+<a href="https://ibb.co/VjwJnsf"><img src="https://i.ibb.co/M2BZwmF/config-file.png" alt="config-file" border="0"></a>
+
+Write out the output by clicking `ctrl+o` and hit `enter`.
+
+After you make changes to your service configuration file, use systemctl to introspect and restart your node service. Run `sudo systemctl restart mysterium-node` to apply the changes. 
+
+**Note!**
+
+* `--wireguard.listen.ports` & `--p2p.listen.ports*` has been deprecated starting from the Testnet3+, use above flag to manually set range of listen ports.
 
 A summary of the steps to setup a port forward in your router are:
 
