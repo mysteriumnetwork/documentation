@@ -1,5 +1,5 @@
 ---
-title: The New Mysterium Node Windows Installer
+title: Mysterium node Windows Installer
 description: How to easily install a node on Windows
 ---
 
