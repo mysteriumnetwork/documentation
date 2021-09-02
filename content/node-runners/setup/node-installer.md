@@ -4,7 +4,7 @@ description: How to easily install a node on Windows
 ---
 
 
-## We’re on a mission to make running a Mysterium Node as effortless and enjoyable as possible. 
+We’re on a mission to make running a Mysterium Node as effortless and enjoyable as possible. 
 
 For every Windows user out there, we’ve just released a new installer which sets up your node in a matter of minutes. You can check out these steps below. 
 
@@ -34,4 +34,4 @@ You can open Node UI in-app.
 
 3. Finish the installation process and complete your onboarding by opening Node UI page and claiming your node. *Please note that still you need to log into your desktop session (required for Docker Desktop to start).
 
-<a href="https://ibb.co/wQmgtkQ"><img src="https://i.ibb.co/hdz906d/steps-1.jpg" alt="steps-1" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>upload multiple images</a><br />
+<a href="https://ibb.co/wQmgtkQ"><img src="https://i.ibb.co/hdz906d/steps-1.jpg" alt="steps-1" border="0"></a><br />
