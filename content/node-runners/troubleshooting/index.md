@@ -156,12 +156,38 @@ If you are planning to run the node behind the Mobile Router (cellular network),
 
 ## Forgot password
 
-To reset your Node UI password, run the following commands via the node CLI:
+#### To reset your Node UI password in Linux, run the following commands via terminal:
 
 ```bash
 myst reset --tequilapi
 ```
 or
+```bash
+myst reset
+```
+
+#### Raspberry Pi
+
+SSH into your RaspberryPi:
+
+```bash
+ssh myst@ip-of-your-raspberry
+```
+then run:
+
+```bash
+myst reset
+```
+
+#### Docker
+
+Open terminal window and run:
+
+```bash
+docker exec -it <container-id> /bin/sh
+```
+then run:
+
 ```bash
 myst reset
 ```
