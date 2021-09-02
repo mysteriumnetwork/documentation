@@ -30,8 +30,8 @@ You can open Node UI in-app.
 
 1. Enable Virtualization Extensions in the BIOS and in Virtual Machine (if one is used): VT-x / EPT / IOMMU or SVM for AMD-based systems.
 
-2. Download and open myst-launcher-amd64.exe (or myst-launcher-testnet3-amd64.exe for the Pre-Mainnet version). *Please note that a system restart might be required by the Windows Node Installer.
+2. Download and open [myst-launcher-amd64.exe](https://github.com/mysteriumnetwork/myst-launcher/releases/download/1.0.10/myst-launcher-amd64.exe). *Please note that a system restart might be required by the Windows Node Installer.
 
-3. Finish the installation process and complete your onboarding by opening Node UI page and claiming your node. *Please note that still you need to log into your desktop session (required for Docker Desktop to start).
+3. Finish the installation process and complete your onboarding by opening Node UI page and claiming your node. *Please note that still you need to log into your desktop session (required for Docker Desktop to start)*.
 
 <a href="https://ibb.co/wQmgtkQ"><img src="https://i.ibb.co/hdz906d/steps-1.jpg" alt="steps-1" border="0"></a><br />
