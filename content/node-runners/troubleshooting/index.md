@@ -184,7 +184,7 @@ myst reset
 Open terminal window and run:
 
 ```bash
-docker exec -it 00432a3f1f9020cb5a824052cfa599e3d02bc8dfc789b16f6a51277d2fdefe2f /bin/sh
+docker exec -it <container-id> /bin/sh
 ```
 then run:
 
