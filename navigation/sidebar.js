@@ -8,6 +8,7 @@ module.exports = {
   "Node runner guides": [
     "node-runners/testnet3-migration",
     "node-runners/setup/docker",
+    "node-runners/setup/node-installer",
     "node-runners/setup/raspberry-pi",
     "node-runners/setup/linux",
     "node-runners/setup/avado",
