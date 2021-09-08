@@ -15,7 +15,9 @@ Until then, we have two different bounties depending on where you are based:
  1. Regional Bounty (residential IP only)
  2. Global Bounty (Any IP)
 
-
+<div style="text-align:center">
+  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/postinstall/bounty_table.png" alt="Check connection button" class="screenshot" />
+</div>
 
 
 All nodes can earn based on the “time x bandwidth” model, meaning the amount of data transmitted through your node and the amount of time users are connected for. The more users who connect to your node, the more you will earn. 
