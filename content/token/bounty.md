@@ -16,7 +16,7 @@ Until then, we have two different bounties depending on where you are based:
  2. Global Bounty (Any IP)
 
 <div style="text-align:center">
-  <img src="../images/postinstall/bounty_table.png" alt="Bounty table" class="screenshot" />
+  <img src="../images/postinstall/bounty_tab.png" alt="Bounty table" class="screenshot" />
 </div>
 
 
