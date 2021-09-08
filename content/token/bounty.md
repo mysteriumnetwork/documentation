@@ -130,6 +130,12 @@ see the following criteria as abuse:
 This list of abuse criteria will grow - we know hackers out there will continue to game the system. We’re a hacktivist
 team, so we expect it, but don’t expect to get paid 🤣🤣🤣
 
+### September 2021 updates:
+**Residential IP bounty**
+* 1000 nodes will earn in total
+* New regions introduced:  Colombia, Croatia, Ireland, South Korea, Mexico, Malaysia, New Zealand, Portugal, Hong Kong, Nigeria, Kenya, South Africa
+
+
 ### May 2021 updates:
 **Residential IP bounty**
 * Maximum earnings of 100 MYST / Mysterium Node
