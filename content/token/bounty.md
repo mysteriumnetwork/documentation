@@ -25,7 +25,7 @@ Pis [preferred for Mysterium Network and a higher likelihood of earning], deskto
 
 Our first node pilot bounty rule will only apply to **residential IPs in the following regions:**
 - Australia
-- Brasil
+- Brazil
 - Canada
 - Germany
 - Italy
@@ -34,6 +34,18 @@ Our first node pilot bounty rule will only apply to **residential IPs in the fol
 - Netherlands
 - United Kingdom
 - United States
+- Colombia
+- Croatia
+- Ireland
+- South Korea
+- Mexico
+- Malaysia
+- New Zealand
+- Portugal 
+- Hong Kong
+- Nigeria
+- Kenya 
+- South Africa
 
 **You will earn by data transmitted through your node and session time**. As your node transmits data, you will begin to earn MYSTT.
 
