@@ -65,7 +65,7 @@ If you do not earn enough MYSTT to become a top 1000 node in the first month, yo
 
 **For example** - _John downloads Mysterium’s node software on his computer and begins running his node. John starts to earn MYSTT as users connect to his node. At the end of his first month, John earns a total of 50 MYSTT._
 
-_Scenario A: If John is among the top 600 nodes [calculated by the total amount of MYSTT earned], he will be eligible for a bounty reward. He will be paid 50 MYST and restart month two with a zero balance.
+_Scenario A: If John is among the top 600 nodes [calculated by the total amount of MYSTT earned], he will be eligible for a bounty reward. He will be paid 50 MYST and restart month two with a zero balance._
 
 _Scenario B: If John does not earn enough MYSTT to be among the top 600 nodes, his 50 MYSTT will roll over to the second month. If John earns another 70 MYSTT in month two, this brings his accumulated total to 120 MYSTT. If John is within the top 600 nodes in the UK based on his total earnings, he will be paid 100 MYST (the capped amount) in month two. Once he collects his payout, his MYSTT balance will return to zero starting in month three._
 
