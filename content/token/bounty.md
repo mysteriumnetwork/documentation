@@ -4,14 +4,21 @@ weight: 1
 description: Mysterium Node Pilot
 ---
 
-## General info
-Being a part of the Mysterium Network Node Pilot means you join us in the research phase of our project. So expect rapid changes to bounty rules.  
-All updates are listed below!
+## Mysterium Node Bounty Programs
 
-Here are the two current bounties running within the Mysterium Node Pilot:
+Mysterium’s bounty programs reward those who run a node and help power the network during our testnet (BETA) development. 
 
- 1. [Residential IP bounties with payout caps and rolling payments](#residential-ip-bounties-with-payout-caps-and-rolling-payments)
- 2. [Top 5 nodes / region bounties 🌍](#top-5-node--region-global-bounty)
+Once we launch on ✨mainnet✨, the bounty program will change. This is because the network will become a purely peer-to-peer system, where VPN users will pay nodes directly. Payments will be based on a supply and demand algorithm.
+
+Until then, we have two different bounties depending on where you are based:
+
+ 1. Regional Bounty (residential IP only)
+ 2. Global Bounty (Any IP)
+
+
+
+
+All nodes can earn based on the “time x bandwidth” model, meaning the amount of data transmitted through your node and the amount of time users are connected for. The more users who connect to your node, the more you will earn. 
 
 Important Definitions:
 
@@ -24,99 +31,59 @@ Pis [preferred for Mysterium Network and a higher likelihood of earning], deskto
 ### Residential IP bounties with payout caps and rolling payments
 
 Our first node pilot bounty rule will only apply to **residential IPs in the following regions:**
-- Australia
-- Brazil
-- Canada
-- Germany
-- Italy
-- India
-- Japan
-- Netherlands
-- United Kingdom
-- United States
-- Colombia
-- Croatia
-- Ireland
-- South Korea
-- Mexico
-- Malaysia
-- New Zealand
-- Portugal 
-- Hong Kong
-- Nigeria
-- Kenya 
-- South Africa
 
-**You will earn by data transmitted through your node and session time**. As your node transmits data, you will begin to earn MYSTT.
+-Australia
+-Brasil
+-Canada
+-Colombia
+-Croatia
+-Germany
+-Hong Kong
+-Ireland
+-Italy
+-India
+-Japan
+-Kenya
+-Malaysia
+-Mexico
+-Netherlands
+-New Zealand
+-Nigeria
+-Portugal
+-South Korea
+-South Africa
+-United Kingdom
+-United States
 
-MYSTT functions like points. Earnings will be calculated by the amount of MYSTT accumulated by your node at the end of the month.
+All nodes must be linked to a residential IP address, meaning no data center IPs will be rewarded. For these non-residential IPs, you can check out our second bounty program.
 
-We will be capping the number of nodes paid out per target region. In each of these regions, if you are running a residential IP you can earn **up to 100 MYST**.<sup>*</sup>
+Each month, there is a cap of1000 nodes paid out in total for all regions. Each node can earn up to 100 MYST. You can check out the leaderboard here.
 
-MYSTT will be calculated such that 1 MYSTT = 1 MYST.
-**If you do not earn enough MYSTT in the first month to get a payout, your accumulated MYSTT will be transferred to the next month.**<sup>**</sup> This means that you will stand a higher chance of being one of the top nodes in your region in month two. Once you get paid, your MYSTT value will go back to zero for the following month.
+If you do not earn enough MYSTT to become a top 1000 node in the first month, your accumulated MYSTT will be transferred to the next month. This also means you will stand a higher chance of being a top node in the following month. Once you are paid, your MYSTT total will return to zero and the process starts again. Payouts are made at the beginning of each month.
 
-**We will have a total cap of 600 nodes paid out for the following regions: the UK, US, Italy, India, Germany, Australia, Netherlands, Japan, Brasil & Canada.**
+### Scenarios
 
-When it comes to residential IPs, we may add more countries or change limits. We will provide you with 1-week notice in the case of upcoming changes. Regions are chosen based on the interest expressed by network users.
+**For example** - _John downloads Mysterium’s node software on his computer and begins running his node. John starts to earn MYSTT as users connect to his node. At the end of his first month, John earns a total of 50 MYSTT._
 
-**For example** - _John has been running a node in the UK for the past 2 months. At the beginning of the month of March,
-the number of MYSTT accumulated in his account will be zero. Over the course of the month, John will offer a VPN service
-from his node to end-users and to whitelisted traffic within the network. This will start to earn him MYSTT. At the end
-of March, John earns a total of 50 MYSTT._
+_Scenario A: If John is among the top 600 nodes [calculated by the total amount of MYSTT earned], he will be eligible for a bounty reward. He will be paid 50 MYST and restart month two with a zero balance.
 
-_Scenario A: If John is among the top 600 nodes [calculated by the total amount of MYSTT earned], he will be eligible
-for the bounty. He will collect his payout in MYST and start month two with zero MYSTT._
+_Scenario B: If John does not earn enough MYSTT to be among the top 600 nodes, his 50 MYSTT will roll over to the second month. If John earns another 70 MYSTT in month two, this brings his accumulated total to 120 MYSTT. If John is within the top 600 nodes in the UK based on his total earnings, he will be paid 100 MYST (the capped amount) in month two. Once he collects his payout, his MYSTT balance will return to zero starting in month three._
 
-_Scenario B: If John does not earn enough MYSTT to be one of the top 600 in the UK, his 50 MYSTT will roll over to
-month two. Let's say John earns another 70 MYSTT in month two. This brings him to a total of 120 MYSTT accumulated over
-the two months. In month two John is within the top 600 nodes in the UK based on his total of 120 MYSTT._ **_He will be
-able to collect 100 MYST_** _as his payout for the month. Once he collects his payout, his MYSTT balance will fall to
-zero on month three._
+With our residential IP bounty, we may need to add more regions or change limits. Changes are based on the needs of our users. We will provide you with one week’s notice in the case of upcoming changes.
 
-**To reiterate: MYSTT will be calculated such that 1 MYSTT = 1 MYST. Each payout will be capped at 100 MYST / node.**
+### Global bounty
 
-Payouts happen at the beginning of each month.<sup>***</sup>
+[If you qualify for the regional bounty, you can stop reading here because the global bounty is applied automatically and won't affect your regional earnings]
 
-### Top 5 node / region global bounty
+Our second bounty program is open to every country in the world. Nodes can also offer any type of IP address [residential IP or data-centre IP]. To be eligible you must have an identifiable IP address and verification of your geolocation checked against [Maxmind](https://www.maxmind.com/en/home).
 
-Our second node pilot bounty rule will apply to **all types of IPs in all regions of the world.**
+For this bounty, the top 5 performing nodes per country worldwide will earn MYSTT. Any node runner in any country can participate. Monthly earnings are capped at 30 MYST per node. If you are already participating in our "Residential IP bounties", you are welcome to participate in this second bounty and earn an extra 30 MYST.
 
-**Mysterium Node Global Bounty is open to every country in the world.** With this bounty, nodes with any type of IP are
-eligible to earn [Residential IP, Data Centre IP, etc]. To be eligible you must have an identifiable IP address and
-verification of your geolocation checked against [Maxmind](https://www.maxmind.com/en/home).
+In this bounty program, the five nodes with the highest number of MYSTT will earn for the month. If you earn MYSTT but do not qualify as one of the top five, do not fear - you will still be able to keep your MYSTT and continue to accumulate earnings for the following month. This puts you in a better position to become a top 5 node for your region in the upcoming months.
 
-For this bounty, we will only pay the top 5 performing nodes per region. Top 5 node earnings are capped at 30 MYST. If
-you are already participating in our "Residential IP bounties with payout caps and rolling payments" this is a way for
-you to earn an extra 30 MYST.
+### Scenarios
 
-How will this be calculated? Once you connect your node you will begin earning MYSTT in exchange for data usage. MYSTT
-functions like points. The five nodes with the highest number of MYSTT will earn for the month. **If you earn MYSTT but
-do not qualify as one of the top five, do not fear - you will be able to keep your MYSTT and continue to accumulate
-them in the following month**, which puts you in a better position to clinch the top 5 node position for your region in
-the upcoming months.
-
-**For example** - _Jane begins running a node in Turkey. In month one she accumulates 20 MYSTT. This does not place her
-within the top 5 nodes within her region. She continues to run her node in month two. During this period she earns
-another 30 MYSTT. The total number of MYSTT in her balance is 50 at the end of month two. She is now one of the top
-five nodes for month two based on her total amount of MYSTT accumulated. This makes her eligible for a 30 MYST bounty
-payout. Once the bounty payout is made, her MYSTT balance will fall to zero and she will have to begin
-accumulating MYSTT starting from zero at month 3._
-
-Payouts happen at the beginning of each month.<sup>***</sup>
-
-\* This cap is due to change as the market reacts to our move to MainNet
-
-** Network fork means all MYSTT collected to date will disappear as you upgrade your node. This will mean you will start
-with a balance of zero.
-
-*** Due to Ethereum transaction fees we will be increasing our minimum payout value to $3 USD. This will go into effect
-in September and will affect payouts moving forward. Don't worry if you haven't hit the $3 USD threshold, your earnings
-will roll over to the next month and continue to accumulate until you hit our minimum limit for a payout.
-Payouts will be executed by the 7th on each month in the upcoming months as we will be limiting gas fee we're paying to
-miners, to reduce the transactions fees for the blockchain.
-
-***
+**For example** - _Jane begins running a node in Turkey. In her first month she earns 20 MYSTT. This does not place her within the top 5 nodes within her region. She continues to run her node in month two. During this period she earns another 30 MYSTT. The total number is now 50 MYSTT at the end of month two, making Jane one of the top five nodes in Turkey. This makes her eligible for a 30 MYST bounty payout. Once she receives her bounty reward, her MYSTT balance will fall to zero._
 
 **If you abuse the Mysterium Node Pilot bounty rules, you will not be paid.**
 
