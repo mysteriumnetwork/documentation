@@ -78,6 +78,17 @@ passwd
 - Type in `passwd myst` and then follow the prompt to enter a new password.
 - Shut the machine down, pull the card out and put the `cmdline.txt` file back the way it was by removing the `init=/bin/sh` line.
 
+## Install latest stable version of the node using the quick-install script
+
+We do provide an installation script written in `bash` which can be downloaded and executed using this command:
+
+```bash
+sudo apt-get install curl
+sudo -E bash -c "$(curl -s https://raw.githubusercontent.com/mysteriumnetwork/node/master/install.sh)"
+```
+
+In addition to downloading and installing our Node on your Raspberry Pi, this command will also install additional required dependencies like WireGuard if you don't have it already.
+
 
 ## Install pre-release version of the node
 
