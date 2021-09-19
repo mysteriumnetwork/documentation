@@ -58,7 +58,7 @@ sudo apt-get install curl
 sudo -E bash -c "$(curl -s https://raw.githubusercontent.com/mysteriumnetwork/node/master/install.sh)"
 ```
 
-In addition to downloading and installing our Node, these commands will also install additional required dependencies like WireGuard and OpenVPN if you don't have them already.
+In addition to downloading and installing our Node, this command will also install additional required dependencies like WireGuard if you don't have it already.
 
 Once the installation is complete, check your service status.
 
