@@ -78,7 +78,23 @@ passwd
 - Type in `passwd myst` and then follow the prompt to enter a new password.
 - Shut the machine down, pull the card out and put the `cmdline.txt` file back the way it was by removing the `init=/bin/sh` line.
 
-## Install latest stable version of the node using the quick-install script
+## Install latest stable version of the node on your own Raspberry Pi device
+
+### SSH into your Raspberry Pi
+
+```bash
+ssh myst@ip-of-your-raspberry
+```
+Note: To find out the IP address of your Raspberry Pi - you may try the following commands:
+```bash
+ping raspberrypi.local
+```
+or
+```bash
+ping raspi
+```
+
+### Install a Mysterium node
 
 We do provide an installation script written in `bash` which can be downloaded and executed using this command:
 
