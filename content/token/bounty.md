@@ -16,7 +16,7 @@ Until then, we have two different bounties depending on where you are based:
  2. Global Bounty (Any IP)
 
 <div style="text-align:center">
-  <img src="../images/postinstall/bounty_tab.png" alt="Bounty table" class="screenshot" />
+ <img width="643" alt="Bounty Programs October 2021" src="https://user-images.githubusercontent.com/49900800/134561827-054c8409-b9e1-4979-a4b5-f408eb03a3fa.png">
 </div>
 
 
