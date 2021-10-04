@@ -32,7 +32,9 @@ module.exports = {
   "Developer guide": [
     "developers/index",
     "developers/node",
-    "developers/mobile"
+    "developers/mobile",
+    "developers/tequilapitutorial",
+    "developers/dvpntutorial"
   ],
   Resources: [
     "resources/faq",
