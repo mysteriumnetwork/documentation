@@ -14,7 +14,7 @@ description: Simple tutorial to show how you can build your own dVPN desktop cli
 
 Hello friends, in this tutorial we will show how to build the simplest desktop dVPN application based on the Electron framework and will cover the main parts of the dVPN client, to give you an understanding of how they interact.
 
-For those who want's to go straight to the code,  [here is a link](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial)
+The code that is used through this tutorial can be found: [here](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial)
 
 **What we will use:**
 
