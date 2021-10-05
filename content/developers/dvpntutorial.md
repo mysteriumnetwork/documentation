@@ -9,7 +9,7 @@ description: Simple tutorial to show how you can build your own dVPN desktop cli
 
 In this tutorial we will show how to build the simplest desktop dVPN application based on the Electron framework and will cover the main parts of the dVPN client, to give you an understanding of how they interact.
 
-For those who want's to go straight to the code,  [here is a link](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial)
+The code that is used through this tutorial can be found: [here](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial)
 
 **Dependencies:**
 
@@ -25,11 +25,11 @@ For those who want's to go straight to the code,  [here is a link](https://githu
 - mysterium-vpn-js: > 15.1.0 _// Tequila API client_
 - electron-builder: > 22.11.7
 
-## How is client application work
+## Client application workflow
 
 ![Client-Spuervisor-Node-WireGuard](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial/raw/main/docs/scheme.png)
 
-**Every client application consist of these four parts:**
+**Every client application consists of these four parts:**
 
 - **Application** - your client application
 - **Mysterium Node** - client node to interact with Mysterium Network
