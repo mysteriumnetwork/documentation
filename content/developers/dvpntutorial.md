@@ -30,7 +30,7 @@ The code that is used through this tutorial can be found: [here](https://github.
 - mysterium-vpn-js: > 15.1.0 _// Tequila API client_
 - electron-builder: > 22.11.7
 
-## How is client application work
+## Client application workflow
 
 ![Client-Spuervisor-Node-WireGuard](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial/raw/main/docs/scheme.png)
 
