@@ -5,18 +5,13 @@ description: Simple tutorial to show how you can build your own dVPN desktop cli
 
 ![Mysterium Network dVPN tutorial application](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial/raw/main/docs/demo.png)
 
-# To run
-1. `git clone git@github.com:mysteriumnetwork/tequilapi-webapp-tutorial.git`
-2. `yarn install`
-3. `yarn dev` - to see how it looks like 
-
 # Making client application.
 
-Hello friends, in this tutorial we will show how to build the simplest desktop dVPN application based on the Electron framework and will cover the main parts of the dVPN client, to give you an understanding of how they interact.
+In this tutorial we will show how to build the simplest desktop dVPN application based on the Electron framework and will cover the main parts of the dVPN client, to give you an understanding of how they interact.
 
 For those who want's to go straight to the code,  [here is a link](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial)
 
-**What we will use:**
+**Dependencies:**
 
 - NodeJs: >=v16.9.1
 - npm: >=7.21.1
@@ -38,7 +33,7 @@ For those who want's to go straight to the code,  [here is a link](https://githu
 
 - **Application** - your client application
 - **Mysterium Node** - client node to interact with Mysterium Network
-- **Supervisor** - service used to move out from Node any services that need escalation of privileges and also used to control them. Supervisor used only for client applications.
+- **Supervisor** - a service which allows our application to interact with `node` without the need for privilege escalation. Supervisor used only for client applications.
 - **Wireguard** - VPN tunnel
 
 **Typical application startup:**
