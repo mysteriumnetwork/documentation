@@ -34,7 +34,7 @@ The code that is used through this tutorial can be found: [here](https://github.
 
 ![Client-Spuervisor-Node-WireGuard](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial/raw/main/docs/scheme.png)
 
-**Every client application consist of these four parts:**
+**Every client application consists of these four parts:**
 
 - **Application** - your client application
 - **Mysterium Node** - client node to interact with Mysterium Network
