@@ -117,6 +117,29 @@ UPnP and NAT-PNP protocols provide automatic port configuration features for var
 
 UPnP might be convenient, but it adds its potential security issues. It assumes that every device on your local network is trustworthy. So if you happen to get infected by malware that wants to initiate a direct connection with a remote attack, your UPnP router will allow it without question. Such a connection would be much more difficult to open with UPnP disabled.
 
+### Types of NAT
+
+There are two categories of NAT behavior, namely Cone and Symmetric NAT. The crucial difference between them is that the former will use the same port numbers for internal and external transport addresses, while the latter will always use different numbers for each side of the NAT. This will be explained later in more detail.
+
+Besides, there are 3 types of Cone NATs, with varying degrees of restrictions regarding the allowed sources of inbound transmissions. To connect with a local host which is behind a Cone NAT, it’s first required that the local host performs an outbound transmission to a remote one. This way, a dynamic rule will be created for the destination transport address, allowing the remote host to connect back. The only exception is the Full Cone NAT, where a static rule can be created beforehand by an administrator, thanks to the fact that this kind of NAT ignores what is the source transport address of the remote host that is connecting.
+
+
+### Troubleshooting NAT type related issues
+
+#### When your Docker container is behind a Port Restricted Cone NAT
+
+You will still be able to connect with the majority of consumers, but not with those who have Symmetric NAT Routers (which are not that common, fortunately). 
+When you start Docker, a default bridge network (also called bridge) is assigned automatically, and newly-started containers connect to it unless otherwise specified. Unfortunately, it becomes a challenge for Mysterium Network users that are sitting behind a symmetric NAT.
+
+A symmetric NAT is one where all requests from the same internal IP address and port, to a specific destination IP address and port, are mapped to the same external IP address and port. If the same host sends a packet with the same source address and port, but to a different destination, a different mapping is used. Furthermore, only the external host that receives a packet can send a UDP packet back to the internal host thus making it a non-routable combination with Port Restricted NAT type.
+
+If your Docker container is hosted on a VPS Hosting, the host network mode for a container could be used, thus making container’s network stack to be not isolated from the Docker host. Host mode networking can be useful in handling a large range of ports, as it does not require network address translation (NAT).
+
+Enable the host mode by passing `--network=host` flag to the [docker run](https://github.com/mysteriumnetwork/documentation/blob/master/content/node-runners/setup/docker.md#docker-on-linux) command.
+
+Note! The host networking driver only works on Linux hosts, and is not supported on Docker Desktop for Mac or Docker Desktop for Windows.
+
+
 ### TCP/UDP Ports
 
 A **TCP/UDP port** identifies an **application or service** on a machine in a TCP/IP network. On a TCP/IP network, every device must have an IP address that identifies the device which can run **multiple** applications/services.The **port** identifies the **application/service** running on the machine. The use of ports allows computers/devices to run multiple services/applications.
