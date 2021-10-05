@@ -6,15 +6,15 @@ description: Simple tutorial to show how you can build your own dVPN desktop cli
 ![Mysterium Network dVPN tutorial application](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial/raw/main/docs/demo.png)
 
 # To run
-1. `git clode https://...`
+1. `git clone git@github.com:mysteriumnetwork/tequilapi-webapp-tutorial.git`
 2. `yarn install`
 3. `yarn dev` - to see how it looks like 
 
 # Making client application.
 
-Hello friends, in this tutorial we will show how to build a simplest desktop dVPN application based on Electron framework, and will cover main parts of dVPN client, to give you understanding how they interract.
+Hello friends, in this tutorial we will show how to build the simplest desktop dVPN application based on the Electron framework and will cover the main parts of the dVPN client, to give you an understanding of how they interact.
 
-For those who whant's to go straight to the code, [here is a link](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial)
+For those who want's to go straight to the code,  [here is a link](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial)
 
 **What we will use:**
 
@@ -30,7 +30,7 @@ For those who whant's to go straight to the code, [here is a link](https://githu
 - mysterium-vpn-js: > 15.1.0 _// Tequila API client_
 - electron-builder: > 22.11.7
 
-## How do client application work
+## How is client application work
 
 ![Client-Spuervisor-Node-WireGuard](https://github.com/mysteriumnetwork/dvpn-desktop-tutorial/raw/main/docs/scheme.png)
 
@@ -38,31 +38,30 @@ For those who whant's to go straight to the code, [here is a link](https://githu
 
 - **Application** - your client application
 - **Mysterium Node** - client node to interact with Mysterium Network
-- **Supervisor** - service used to move out from Node any services that need escalation of privileges, and also used to controll them. Supervisor used only for client applications.
+- **Supervisor** - service used to move out from Node any services that need escalation of privileges and also used to control them. Supervisor used only for client applications.
 - **Wireguard** - VPN tunnel
 
 **Typical application startup:**
 
 1. Start the Node.
-2. Install & Start Supervisor service(if it not installed yet).
+2. Install & Start Supervisor service(if it has not been installed yet).
 3. Setup connection to the Node Tequila API through the localhost.
 4. Setup connection to the Supervisor through the socket.
 5. Do some application logic...
 
-Each Mysterium client Node is running Tequila API on `localhost:44050` which used for communication and controll. To interact  with this API we will use package `mysterium-vpn-js`. You can see docs for API by opening [localhost:44050/docs](http://localhost:44050/docs) in your browser(when Node working) and by visiting [mysterium-vpn-js client](https://github.com/mysteriumnetwork/mysterium-vpn-js/blob/master/src/tequilapi-client.ts)
-
+Each Mysterium client Node is running Tequila API on `localhost:44050` which is used for communication and control. To interact with this API we will use the package `mysterium-vpn-js`. You can see docs for API by opening [localhost:44050/docs](http://localhost:44050/docs) in your browser(when Node working) and by visiting [mysterium-vpn-js client](https://github.com/mysteriumnetwork/mysterium-vpn-js/blob/master/src/tequilapi-client.ts)
 ## Let's build some simple Electron App
 
 Clone our demo repository to your local machine
 
-1. `git clode https://...`
+1. `git clone git@github.com:mysteriumnetwork/tequilapi-webapp-tutorial.git`
 2. `yarn install`
 3. `yarn dev` - to see how it looks like
 
 ### Structure & main modules
 
-Usually people are building react app with use of `create-react-app` tool which separate Source code from Electron.
-But this aproach has some negative consequences if we want that all our code be written on TypeScript.
+Usually, people are building react app with the use of `create-react-app` tool which separates Source code from Electron.
+But this approach has some negative consequences if we want that all our code to be written on TypeScript.
 That's why we will be using `webkit` & `electron-webkit` wrapper.
 
 From this point our project structure will look like this:
@@ -106,8 +105,8 @@ We use `postinstall` directive to copy Node binaries to our static folder so we 
 
 ### Setting up Electron
 
-First entry point of our application is `src/electron/main.ts` which will run our Electron.
-To create Electron window we use:
+The first entry point of our application is `src/electron/main.ts` which will run our Electron.
+To create an Electron window we use:
 
 ```js
 const win = new BrowserWindow({
@@ -140,7 +139,7 @@ if (isDev) {
 }
 ```
 
-Beside typical stuff we need to setup IPC channels for our Node and Supervisor. And stop Node and disconnect from Supervisor before quit
+Besides typical stuff, we need to setup IPC channels for our Node and Supervisor. And stop Node and disconnect from Supervisor before quit
 
 ```js
   app.on("ready", async () => {
@@ -159,9 +158,9 @@ Beside typical stuff we need to setup IPC channels for our Node and Supervisor. 
 
 ### Mysterium Node & Supervisor
 
-In the `src/electron/node/` we have `mysteriumNode.ts` and `supervisor.ts`. This is our IPC listeners that runs in Electron thread, and which will give our App posibility to run Node and Supervisor. We need this because our renderer process with our app has no access to the system, but electron process has.
+In the `src/electron/node/` we have `mysteriumNode.ts` and `supervisor.ts`. This is our IPC listeners that runs in the Electron thread, and which will give our App the possibility to run Node and Supervisor. We need this because our renderer process with our app has no access to the system, but the electron process has.
 
-We will communiate with them using IPC clients in `src/shared/ipc` folder.
+We will communicate with them using IPC clients in `src/shared/ipc` folder.
 
 In `mysteriumNode.ts` we have 3 IPC methods: start, stop and kill. If you need Import/Export identity methods you can find them [here](https://github.com/mysteriumnetwork/mysterium-vpn-desktop/blob/master/src/main/node/mysteriumNode.ts).
 
@@ -277,7 +276,7 @@ In `mysteriumNode.ts` we have 3 IPC methods: start, stop and kill. If you need I
  export const mysteriumNode = new MysteriumNode()
 ```
 
-In `supervisor.ts` we have 4 IPC methods: istall, upgrade, connect, disconnect. During Supervisor instalation user will need to enter Admin password as it will be run with system privileges.
+In `supervisor.ts` we have 4 IPC methods: install, upgrade, connect, disconnect. During Supervisor installation user will need to enter Admin password as it will be run with system privileges.
 
 ```js
 function mystSockPath(): string {
@@ -378,17 +377,17 @@ function mystSockPath(): string {
 
 ### Main App
 
-Our application is very simple and consists from few views components and api to work with Node Tequila API.
+Our application is very simple and consists of a few views components and API to work with Node Tequila API.
 
-Let's discuss proccess of interaction with Node and creating VPN tunnel with some exit node:
+Let's discuss the process of interaction with Node and creating VPN tunnel with some exit nodes:
 
-1. We need to create identity, which looks something like this `0x142362c0a179da288903f21adcba24686c01e654` and which is basically user id in Mysterium Network
-2. To use identity we need to unlock it(with password) and register in the Registry service of Mysterium Network.
-3. Get list of proposals using some filtration by country, connection type, price, speed, etc. Proposal is basically information about provider(exit node) which you able to connect.
+1. We need to create an identity, which looks something like this `0x142362c0a179da288903f21adcba24686c01e654` and which is basically user id in Mysterium Network
+2. To use identity we need to unlock it(with a password) and register in the Registry service of Mysterium Network.
+3. Get a list of proposals using some filtration by country, connection type, price, speed, etc. The proposal is information about the provider(exit node) to which you are able to connect.
 4. Connect to one of the providers and all traffic will be routed through him.
 5. Disconnect from the provider to stop route traffic through him.
 
-We will not be using any redux, mobx, etc. Instead we will store state in the `api.ts` to make app simpler.
+We will not be using any redux, mobx, etc. Instead, we will store state in the `api.ts` to make the app simpler.
 
 ```js
 let tequilapi = new TequilapiClientFactory(
@@ -523,10 +522,9 @@ export async function ConnectRandom(consumerId: string): Promise<any> {
 }
 ```
 
-We use steps here instead of router to just update App view on State update in the api.
-On startup we calling `Startup()` and `Preload()` to start the Node and the Supervisor and preload identities list with current connection status(if we realod the app during work)
+We use steps here instead of a router to just update the App view on State update in the API. On startup, we calling `Startup()` and `Preload()` to start the Node and the Supervisor and preload identities list with current connection status(if we reload the app during work)
 
-After that all prety simple -> User select identity(or create new), unlock it and connect to random Node.
+After that, all pretty simple -> User select identity(or create new), unlock it, and connect to random Node.
 
 ```js
 import {
@@ -603,4 +601,5 @@ export default App;
 ```
 
 ## Summarise
-As you can see building dVPN application for Mysterium Network is simple enough. Just few files for Node and Supervisor integration, Tequila API to controll the Node and that's all. 
+
+As you can see building dVPN application for Mysterium Network is simple enough. Just a few files for Node and Supervisor integration, Tequila API to control the Node and that's all.
