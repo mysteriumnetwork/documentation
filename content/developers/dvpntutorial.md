@@ -37,7 +37,7 @@ The code that is used through this tutorial can be found: [here](https://github.
 **Every client application consists of these four parts:**
 
 - **Application** - your client application
-- **Mysterium Node** - client node to interact with Mysterium Network
+- **Mysterium Node** - node client to interact with Mysterium Network
 - **Supervisor** - service used to move out from Node any services that need escalation of privileges and also used to control them. Supervisor used only for client applications.
 - **Wireguard** - VPN tunnel
 
