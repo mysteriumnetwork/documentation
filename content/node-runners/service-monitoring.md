@@ -20,6 +20,6 @@ go to your node's dashboard where you will find a "Check connection" button.
   <img src="../images/node-ui/check-connection-button.png" alt="Check connection button" class="screenshot" />
 </div>
 
-This manual connection check will attempt to connect to your OpenVPN and Wireguard services.
+This manual connection check will attempt to connect to your Wireguard service.
 
 *There are no limits for how many times you can perform this check, however manually triggered connection checks do not perform data transfers.*
