@@ -128,12 +128,11 @@ Besides, there are 3 types of Cone NATs, with varying degrees of restrictions re
 
 #### When your Docker container is behind a Port Restricted Cone NAT
 
-You will still be able to connect with the majority of consumers, but not with those who have Symmetric NAT Routers (which are not that common, fortunately). 
-When you start Docker, a default bridge network (also called bridge) is assigned automatically, and newly-started containers connect to it unless otherwise specified. Unfortunately, it becomes a challenge for Mysterium Network users that are sitting behind a symmetric NAT.
+You will still be able to make a P2P connection with the majority of consumers, but not with those who have Symmetric NAT Routers (which are not that common, fortunately). When you start Docker, a default bridge network (also called bridge) is created automatically, and newly-started containers connect to it unless otherwise specified. Unfortunately, it becomes a challenge for Mysterium Network users that are sitting behind a symmetric NAT.
 
 A symmetric NAT is one where all requests from the same internal IP address and port, to a specific destination IP address and port, are mapped to the same external IP address and port. If the same host sends a packet with the same source address and port, but to a different destination, a different mapping is used. Furthermore, only the external host that receives a packet can send a UDP packet back to the internal host thus making it a non-routable combination with Port Restricted NAT type.
 
-If your Docker container is hosted on a VPS Hosting, the host network mode for a container could be used, thus making container’s network stack to be not isolated from the Docker host. Host mode networking can be useful in handling a large range of ports, as it does not require network address translation (NAT).
+If your Docker container is hosted on a VPS Hosting, the host network mode for a container could be used thus making container’s network stack to become not isolated from the Docker host. Host mode networking can be useful in handling a large range of ports, as it does not require network address translation.
 
 Enable the host mode by passing `--network=host` flag to the [docker run](https://github.com/mysteriumnetwork/documentation/blob/master/content/node-runners/setup/docker.md#docker-on-linux) command.
 
