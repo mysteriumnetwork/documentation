@@ -117,6 +117,13 @@ UPnP and NAT-PNP protocols provide automatic port configuration features for var
 
 UPnP might be convenient, but it adds its potential security issues. It assumes that every device on your local network is trustworthy. So if you happen to get infected by malware that wants to initiate a direct connection with a remote attack, your UPnP router will allow it without question. Such a connection would be much more difficult to open with UPnP disabled.
 
+### Types of NAT
+
+There are two categories of NAT behavior, namely Cone and Symmetric NAT. The crucial difference between them is that the former will use the same port numbers for internal and external transport addresses, while the latter will always use different numbers for each side of the NAT.
+
+Besides, there are 3 types of Cone NATs, with varying degrees of restrictions regarding the allowed sources of inbound transmissions. To connect with a local host which is behind a Cone NAT, it’s first required that the local host performs an outbound transmission to a remote one. This way, a dynamic rule will be created for the destination transport address, allowing the remote host to connect back. The only exception is the Full Cone NAT, where a static rule can be created beforehand by an administrator, thanks to the fact that this kind of NAT ignores what is the source transport address of the remote host that is connecting.
+
+
 ### TCP/UDP Ports
 
 A **TCP/UDP port** identifies an **application or service** on a machine in a TCP/IP network. On a TCP/IP network, every device must have an IP address that identifies the device which can run **multiple** applications/services.The **port** identifies the **application/service** running on the machine. The use of ports allows computers/devices to run multiple services/applications.
@@ -144,15 +151,6 @@ It also might be that the default firewall forward policy is set to `DROP`. In t
 ```bash
 iptables -P FORWARD ACCEPT
 ```
-
-## Running the node behind a Mobile Router
-
-If you are planning to run the node behind the Mobile Router (cellular network), then you need to take into account the following:
-
-1. check that "Cone NAT" is used under "NAT settings" of the Router
-2. check the "Firewall" settings of the Router, that it's not blocking the traffic
-3. check your "IP filter" settings, that there are no special rules for the packets
-4. check your "MAC Address Filter" settings, that there are no special rules for the device you are running node on
 
 ## Forgot password
 
