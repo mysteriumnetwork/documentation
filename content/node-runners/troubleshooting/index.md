@@ -124,29 +124,6 @@ There are two categories of NAT behavior, namely Cone and Symmetric NAT. The cru
 Besides, there are 3 types of Cone NATs, with varying degrees of restrictions regarding the allowed sources of inbound transmissions. To connect with a local host which is behind a Cone NAT, it’s first required that the local host performs an outbound transmission to a remote one. This way, a dynamic rule will be created for the destination transport address, allowing the remote host to connect back. The only exception is the Full Cone NAT, where a static rule can be created beforehand by an administrator, thanks to the fact that this kind of NAT ignores what is the source transport address of the remote host that is connecting.
 
 
-### Troubleshooting NAT type related issues
-
-#### When your Docker container is behind a Port Restricted Cone NAT
-
-You will still be able to make a P2P connection with the majority of consumers, but not with those who have Symmetric NAT Routers (which are not that common, fortunately). When you start Docker, a default bridge network (also called bridge) is created automatically, and newly-started containers connect to it unless otherwise specified. Unfortunately, it becomes a challenge for Mysterium Network users that are sitting behind a symmetric NAT.
-
-A symmetric NAT is one where all requests from the same internal IP address and port, to a specific destination IP address and port, are mapped to the same external IP address and port. If the same host sends a packet with the same source address and port, but to a different destination, a different mapping is used. Furthermore, only the external host that receives a packet can send a UDP packet back to the internal host thus making it a non-routable combination with Port Restricted NAT type.
-
-If your Docker container is hosted on a VPS Hosting, the host network mode for a container could be used thus making container’s network stack to become not isolated from the Docker host. Host mode networking can be useful in handling a large range of ports, as it does not require network address translation.
-
-Enable the host mode by passing `--network=host` flag to the [docker run](https://github.com/mysteriumnetwork/documentation/blob/master/content/node-runners/setup/docker.md#docker-on-linux) command.
-
-Note! The host networking driver only works on Linux hosts, and is not supported on Docker Desktop for Mac or Docker Desktop for Windows.
-
-#### When your node is behind a Mobile Router
-
-If you are planning to run the node behind the Mobile Router (cellular network), then you need to take into account the following:
-
-- Check that "Cone NAT" is used instead of "Symmetric NAT" under "NAT settings/NAT type" of the Router;
-- Check the "Firewall" settings of the Router, that it's not blocking the traffic;
-- Check your "IP filter" settings, that there are no special rules for the packets;
-- Check your "MAC Address Filter" settings, that there are no special rules for the device you are running node on.
-
 ### TCP/UDP Ports
 
 A **TCP/UDP port** identifies an **application or service** on a machine in a TCP/IP network. On a TCP/IP network, every device must have an IP address that identifies the device which can run **multiple** applications/services.The **port** identifies the **application/service** running on the machine. The use of ports allows computers/devices to run multiple services/applications.
