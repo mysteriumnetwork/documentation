@@ -131,7 +131,7 @@ The most restrictive types of NAT are Port Restricted Cone and Symmetric NAT. In
 
 You will still be able to make a P2P connection with the majority of consumers, but not with those who have Symmetric NAT Routers (which are not that common, fortunately).
 
-A symmetric NAT is one where all requests from the same internal IP address and port, to a specific destination IP address and port, are mapped to the same external IP address and port. If the same host sends a packet with the same source address and port, but to a different destination, a different mapping is used. Furthermore, only the external host that receives a packet can send a UDP packet back to the internal host thus making it a non-routable combination with Port Restricted NAT type. 
+A symmetric NAT is one where all requests from the same internal IP address and port, to a specific destination IP address and port, are mapped to the same external IP address and unpredicted port. If the same host sends a packet with the same source address and port, but to a different destination, a different mapping is used. Furthermore, only the external host that receives a packet can send a UDP packet back to the internal host thus making it a non-routable combination with Port Restricted NAT type. 
 
 The solution to this problem will involve you adjusting Mysterium config file and configuring your router. 
 
