@@ -138,6 +138,14 @@ Enable the host mode by passing `--network=host` flag to the [docker run](https:
 
 Note! The host networking driver only works on Linux hosts, and is not supported on Docker Desktop for Mac or Docker Desktop for Windows.
 
+#### When your node is behind a Mobile Router
+
+If you are planning to run the node behind the Mobile Router (cellular network), then you need to take into account the following:
+
+- Check that "Cone NAT" is used instead of "Symmetric NAT" under "NAT settings/NAT type" of the Router;
+- Check the "Firewall" settings of the Router, that it's not blocking the traffic;
+- Check your "IP filter" settings, that there are no special rules for the packets;
+- Check your "MAC Address Filter" settings, that there are no special rules for the device you are running node on.
 
 ### TCP/UDP Ports
 
@@ -166,15 +174,6 @@ It also might be that the default firewall forward policy is set to `DROP`. In t
 ```bash
 iptables -P FORWARD ACCEPT
 ```
-
-## Running the node behind a Mobile Router
-
-If you are planning to run the node behind the Mobile Router (cellular network), then you need to take into account the following:
-
-1. check that "Cone NAT" is used under "NAT settings" of the Router
-2. check the "Firewall" settings of the Router, that it's not blocking the traffic
-3. check your "IP filter" settings, that there are no special rules for the packets
-4. check your "MAC Address Filter" settings, that there are no special rules for the device you are running node on
 
 ## Forgot password
 
