@@ -123,6 +123,83 @@ There are two categories of NAT behavior, namely Cone and Symmetric NAT. The cru
 
 Besides, there are 3 types of Cone NATs, with varying degrees of restrictions regarding the allowed sources of inbound transmissions. To connect with a local host which is behind a Cone NAT, it’s first required that the local host performs an outbound transmission to a remote one. This way, a dynamic rule will be created for the destination transport address, allowing the remote host to connect back. The only exception is the Full Cone NAT, where a static rule can be created beforehand by an administrator, thanks to the fact that this kind of NAT ignores what is the source transport address of the remote host that is connecting.
 
+The most restrictive types of NAT are Port Restricted Cone and Symmetric NAT. In case you run a Mysterium node behind one of them, it will require some changes to make it accessible to more users.
+
+### Troubleshooting NAT type related issues
+
+#### When your node is behind a Port Restricted Cone/Symmetric NAT
+
+You will still be able to make a P2P connection with the majority of consumers, but not with those who have Symmetric NAT Routers (which are not that common, fortunately).
+
+A symmetric NAT is one where all requests from the same internal IP address and port, to a specific destination IP address and port, are mapped to the same external IP address and unpredicted port. If the same host sends a packet with the same source address and port, but to a different destination, a different mapping is used. Furthermore, only the external host that receives a packet can send a UDP packet back to the internal host thus making it a non-routable combination with Port Restricted NAT type. 
+
+The solution to this problem will involve you adjusting Mysterium config file and configuring your router. 
+
+##### Enable UPnP
+
+Many recent routers support a feature called UPnP. When it's enabled, hosts in the LAN can request the router to automatically perform needed port conversions. You will need to toggle it on to allow Mysterium to make all the changes required.
+
+Navigate to [NodeUI](https://docs.mysterium.network/node-runners/node-ui/) and change the ordering of NAT traversal methods to prioritize UPnP - `"upnp,manual,holepunching"`. To make the changes effective - restart your node. Depending on the type of the router, it might require a restart too. 
+
+Go to my.mysterium.network to trigger a [monitoring check manually](https://docs.mysterium.network/node-runners/service-monitoring/#how-to-trigger-a-connection-check). It will attempt to connect to your Wireguard service. If monitoring agent succeed connecting to your node, the node status will switch to online within 15 minutes.
+
+If UPnP feature is not available or it's not working as intended, manually configuring port forwarding on the router is required (see below).
+
+##### Enable Port Forwarding
+
+Navigate to [NodeUI](https://docs.mysterium.network/node-runners/node-ui/) and change the ordering of NAT traversal methods to prioritize port forwarding - `"manual,upnp,holepunching"`. The default UDP port range could be used (10000:60000) or specify another more suitable range.
+
+Log in to your router and manually configure it to do port-forwarding for UDP ports range (default: 10000:60000). The port-forwarding configuration page will ask you for a port range (eg. Start Port, End Port). Set the Start Port to 10000 and End to 60000. It will also ask you for the IP address of the node host that the data should be sent to (may be called LAN IP, Local IP, or Private IP) and the protocol type to use (set it to UDP).
+
+Unfortunately, it is not possible to offer step-by-step instructions here as every router has a different interface and configuration layout but you may check [the following guide](https://www.noip.com/support/knowledgebase/general-port-forwarding-guide/) for general understanding. To make the changes effective - restart your node. Depending on the type of the router, it might require a restart too. 
+
+Navigate to my.mysterium.network to trigger a [monitoring check manually](https://docs.mysterium.network/node-runners/service-monitoring/#how-to-trigger-a-connection-check). It will attempt to connect to your Wireguard service. If monitoring agent succeed connecting your node, the node status will switch to online within 15 minutes.
+
+##### Enable Port Forwarding for the Docker container running a node
+
+It requires steps described in the [previous section]() and several extra flags (see below) passed to the [`docker run` command (based on the host type)](https://docs.mysterium.network/node-runners/setup/docker/).
+
+Range of UDP listen ports used for connections (default: "10000:60000"). We recommend to use a smaller range, e.g. `--udp.ports=59850:60000`
+Map UDP port range e.g. 59850:60000 in the container to port range e.g. 59850:60000 on the Docker host: `-p 59850-60000:59850-60000`
+
+
+In the end, it would look like this:
+
+For Linux users:
+
+```bash
+docker run --cap-add NET_ADMIN -d -p 4449:4449 -p 59850-60000:59850-60000 --name myst -v myst-data:/var/lib/mysterium-node mysteriumnetwork/myst:latest --udp.ports=59850:60000 service --agreed-terms-and-conditions
+```
+For Windows users:
+
+```bash
+docker run --cap-add NET_ADMIN -d -p 4449:4449 -p 59850-60000:59850-60000 --name myst -v myst-data:/var/lib/mysterium-node mysteriumnetwork/myst:latest --udp.ports=59850:60000 service --agreed-terms-and-conditions
+```
+For Mac users:
+
+```bash
+docker run --cap-add NET_ADMIN -d -p 4449:4449 -p 59850-60000:59850-60000 --name myst -v myst-data:/var/lib/mysterium-node --device /dev/net/tun:/dev/net/tun mysteriumnetwork/myst:latest --udp.ports=59850:60000 service --agreed-terms-and-conditions
+```
+To make the changes effective - restart your container. Depending on the type of the router, it might require a restart too. 
+
+#### When your Docker container is running on a VPS hosting and it's behind a Port Restricted Cone NAT
+
+If your Docker container is hosted on a VPS Hosting, the host network mode for a container could be used thus making container’s network stack to become not isolated from the Docker host. Host mode networking can be useful in handling a large range of ports, as it does not require network address translation.
+
+When you start Docker, a default bridge network (also called bridge) is created automatically, and newly-started containers connect to it unless otherwise specified. Unfortunately, it becomes a challenge for Mysterium Network users that are sitting behind a symmetric NAT.
+
+Enable the host mode by passing `--network=host` flag to the [docker run](https://github.com/mysteriumnetwork/documentation/blob/master/content/node-runners/setup/docker.md#docker-on-linux) command.
+
+Note! The host networking driver only works on Linux hosts, and is not supported on Docker Desktop for Mac or Docker Desktop for Windows.
+
+#### When your node is behind the Mobile Router (extra tips)
+
+If you are running the node behind the Mobile Router (cellular network), then you need to take into account the following:
+
+- Check that "Cone NAT" is used instead of "Symmetric NAT" under "NAT settings/NAT type" of the Router;
+- Check the "Firewall" settings of the Router, that it's not blocking the traffic;
+- Check your "IP filter" settings, that there are no special rules for the packets;
+- Check your "MAC Address Filter" settings, that there are no special rules for the device you are running node on.
 
 ### TCP/UDP Ports
 
