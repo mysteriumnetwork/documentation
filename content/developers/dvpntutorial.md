@@ -55,7 +55,7 @@ Clone our demo repository to your local machine
 
 ### Structure & main modules
 
-Usually, people are building react app with the use of `create-react-app` tool which separates Source code from Electron.
+Usually, people build react apps using the `create-react-app` tool which separates Source code from Electron.
 But this approach has some negative consequences if we want that all our code to be written on TypeScript.
 That's why we will be using `webkit` & `electron-webkit` wrapper.
 
