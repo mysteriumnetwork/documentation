@@ -157,7 +157,7 @@ Navigate to my.mysterium.network to trigger a [monitoring check manually](https:
 
 ##### Enable Port Forwarding for the Docker container running a node
 
-It requires steps described in the [previous section]() and several extra flags (see below) passed to the [`docker run` command (based on the host type)](https://docs.mysterium.network/node-runners/setup/docker/).
+It requires steps described in the [previous section](https://docs.mysterium.network/node-runners/troubleshooting/#enable-port-forwarding) and several extra flags (see below) passed to the [`docker run` command (based on the host type)](https://docs.mysterium.network/node-runners/setup/docker/).
 
 Range of UDP listen ports used for connections (default: "10000:60000"). We recommend to use a smaller range, e.g. `--udp.ports=59850:60000`
 Map UDP port range e.g. 59850:60000 in the container to port range e.g. 59850:60000 on the Docker host: `-p 59850-60000:59850-60000`
