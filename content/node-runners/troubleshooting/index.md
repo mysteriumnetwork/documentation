@@ -266,3 +266,7 @@ then run:
 ```bash
 myst reset
 ```
+
+#### Set new password
+
+Open your Node UI in your browser (must be on the local network, this won't work through a reverse proxy) and enter your new password on the set-up screen.
