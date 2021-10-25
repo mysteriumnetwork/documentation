@@ -1,31 +1,31 @@
 ---
 title: Node Management with TequilAPI Tutorial
-description: Simple web app that will show us how we can use TequilAPI
+description: Creating a simple web app that shows us how to use TequilAPI
 ---
 
-In this tutorial, we are going to create a web app that will allow us to manage and see the stats of multiple nodes. We will use the [mysterium-vpn-js](https://github.com/mysteriumnetwork/mysterium-vpn-js) npm package to interact with our nodes and manage them.
+In this tutorial, we are going to make a web app that allows us to manage and view the stats of multiple nodes. We will use the [mysterium-vpn-js](https://github.com/mysteriumnetwork/mysterium-vpn-js) npm package to interact with our nodes and manage them.
 
-For those who whant's to go straight to the code, [here is a link](https://github.com/Guillembonet/tequilapi-webapp-tutorial)
+For those who'd like to skip directly to the code, [here is a link](https://github.com/Guillembonet/tequilapi-webapp-tutorial)
 
 Our web app will consist of 2 parts:
-- A react application
+- A React application
 - A web proxy
 
-We need to use a web proxy due to CORS limitations. In the future, if we can set the CORS origin whitelist in our nodes, we will no longer need it. These limitations are set for security reasons.
+We need to use a web proxy due to CORS limitations. In future, if we can set the CORS origin whitelist within our nodes, we will no longer need it. These limitations are set for security reasons.
 
-To follow this tutorial you will need some requirements:
+To follow this tutorial you first need to meet some requirements:
 - Node.js >= 14.0
 - npm
 - yarn
-- Mysterium node port 4449 forwarded in our router
+- Mysterium node port 4449 forwarded in your router
 
-We will start by building the proxy as it provides a base for our web app. We are going to use node.js with typescript to develop it.
+Let's start by building the proxy, as it provides a base for our web app. We are going to use node.js with typescript to develop it.
 
 ## Proxy creation
 
-1. Create a new directory called `proxy` where we are going to put the proxy code.
+1. Create a new directory called `proxy` where we will place the proxy code.
 
-2. Run `yarn init` inside the proxy directory to start a new project, you can use the default values.
+2. Run `yarn init` inside the proxy directory to start a new project. You can use the default values.
 
 3. Install dependencies using `yarn add @types/node typescript` and `yarn add -D ts-node`.
 
@@ -33,7 +33,7 @@ We will start by building the proxy as it provides a base for our web app. We ar
 
 5. Create an `index.ts` file.
 
-6. We will start adding some code! We are just going to use default libraries. To create a proxy we will need a server that listens to the requests, forwards them, and forwards the reply back to us with the correct CORS headers. To create the server we will type:
+6. Now let's add some code! We can use default libraries. To create a proxy we will need a server that listens to the requests and forwards them, and then forwards the reply back to us with the correct CORS headers. To create the server we type:
 
 ```ts
 import { createServer, IncomingMessage, request, ServerResponse } from 'http';
@@ -46,7 +46,7 @@ function onRequest(req: IncomingMessage, res: ServerResponse) {
 
 ```
 
-7. Then we need to transform our target URL to the correct format. We will call the API using this URL format: `http://localhost:5000/proxy/<ip>/<port>/tequilapi/<path>` and the proxy will transform it to `http://<ip>:<port>/tequilapi/<path>`. To do this transformation we can use the following code:
+7. Then we need to transform our target URL into the correct format. We can call the API using this URL format: `http://localhost:5000/proxy/<ip>/<port>/tequilapi/<path>` and the proxy will transform it to `http://<ip>:<port>/tequilapi/<path>`. To do this transformation we can use the following code:
 
 ```ts
   let url = req.url?.split('/')
@@ -61,9 +61,9 @@ function onRequest(req: IncomingMessage, res: ServerResponse) {
   let target_port = url![3]
   let target_path = '/' + url!.slice(4).join('/')
 ```
-We could add more validity checks to make sure that the URL we are getting is correct, but for now, we will keep it simple.
+We could add more validity checks to make sure that the URL we are getting is correct, but for now, we'll keep it simple.
 
-8. We now want to forward the request to our node, and then forward the response back as our API response but modifying some headers to avoid the CORS issues. To do so we can use this code:
+8. We now want to forward the request to our node, and then forward the response back as our API response while modifying some headers to avoid the CORS issues. To do this, we can use this code:
 
 ```ts
   let cors_headers = {
@@ -93,7 +93,7 @@ We could add more validity checks to make sure that the URL we are getting is co
   });
 ```
 
-9. Also, we should add some code to handle request errors, this way, if the address we are given doesn't work we will notify it as an API response instead of crashing:
+9. We should also add some code to handle request errors. This way, if the address we are given doesn't work, it will notify as an API response instead of crashing:
 
 ```ts
   proxy.on('error', function(err) {
@@ -104,9 +104,9 @@ We could add more validity checks to make sure that the URL we are getting is co
   });
 ```
 
-10. Finally, we will also need to answer the CORS preflight requests. A CORS preflight request is a CORS request that checks to see if the CORS protocol is understood and a server is aware of using specific methods and headers.  
- For example, a client might be asking a server if it would allow a DELETE request, before sending a DELETE request, by using a preflight request. You can learn more about them using this [link](https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request).  
- To answer them saying that everything is okay we should use this code at the start of the onRequest function:
+10. Finally, we need to answer the CORS preflight requests. A CORS preflight request is a CORS request that checks to see if the CORS protocol is understood and a server is aware of using specific methods and headers.  
+ For example, the client might be asking a server if it would allow a DELETE request before actually sending one, by using a preflight request. You can learn more about them using this [link](https://developer.mozilla.org/en-US/docs/Glossary/Preflight_request).  
+ To answer the client that everything is OK, we can use this code at the start of the onRequest function:
 
 ```ts
   if (req.method === 'OPTIONS') {
@@ -128,16 +128,16 @@ We completed our proxy! You can run it by using `yarn ts-node ./index.ts` or by 
 ```
 to the root of `package.json` and using `yarn dev`.
 
-## Webapp creation
+## Web app creation
 
-1. Let's start by going to the root of our project and running the create-react-app utility with the typescript option using `npx create-react-app --template typescript frontend`. This will create a new react project called frontend.
+1. Let's start by going to the root of our project and running the create-react-app utility with the typescript option using `npx create-react-app --template typescript frontend`. This will create a new react project called "frontend".
 
 2. Now, to install our dependencies we will use:
  - `yarn add mysterium-vpn-js`: to install the mysterium-vpn-js npm package
  - `yarn add @material-ui/core`: for style, so our web app is not ugly.
  - `yarn add @material-ui/icons`: for the refresh, start, and stop icons.
 
-3. We will create a very simple web app that will allow us to add nodes, see some stats and be able to turn the wireguard service on and off. To do so we will just modify the `App.tsx` file. We will start creating some variables to store our data. First, we will create a list of all our nodes addresses, a map to store the data of each node, and some helper functions to manipulate them:
+3. This very simple web app will allow us to add nodes, view some stats and be able to turn the Wireguard service on and off. To achieve this, we will modify the `App.tsx` file. We can start creating some variables to store our data. First, we will create a list of all our nodes addresses, a map to store the data of each node, and some helper functions to manipulate them:
 
 ```ts
   const [nodes, setNodes] = useState<Map<string,nodeData>>(new Map())
@@ -152,7 +152,7 @@ to the root of `package.json` and using `yarn dev`.
   }
 ```
 
-4. Let's also create some state variables for our inputs of IP, port, and password, which is the data we need to connect to our nodes. Then we can also add text fields in our Html code for modifying the variables, as well as a button to trigger the addition of the node:
+4. Let's also create some state variables for our inputs of IP, port, and password, which is the data we need to connect to our nodes. Then we can also add text fields in our HTML code for modifying the variables, as well as a button to trigger the addition of the node:
 
 ```ts
   const [ipField, setIpField] = useState('')
@@ -168,7 +168,7 @@ to the root of `package.json` and using `yarn dev`.
   </Box>
 ```
 
-5. For a nice autocomplete experience, we can create a return type for the node data, this is all the data we will save in our nodes Map created in step 3:
+5. For a nice autocomplete experience, we can create a return type for the node data. This is all the data we will save in our nodes Map created in Step 3:
 
 ```ts
 interface nodeData {
@@ -181,7 +181,7 @@ interface nodeData {
 } 
 ```
 
-6. Now, let's create some functions to add or update a new node, this function will be triggered by our button:
+6. Now, let's create some functions to add or update a new node. This function will be triggered by our button:
 
 ```ts
   function addOrUpdateNode(ip: string, port: string, password?: string) {
@@ -246,7 +246,7 @@ interface nodeData {
   }
 ```
 
-7. Let's also add functions to start and stop the node. We will always use our first identity for starting, and the first service for stopping. This will be enough for the default node configuration:
+7. Let's also add functions to start and stop the node. We will always use our first identity for starting, and the first service for stopping. This is enough for the default node configuration:
 
 ```ts
   async function startNode(address: string) {
@@ -283,7 +283,7 @@ interface nodeData {
   }
 ```
 
-8. Now we will create the table for displaying the data, we can do it with Html code and a variable that will transform our node's data into table rows. We will also add a refresh button to trigger the update of all the nodes data:
+8. Now let's create the table for displaying the data. We can do it with HTML code and a variable that will transform our node's data into table rows. We will also add a refresh button to trigger the update of all the nodes data:
 
 ```tsx
   const nodesList = nodesKeys.map((key, i) => {
@@ -350,9 +350,9 @@ interface nodeData {
   }
 ```
 
-10. Now we have a working web app that can see node's data, and start or stop the service. There is only one thing that is going to bother us, which is that when we refresh the page all of our added nodes are reset and we have to add them again.  
-To mitigate this problem we can persist the data in the webpage local storage. To do it we will use some UseEffect hooks, which will be called when we update our data to save it, and when we load our page to retrieve the data if there is some saved.  
-We will also use the hooks to check if no API is initialized, which would mean that nodes data has just been retrieved from local storage, and therefore we need to refresh all the data to update it and reload the clients.
+10. Now we have a working web app that can see node data, and start or stop the service. There is only one thing that is going to bother us; when we refresh the page, all of our added nodes are reset and we have to add them again.  
+To mitigate this problem, we need to ensure the data persists in the webpage's local storage. We can employ some UseEffect hooks, which will be called when we update our data to save it, and when we load our page to retrieve the data if there is some saved.  
+We will also use the hooks to check if no API is initialized, which would mean that the nodes' data has just been retrieved from local storage, and therefore we need to refresh all the data to update it and reload the clients.
 
 ```ts
   // Retrieve data from local storage
@@ -380,7 +380,7 @@ We will also use the hooks to check if no API is initialized, which would mean t
   }, [nodesKeys]);
 ```
 
-11. Another problem we have now is that the client used to call the API is not persisted in storage, but we have enough information to recreate it. We will create a function to do so and we will call it in the `getNodeData` function if the client is not created:
+11. Another problem we now have is that the client used to call the API has not persisted in storage, but we have enough information to recreate it. We will create a function to do this, and we will call it in the `getNodeData` function if the client is not created:
 
 ```ts
   async function checkNodeAPI(nodeApi: TequilapiClient | null, ip: string, port: string, token: string): Promise<TequilapiClient> {
@@ -409,9 +409,9 @@ Will become:
   }
 ```
 
-We have finally completed our management web app! Many improvements could be made, but I hope this guide provided inspiration and a good building base for your projects using the node's tequila API!
+We have finally completed our node management web app! Many improvements could be made, but I hope this guide provides inspiration and a good foundation for your future projects which use the node's TequilAPI!
 
-To make running both projects easier we can add this line in the `package.json` scripts of the frontend project:
+To make the running of both projects easier, we can add this line in the `package.json` scripts of the frontend project:
 
 ```json
 "dev": "yarn --cwd ../proxy dev & yarn start"
