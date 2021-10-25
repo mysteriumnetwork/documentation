@@ -36,6 +36,6 @@ module.exports = {
   ],
   Resources: [
     "resources/faq",
-    "[MMN](https://testnet2.mysterium.network)"
+    "[MMN](https://my.mysterium.network)"
   ]
 }
