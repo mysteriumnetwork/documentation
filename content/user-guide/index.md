@@ -39,7 +39,7 @@ sudo -E bash -c "$(curl -s https://raw.githubusercontent.com/mysteriumnetwork/no
 ```
 
 In addition to downloading and installing our Node using either of these commands will also
-install additional required dependencies like WireGuard and OpenVPN if you don't have them already.
+install additional required dependencies like WireGuard if you don't have them already.
 
 ### Configure the services
 
