@@ -99,7 +99,9 @@ After you make changes to your service configuration file, use systemctl to intr
 
 **Note!**
 
-* `--wireguard.listen.ports` & `--p2p.listen.ports*` has been deprecated starting from the Testnet3+, use above flag to manually set range of listen ports.
+`--wireguard.listen.ports` & `--p2p.listen.ports` has been deprecated starting from the Testnet3+, use above flag to manually set range of listen ports.
+
+### Forward ports in your router
 
 A summary of the steps to setup a port forward in your router are:
 
