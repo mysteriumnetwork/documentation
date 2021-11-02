@@ -9,12 +9,12 @@ MYST is the native utility token at the heart of Mysterium. It will power the st
 
 Mysterium’s Tokenomics 2.0 model will create new opportunities for both node runners and token holders alike. Soon you’ll be able to stake your MYST to run a node, or add your tokens to the Mysterium Delegation Pool, to earn rewards in DAI stablecoin. 
 
-#### Tokenomics 2.0 - Powered by the IQ Protocol
+### Tokenomics 2.0 - Powered by the IQ Protocol
 
 The [IQ Protocol](https://parsiq.net/iqprotocol.pdf) is a groundbreaking solution that brings Mysterium Tokenomics 2.0 to life. It’s designed to provide a completely risk-free environment for Mysterium delegators and renters. [Read about it here](https://mysterium.network/blog/mysterium-partners-with-parsiq-for-myst-tokenomics-2-0/).
 
 
-#### MYST Tokenomics 1.0
+### MYST Tokenomics 1.0
 
 ##### Purpose:
 
@@ -64,7 +64,7 @@ Mysterium team hasn’t collected information except for email addresses from co
 - The integration of payments in MYST will create and maintain demand for our tokens, so we expect an increase in trading volume, token price and overall liquidity in the main markets. No buybacks or burning of tokens are planned.
 - Mysterium Team will not manipulate the market to artificially inflate or deflate the price or influence the behaviour of the market to gain financial benefits.
 
-#### Token migration
+### Token migration
 
 Already hodl MYST? Then you’ve come to the right place. Mysterium has started upgrading its token to MYSTv2.  
 
