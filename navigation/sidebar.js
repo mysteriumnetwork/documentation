@@ -36,6 +36,7 @@ module.exports = {
   ],
   Resources: [
     "resources/faq",
+    "resources/myst-token",
     "[MMN](https://my.mysterium.network)"
   ]
 }
