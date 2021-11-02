@@ -48,6 +48,7 @@ In May 2017 a token sale was performed on BitcoinSuisse. The token issued during
 Part of MYST supply was reserved for the future as an additional fundraising mechanism for the Mysterium network project to continue development. Tokens reserved for future funding were locked for 12 months, after which they were sent to a multi-sig-wallet belonging to Mysterium Foundation. You can find the detailed tokens allocation in our whitepaper.
 
 ##### KYC compliance:
+
 Mysterium team hasn’t collected information except for email addresses from contributors.Everyone interested was able to participate in the token sale, except for US citizens.
 
 ##### Utilization:
