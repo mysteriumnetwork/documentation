@@ -104,7 +104,7 @@ identities get-payout-address <providerIdentity>
 
 ### Withdraw earned MYST
 
-You can use the CLI to withdraw MYST you've earned. Make sure your identity is unlocked and check your balance and earninings:
+You can use the CLI to withdraw MYST you've earned. Make sure your identity is unlocked and check your balance and earnings:
 ```bash
 identities get <providerIdentity>
 ```
