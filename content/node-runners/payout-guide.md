@@ -113,7 +113,7 @@ After you click Add Token, navigate to the Custom Token tab and manually enter t
 **Decimals: 18**
 
 
-### How to send MYST Tokens to Polygon Network
+### Bridge your MYST tokens from Ethereum mainnet to Polygon
 
 To use the Polygon Network, you´ll also need some MATIC tokens to pay for the gas fees. This is in the same way that you need ETH for Ethereum and BNB for the Binance Smart Chain. If you already hold some MATIC tokens in a Polygon based wallet (such as Metamask), you can move forward and bridge MYST tokens from Ethereum to the Polygon Network.
 
