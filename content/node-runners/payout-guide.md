@@ -106,7 +106,7 @@ After you click Add Token, navigate to the Custom Token tab and manually enter t
 
 **MYST token details:**
 
-**Token Address : https://polygonscan.com/token/0x1379e8886a944d2d9d440b3d88df536aea08d9f3**
+**Token Contract Address on PolygonScan : https://polygonscan.com/token/0x1379e8886a944d2d9d440b3d88df536aea08d9f3**
 
 **Symbol: MYST**
 
