@@ -102,6 +102,32 @@ Ensure that beneficiary wallet address has been successfully changed:
 identities get-payout-address <providerIdentity>
 ```
 
+### Withdraw earned MYST
+
+You can use the CLI to withdraw MYST you've earned. Make sure your identity is unlocked and check your balance and earninings:
+```bash
+identities get <providerIdentity>
+```
+
+(Optional) The amount which you can withdraw will be displayed as your balance. Your earnings are periodically settled in to your balance.
+If you want to settle earnings in to balance yourself (it will cost you a certain amount MYST in fees), you can do so by running:
+```bash
+identities settle <providerIdentity>
+```
+
+After that's done you can now withdraw your funds using the withdraw command:
+```bash
+identities withdraw <providerIdentity> <withdrawToAddress> <toChain> [amount]
+```
+
+You can withdraw to two chains:
+* 1 (ETH mainnet)
+* 137 (Matic mainnet)
+
+Note that when dealing with ETH mainnet the fees will be a lot higher for any operation including withdrawal.
+The last `[amount]` argument is optional and if skipped all your balance will be withdrawn.
+
+
 ### Managing node service
 
 #### To start WireGuard service we'd have to execute (note that WireGuard service is started automatically upon installation, therefore you don't need to start it manually):
