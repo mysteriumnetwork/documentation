@@ -47,7 +47,7 @@ We take no responsibility for the results and outcomes of using third-party soft
 We only recommend to hold/trade our tokens for the future purpose of using the Mysterium platform.
 
 
-## Adding MYST token to MetaMask 
+## Adding MYST token to MetaMask on the Ethereum Mainnet
 
 
 Ether (ETH) is already added to your MetaMask by default. You won’t need to go through this process to start depositing and withdrawing ETH. For other ERC-20 based tokens, you need to add them to your MetaMask asset tab.
@@ -74,4 +74,57 @@ After this, you will be able to view your earned MYST tokens on the Assets tab. 
 On mobile, the process is exactly the same. However, you might find it a bit harder to copy and paste the Contract Token Address on the mobile app.
 
 And that’s it. You’ve learned how to add your tokens and are a step closer to plunging into the decentralized ecosystem!
+
+
+## Using MetaMask with Polygon MYST
+
+Polygon MYST can be added to your MetaMask with a few simple clicks.
+
+### Link MetaMask to the Polygon Network
+
+1. Open MetaMask console and switch the connected blockchain (network) by clicking on the tab saying Ethereum Mainnet, we need to add the Matic network.
+2. Scroll down until you find Custom RPC.
+3. Enter in the Matic Mainnet settings as follows:
+
+> Network Name: Matic Mainnet
+
+> New RPC URL: https://rpc-mainnet.maticvigil.com/
+
+> Chain ID: 137
+
+> Currency Symbol (optional): MATIC
+
+> Block Explorer URL (optional): https://explorer.matic.network/
+
+<div style="text-align:center">
+  <img src="../images/platforms/mp1.png" alt="Polygon" class="screenshot"/>
+</div>
+
+
+You have now connected to the Matic mainnet with your Metamask Wallet! You can now interact with Polygon tokens like $MYST while connected to Polygon. Note that transactions on the Polygon network requires its native token MATIC which will be used as gas fee. You can get Matic tokens from most exchanges.
+
+### Adding MYST token to MetaMask on the Polygon Mainnet
+
+Follow our previous guide - > Adding MYST token to MetaMask on the Ethereum Mainnet. Please note that recently created Polygon (Matic) Mainnet blockchain should be used instead of the Ethereum Mainnet!
+
+### How to send MYST Tokens to Polygon Network
+
+To use the Polygon Network, you´ll also need some MATIC tokens to pay for the gas fees. This is in the same way that you need ETH for Ethereum and BNB for the Binance Smart Chain. If you already hold some MATIC tokens in a Polygon based wallet (such as Metamask), you can move forward and bridge MYST tokens from Ethereum to the Polygon Network.
+
+1. Navigate to the Matic Wallet v2 where you’ll be prompted to connect a wallet.
+
+<div style="text-align:center">
+  <img src="../images/platforms/polygon.png" alt="MYST/Polygon" class="screenshot"/>
+</div>
+
+2. “Connect” your Metamask Wallet, “Sign the Transaction” and ensure that Metamask is connected to the Ethereum Mainnet. This where you’re MYST tokens should currently be to perform the bridge.
+3. From the top of the screen click “Apps” and choose “Polygon Bridge“. Here is where you can swap your tokens from ERC20 tokens to the Polygon network.
+4. Choose “MYST” from the dropdown list and enter the “Amount” you’d like to bridge.
+5. Click on “Transfer“ and "Continue". You will get a transfer overview including all the estimated fees.
+6. Click “Continue” and “Confirm” then “Approve the transaction” inside your MetaMask Wallet.
+
+When the bridge has completed its transfer, your MYST tokens will then appear in your MetaMask wallet under the Polygon Network.
+
+
+
 
