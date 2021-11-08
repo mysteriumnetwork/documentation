@@ -123,7 +123,7 @@ To use the Polygon Network, you´ll also need some MATIC tokens to pay for the g
 5. Click on “Transfer“ and "Continue". You will get a transfer overview including all the estimated fees.
 6. Click “Continue” and “Confirm” then “Approve the transaction” inside your MetaMask Wallet.
 
-When the bridge has compelted its transfer, your MYST tokens will then appear in your MetaMask wallet under the Polygon Network.
+When the bridge has completed its transfer, your MYST tokens will then appear in your MetaMask wallet under the Polygon Network.
 
 
 
