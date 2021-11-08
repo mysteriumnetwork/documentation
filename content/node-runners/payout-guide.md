@@ -102,11 +102,6 @@ You have now connected to the Matic mainnet with your Metamask Wallet! You can n
 
 To add MYST token to your MetaMask, go to the main MetaMask account page. Click on the assets tab, where you’ll see Add Token at the bottom.
 
-<div style="text-align:center">
-  <img src="../images/platforms/metamask.png" alt="Check connection button" class="screenshot"/>
-</div>
-
-
 After you click Add Token, navigate to the Custom Token tab and manually enter the MYST token details. Copy the Token Contract Address (please find below) and paste that onto the Custom Token tab on MetaMask. 
 
 **MYST token details:**
