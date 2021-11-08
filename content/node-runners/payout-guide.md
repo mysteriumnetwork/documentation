@@ -94,7 +94,7 @@ Polygon MYST can be added to your MetaMask with a few simple clicks.
 
 > Currency Symbol (optional): MATIC
 
-> Block Explorer URL (optional): https://explorer.matic.network/
+> Block Explorer URL (optional): https://polygonscan.com/
 
 You have now connected to the Matic mainnet with your Metamask Wallet! You can now interact with Polygon tokens like $MYST while connected to Polygon. Note that transactions on the Polygon network requires its native token MATIC which will be used as gas fee. You can get MATIC tokens in any DEX available in the Ethereum Mainnet (such as at @Uniswap) and then bridge the tokens to Polygon.
 
