@@ -6,7 +6,7 @@ module.exports = {
     "node-runners/setup/index"
   ],
   "Node runner guides": [
-    "node-runners/testnet3-migration",
+    "node-runners/mainnet-migration",
     "node-runners/setup/docker",
     "node-runners/setup/node-installer",
     "node-runners/setup/raspberry-pi",
