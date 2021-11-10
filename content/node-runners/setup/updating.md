@@ -108,17 +108,9 @@ Unattended-Upgrade::Automatic-Reboot "true";
 Unattended-Upgrade::Automatic-Reboot-WithUsers "true";
 ```
 
-`unattended-ugprades` is running automatically and is called via `cronjob`. If you want to debug it, you can easily run it with parameter: 
-
-```bash 
-sudo unattended-upgrades -d
-```
-
-All logs can be found here: `/var/log/unattended-upgrades/unattended-upgrades.log`
-
 ### Allowing automatic node updates on Ubuntu/Debian
 
-The section that controls what packages are updated automatically starts with `Unattended-Upgrade::Allowed-Origins {`. It will look something like the above screenshot. You can enable all packages or security updates only. For software that is not on the Ubuntu repos that you would like to update, you need to add an origin and archive to the file. To find what those are for your PPAs, open the folder `/var/lib/apt/lists/`, that is the storage area for state information for each package resource and look for the file that end with Release in the name. Navigate to this file.
+The section that controls what packages are updated automatically starts with `Unattended-Upgrade::Allowed-Origins {`. You can enable all packages or security updates only. For software that is not on the Ubuntu repos that you would like to update, you need to add an origin and archive to the file. To find what those are for your PPAs, open the folder `/var/lib/apt/lists/`, that is the storage area for state information for each package resource and look for the file that end with Release in the name. Navigate to this file.
 
 Inside you will see something like the following:
 
@@ -149,3 +141,11 @@ Unattended-Upgrade::Allowed-Origins {
         "LP-PPA-mysteriumnetwork-node-mainnet:focal";
 };
 ```
+
+`unattended-ugprades` is running automatically and is called via `cronjob`. If you want to debug it, you can easily run it with parameter: 
+
+```bash 
+sudo unattended-upgrades -d
+```
+
+All logs can be found here: `/var/log/unattended-upgrades/unattended-upgrades.log`
