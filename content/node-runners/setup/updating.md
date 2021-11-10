@@ -68,7 +68,7 @@ docker run --cap-add NET_ADMIN -d -p 4448:4449 --name myst-mainnet -v myst-data-
 ```
 
 Network: `Mainnet`
-Container Name: `myst-mainne`
+Container Name: `myst-mainnet`
 Port to listen NodeUI on: `4448`
 Volume: `myst-data-mainnet`
 
