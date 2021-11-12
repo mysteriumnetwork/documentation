@@ -1,6 +1,6 @@
 ---
-title: Mainnet migration 
-description: How to migrate to Mainnet
+title: Pre-Mainnet migration 
+description: How to migrate to Pre-Mainnet
 ---
 
 ## Updating your node
