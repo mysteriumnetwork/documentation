@@ -159,7 +159,7 @@ For the example lets say we'll top up 100 `MYST` while paying in `BTC`
 in that case we'd execute the command like this:
 
 ```bash
-myst account topup --amount 100 --currency BTC 
+myst account topup --amount 100 --currency BTC --gateway coingate
 ```
 
 If everything is completed without errors, the output should be similar to this:
