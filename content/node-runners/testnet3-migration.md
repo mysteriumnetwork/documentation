@@ -5,7 +5,7 @@ description: How to migrate to MainNet
 
 ## Migration to MainNet
 
-The new MainNet node has many new features including a simplified onboarding flow, super fast and cheap registrations, Matic Polygon withdrawals and much more. For a majority of nodes your user accounts including payout (beneficiary) addresses and API keys were migrated from the old my.mysterium.network to the new Mystnodes.com platform.
+The new MainNet node has many new features including a simplified onboarding flow, super fast and cheap registrations, Matic Polygon withdrawals and much more. For a majority of nodes your user accounts including an API keys were migrated from the old my.mysterium.network to the new Mystnodes.com platform.
 
 Once your node is migrated to MainNet, you will automatically start earning in a new way based on supply and demand as explained in the [Payout Rules](https://mystnodes.com/payout-rules). **Migration for RaspberryPi nodes with pre-installed mystberry package will happen automatically by updating your node software.** If your node does not auto-update or something goes wrong - you can follow the steps below to manually update your node.
 
