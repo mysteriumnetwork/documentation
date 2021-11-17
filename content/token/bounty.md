@@ -4,6 +4,16 @@ weight: 1
 description: Mysterium Node Pilot
 ---
 
+## MainNet migration - what do you need to know?
+
+### Bounties are replaced by P2P payments
+
+Mysterium Network MainNet provides new opportunities for both VPN consumers and Exit node runners. Bounties are replaced by peer-to-peer payments based on supply and demand, in other words VPN consumers pay Exit node runners for their services.
+
+All bounties collected on TestNet3 during November will be paid as usual according to Bounty rules. The last day for collecting bounties is the 30th of November, 2021. After this date there will be no rewards for running a node in TestNet3. 
+
+**Important: After November bounty payouts are done, remaining bounty amounts will be reset to 0.**
+
 ## Mysterium Node Bounty Programs
 
 Mysterium’s bounty programs reward those who run a node and help power the network during our testnet (BETA) development. 
