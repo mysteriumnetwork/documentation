@@ -119,6 +119,14 @@ When your node is in a data center:
 </div>
 
 
+### Where do I check and withdraw my earnings?
+
+Earnings for each of your nodes can be checked in:
+- Nodes list
+- Node’s internal NodeUI http://[local-ip-of-your-node]:4449. 
+
+You can withdraw your earnings from Node’s internal NodeUI http://[node-ip]:4449.
+
 ### Change payout (beneficiary) address
 
 You can change the beneficiary address once you earn at least a little bit of MYST. The amount varies, but it's somewhere between 0.001 and 0.002 MYST. 
