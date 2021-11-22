@@ -59,7 +59,7 @@ For your new nodes to appear in the new Mystnodes.com platform you must claim th
 There are three ways of claiming your node:
 
 1. By logging into the new Mystnodes.com platform, navigating to the Onboarding page and completing the process there.
-2. By logging into the built-in Node UI and entering your API token into the NodeUI settings panel (your API token is the same as before. If needed, you can find and copy your API key in your [Mystnodes.com profile](https://mystnodes.com/me). 
+2. By logging into the built-in Node UI and entering your API token into the NodeUI settings panel (your API token is the same as before. If needed, you can find and copy your API key in your [Mystnodes.com profile](https://mystnodes.com/me)). 
 3. By running the below commands via Mysterium CLI (CLI is a command line interface that allows you to manipulate a Mysterium node using just your terminal. It can be started using a myst cli command):
 
 *Agree to Terms of Use (once)*: 
