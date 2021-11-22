@@ -117,7 +117,7 @@ After you click Add Token, navigate to the Custom Token tab and manually enter t
 
 To use the Polygon Network, you´ll also need some MATIC tokens to pay for the gas fees. This is in the same way that you need ETH for Ethereum and BNB for the Binance Smart Chain. If you already hold some MATIC tokens in a Polygon based wallet (such as Metamask), you can move forward and bridge MYST tokens from Ethereum to the Polygon Network.
 
-1. Navigate to the Matic Wallet v2 where you’ll be prompted to connect a wallet.
+1. [Navigate to the Matic Wallet v2](https://wallet.polygon.technology/bridge/) where you’ll be prompted to connect a wallet.
 2. “Connect” your Metamask Wallet, “Sign the Transaction” and ensure that Metamask is connected to the Ethereum Mainnet. This where you’re MYST tokens should currently be to perform the bridge.
 3. From the top of the screen click “Apps” and choose “Polygon Bridge“. Here is where you can swap your tokens from ERC20 tokens to the Polygon network.
 4. Choose “MYST” from the dropdown list and enter the “Amount” you’d like to bridge.
