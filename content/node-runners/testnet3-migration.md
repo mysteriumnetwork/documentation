@@ -1,11 +1,15 @@
 ---
 title: Pre-Mainnet migration 
-description: How to migrate to Pre-Mainnet
+description: How to migrate to MainNet
 ---
 
-## Updating your node
+## Migration to MainNet
 
-If your node does not auto-update or something goes wrong. You can follow the following steps to update:
+The new MainNet node has many new features including a simplified onboarding flow, super fast and cheap registrations, Matic Polygon withdrawals and much more. For a majority of nodes your user accounts including an API keys were migrated from the old my.mysterium.network to the new Mystnodes.com platform.
+
+Once your node is migrated to MainNet, you will automatically start earning in a new way based on supply and demand as explained in the [Payout Rules](https://mystnodes.com/payout-rules). **Migration for RaspberryPi nodes with pre-installed mystberry package will happen automatically by updating your node software.** If your node does not auto-update or something goes wrong - you can follow the steps below to manually update your node.
+
+## Manually updating your node
 
 ### How to update your Raspberry Pi node
 
@@ -46,8 +50,29 @@ Delete the container that is already being used for running node:
 docker rm -f myst
 ```
 
-Follow the running a docker node guide (https://docs.mysterium.network/node-runners/setup/docker/) to start a new container.
+Follow the running a docker node guide (https://docs.mysterium.network/node-runners/setup/docker/) to start a new container on your machine.
 
+## Steps to claim your node on mystnodes.com:
+
+For your new nodes to appear in the new Mystnodes.com platform you must claim them via the new [Mystnodes.com onboarding page](https://mystnodes.com/onboarding), Node UI or Mysterium CLI app.
+
+There are three ways of claiming your node:
+
+1. By logging into the new Mystnodes.com platform, navigating to the Onboarding page and completing the process there.
+2. By logging into the built-in Node UI and entering your API token into the NodeUI settings panel (your API token is the same as before. If needed, you can find and copy your API key in your [Mystnodes.com profile](https://mystnodes.com/me). 
+3. By running the below commands via Mysterium CLI (CLI is a command line interface that allows you to manipulate a Mysterium node using just your terminal. It can be started using a myst cli command):
+
+*Agree to Terms of Use (once)*: 
+```bash
+myst cli --agreed-terms-and-conditions`
+```
+
+*Claim your node*: 
+```bash
+mmn {api_key}
+```
+
+You should now see your node on the [My nodes list](https://mystnodes.com/nodes).
 
 ## Confirm your node is running
 
@@ -78,31 +103,6 @@ CONTAINER ID   IMAGE                          COMMAND                  CREATED  
 074a8fcb572c   mysteriumnetwork/myst:latest   "/usr/local/bin/dock…"   44 seconds ago   Up 42 seconds  
 ```
 
-## Claim your nodes
-
-The new Pre-mainnet node has many new features including a simplified onboarding flow, super fast and cheap registrations and more. For a majority of nodes your payout (beneficiary) addresses and API keys were migrated to the new network.
-
-**Once your node is updated, you must visit the Node UI Settings page to ensure that your API key is present under MMN integration section. If not, please re-enter your API key and Save it.**
-
-For your new nodes to appear in the new My Mysterium platform you must claim them via the new Node UI or CLI app.
-
-There are two ways of claiming your node:
-
-1. By logging into the built-in Node UI and going through the onboarding process.
-2. By running the below commands via Mysterium CLI (CLI is a command line interface that allows you to manipulate a Mysterium node using just your terminal. It can be started using a myst cli command):
-
-*Agree to Terms of Use (once)*: 
-```bash
-myst cli --agreed-terms-and-conditions`
-```
-
-*Claim your node*: 
-```bash
-mmn {api_key}
-```
-
-**Note:** You can find and copy your MMN API key in your [MMN profile](https://testnet2.mysterium.network/user/profile).
-
 ### How to login to the Node UI
 
 When your node is in a local network:
@@ -118,6 +118,14 @@ When your node is in a data center:
   <img src="../images/node-ui/welcome.png" alt="Welcome" class="screenshot">
 </div>
 
+
+### Where do I check and withdraw my earnings?
+
+Earnings for each of your nodes can be checked in:
+- Nodes list
+- Node’s internal NodeUI http://[local-ip-of-your-node]:4449. 
+
+You can withdraw your earnings from Node’s internal NodeUI http://[node-ip]:4449.
 
 ### Change payout (beneficiary) address
 
