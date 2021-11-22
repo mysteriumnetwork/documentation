@@ -38,7 +38,7 @@ sudo apt update; sudo apt install myst
 
 In order to update your Docker node, run the following commands.
 
-Pull the testnet3 node image:
+Pull the Mainnet node image:
 
 ```bash
 docker pull mysteriumnetwork/myst:latest
