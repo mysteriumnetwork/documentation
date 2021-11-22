@@ -6,7 +6,7 @@ description: How to migrate to MainNet
 ## Migration to MainNet
 
 <div style="text-align:center">
-  <img src="documentation/content/images/postinstall/mainnet.png" alt="Dashboard" class="screenshot">
+  <img src="https://github.com/mysteriumnetwork/documentation/blob/master/content/images/postinstall/mainnet.png" alt="Dashboard" class="screenshot">
 </div>
 
 The new MainNet node has many new features including a simplified onboarding flow, super fast and cheap registrations, Matic Polygon withdrawals and much more. For a majority of nodes your user accounts including an API keys were migrated from the old my.mysterium.network to the new Mystnodes.com platform.
