@@ -1,5 +1,5 @@
 ---
-title: Pre-Mainnet migration 
+title: MainNet migration 
 description: How to migrate to MainNet
 ---
 
