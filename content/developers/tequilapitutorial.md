@@ -5,7 +5,7 @@ description: Creating a simple web app that shows us how to use TequilAPI
 
 In this tutorial, we are going to make a web app that allows us to manage and view the stats of multiple nodes. We will use the [mysterium-vpn-js](https://github.com/mysteriumnetwork/mysterium-vpn-js) npm package to interact with our nodes and manage them.
 
-For those who'd like to skip directly to the code, [here is a link](https://github.com/Guillembonet/tequilapi-webapp-tutorial)
+For those who'd like to skip directly to the code, [here is a link](https://github.com/mysteriumnetwork/tequilapi-webapp-tutorial)
 
 Our web app will consist of 2 parts:
 - A React application
