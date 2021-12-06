@@ -22,6 +22,9 @@ docker exec -ti myst myst cli
 ```bash
 identities set-payout-address <identity> <beneficiary>
 ```
+## Auto Settlement
+
+Unsettled earnings will be settled once you reach ~0.35 MYST
 
 ## Supported wallets
 
