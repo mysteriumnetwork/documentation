@@ -83,7 +83,7 @@ Make sure to use volumes as in the example above to persist your node's identity
 
 ### Docker Compose
 
-if you dont want to run it as an docker run command, you can create an `docker-compose.yml` an put the following code inside.
+if you dont want to run it as an docker run command, you can use docker-compose for it.
 
 Create `docker-compose.yml`
 ```
@@ -113,7 +113,7 @@ services:
       - ./myst-data:/var/lib/mysterium-node
 ```
 
-Create and folder as sibbling to `docker-compose.yml`:
+Create a new folder as sibbling to `docker-compose.yml`:
 ```
 mkdir myst-data
 ```
