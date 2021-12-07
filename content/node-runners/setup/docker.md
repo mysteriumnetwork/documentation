@@ -81,6 +81,48 @@ If you run containers in the background, you can find out their details using `d
 
 Make sure to use volumes as in the example above to persist your node's identity through container and host system restarts or node image upgrades.
 
+### Docker Compose
+
+if you dont want to run it as an docker run command, you can create an `docker-compose.yml` an put the following code inside.
+
+Create `docker-compose.yml`
+```
+touch docker-compose.yml
+```
+
+Add folowing configuration to it
+```
+version: '2.1'
+
+services:
+  mysterium:
+    image: mysteriumnetwork/myst:latest
+    restart: always
+    expose:
+      - 4449
+      - 1194
+      - 4050
+    ports:
+      - 4449:4449
+      - 1194:1194
+      - 4050:4050
+    cap_add:
+      - NET_ADMIN
+    command: 'service --agreed-terms-and-conditions'
+    volumes:
+      - ./myst-data:/var/lib/mysterium-node
+```
+
+Create and folder as sibbling to `docker-compose.yml`:
+```
+mkdir myst-data
+```
+
+Now run your Docker-Container
+```
+docker-compose up -d
+```
+
 
 ## Complete installation
 
