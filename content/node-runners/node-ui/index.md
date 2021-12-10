@@ -60,7 +60,7 @@ DH2i NAT Test: https://clients.dh2i.com/NatTest/
 
 ### Bounty Payout settings
 
-The bounty payout address (ERC-20) is the address of your wallet where you want to receive your earnings.
+The bounty payout address (ERC-20 or Polygon) is the address of your wallet where you want to receive your earnings.
 
 <div style="text-align:center">
   <img src="../../images/node-ui/bounty-payout-settings.png" alt="Bounty Payout settings" class="screenshot" />
@@ -78,7 +78,7 @@ For bounty payouts, claim your node in MMN by providing the Node UI with your MM
 
 ### Advanced settings
 
-Will be updated shortly.
+
 
 ### Reporting an issue
 
