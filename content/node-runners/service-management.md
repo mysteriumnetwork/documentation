@@ -5,7 +5,7 @@ description: How to change service settings, automatic pricing
 
 ## Automatic pricing
 
-Starting from testnet3 pricing model for Node runners is automatic. By providing automatic pricing we aim to make them competitive across all node runners and improve Node visibility.  
+Starting from Mainnet pricing model for Node runners is automatic. By providing automatic pricing we aim to make them competitive across all node runners and improve Node visibility.  
 
 ## Global service settings
 
@@ -26,6 +26,6 @@ Your Node UI allows you to change service settings for all of your VPN services.
 
 If your node is not available in our consumer apps, you should make sure that the configuration is correct:
 
-- Your price range may be out of bounds with the currently implemented pricing ranges in the apps.
-- Your node is using the verified partner traffic option
+- Your node is using the verified partner traffic/whitelisting option
+- Your node quality is too low (switch quality slider from Medium+ to Any to view it)
 - Your node is outdated. Read our [update guide](/node-runners/setup/updating/).
