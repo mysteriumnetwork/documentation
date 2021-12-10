@@ -9,7 +9,7 @@ Create a [Mystnodes.com](https://mystnodes.com/) account to get service health a
 
 ### How the monitoring agent connects to your nodes
 
-- Every 24 hours we send 1GB of data to check your speed and connection health.
+- Every 24 hours we send 0.5GB of data to check your speed and connection health.
 - Every 6 hours we attempt to connect to make sure your node is accessible.
 
 ### How to trigger a connection check
