@@ -66,7 +66,7 @@ Mysterium team hasn’t collected information except for email addresses from co
 
 ### Token migration
 
-Already hodl MYST? Then you’ve come to the right place. Mysterium has started upgrading its token to MYSTv2.  
+Already hold MYST? Then you’ve come to the right place. Mysterium has started upgrading its token to MYSTv2.  
 
 While there will be no time limit for migrating tokens, please be aware that only the new token standard will be used in the Mysterium Network payment system and actively traded on exchanges. [Find out how to migrate your token](https://mysterium.network/blog/myst-token-migration-guide/).
 
