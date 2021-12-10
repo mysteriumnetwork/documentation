@@ -66,7 +66,7 @@ There are three ways of claiming your node:
 
 *Agree to Terms of Use (once)*: 
 ```bash
-myst cli --agreed-terms-and-conditions`
+myst cli --agreed-terms-and-conditions
 ```
 
 *Claim your node*: 
