@@ -33,7 +33,7 @@ There are two "types" of wallets that you can use:
  
 a) Crypto exchange wallets. A user-specific deposit wallet address to facilitate transfers to the exchange (**we currently support HitBTC and Bittrex deposit addresses only**). Always use the exchange's dedicated deposit workflow! If you think you sent assets to the wrong exchange account, please reach out to the exchange's customer support team.
 
-b) Direct Blockchain wallets (such as Metamask, Trust wallet, Atomic, MEW, MyCrypto, Trezor, Ledger ...). 
+b) Direct Blockchain wallets (such as Metamask, Trust wallet, MEW, MyCrypto, Trezor, Ledger ...). 
 
 
 MYST is a standard ERC-20 token, if wallet supports ERC-20 tokens (has possibility to add any custom ERC-20 token), then MYST can be added there.
