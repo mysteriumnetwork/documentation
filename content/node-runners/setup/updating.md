@@ -148,29 +148,3 @@ sudo unattended-upgrades -d
 ```
 
 All logs can be found here: `/var/log/unattended-upgrades/unattended-upgrades.log`
-
-
-## Dual-mode provider (Testnet3 + Mainnet)
-
-Run multiple containers of the same image:
-
-```bash
-docker run --cap-add NET_ADMIN -d -p 4449:4449 --name myst -v myst-data:/var/lib/mysterium-node mysteriumnetwork/myst:0.68.2-alpine --agreed-terms-and-conditions
-```
-Network: `Testnet3`
-Container Name: `myst`
-Port to listen NodeUI on: `4449`
-Volume: `myst-data`
-
-Spin off another container for Mainnet: 
-
-```bash
-docker run --cap-add NET_ADMIN -d -p 4448:4449 --name myst-mainnet -v myst-data-mainnet:/var/lib/mysterium-node mysteriumnetwork/myst:mainnet service --agreed-terms-and-conditions
-```
-
-Network: `Mainnet`
-Container Name: `myst-mainnet`
-Port to listen NodeUI on: `4448`
-Volume: `myst-data-mainnet`
-
-The same result could be achieved by running two RPi nodes with same IP.
