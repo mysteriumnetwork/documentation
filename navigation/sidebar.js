@@ -19,7 +19,6 @@ module.exports = {
     "node-runners/node-migration",
     "node-runners/service-management",
     "node-runners/service-monitoring",
-    "node-runners/payout-guide",
     "node-runners/troubleshooting/index"
   ],
   "Legal": [
