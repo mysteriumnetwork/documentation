@@ -58,28 +58,49 @@ docker run --cap-add NET_ADMIN --net host -v /home/mysterium-node:/var/lib/myste
 You can backup / restore your identity using the __CLI__.
 The result will be protected by a passphrase you provide. The passphrase should be at least 12 symbols.
 
-On Linux setup run
+### Linux Export
 ```bash
 sudo myst cli
-identities export 0x4570fe47a49af9ae9bd76f029818413ea18620000 passphrase
+identities list
 ```
 
-On Docker setup run 
+Select identity you wish to export and set a passphrase:
 ```bash
-docker exec -it e18090529c1e myst cli 
-identities export 0x4570fe47a49af9ae9bd76f029818413ea18620000 passphrase
+identities export <identityID> <passphrase>
 ```
-Where 0x4570fe47a49af9ae9bd76f029818413ea18620000 is an ID of identity and
-e18090529c1e is a real docker container id of myst. To find the id run `docker ps`.
 
+### Docker Export
+
+On Docker setup run to find the correct container ID
+```bash
+docker ps
+```
+
+Run get list of identites in your Myst container
+```bash
+docker exec -it <containerID> myst cli
+identities list
+```
+
+Select identity you wish to export and set a passphrase:
+```bash
+identities export <identityID> <passphrase>
+```
 Now copy the output.
 
-To restore an identity on a target node run
+### Identity Import
+To restore an identity on a target node run:
 ```bash
 myst cli
-identities import passphrase <output>
+identities import <passphrase> <output>
 ```
-Where the <output> is the result of an export command and passphrase is a respective passphrase. 
+
+or for Docker:
+```bash
+docker exec -it <containerID> myst cli
+identities import <passphrase> <output>
+```
+Where <containerID> is the Myst Docker container ID,  <output> is the result of an export command and <passphrase> is the passphrase set when exporting the identity.
 
 ## How should I set a passphrase for node identity?
 By default, generated identity is not protected with any password, that is password is an empty string. If You want to generate a password protected identity You can add `--identity.passphrase` to running command:
