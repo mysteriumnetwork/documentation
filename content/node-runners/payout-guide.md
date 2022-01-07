@@ -89,9 +89,9 @@ Polygon MYST can be added to your MetaMask with a few simple clicks.
 2. Scroll down until you find Custom RPC.
 3. Enter in the Matic Mainnet settings as follows:
 
-> Network Name: Matic Mainnet
+> Network Name: Polygon Mainnet
 
-> New RPC URL: https://rpc-mainnet.maticvigil.com/
+> New RPC URL: https://polygon-rpc.com/
 
 > Chain ID: 137
 
