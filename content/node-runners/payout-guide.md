@@ -85,13 +85,13 @@ Polygon MYST can be added to your MetaMask with a few simple clicks.
 
 ### Link MetaMask to the Polygon Network
 
-1. Open MetaMask console and switch the connected blockchain (network) by clicking on the tab saying Ethereum Mainnet, we need to add the Matic network.
+1. Open MetaMask console and switch the connected blockchain (network) by clicking on the tab saying Ethereum Mainnet, we need to add the Polygon network.
 2. Scroll down until you find Custom RPC.
-3. Enter in the Matic Mainnet settings as follows:
+3. Enter in the Polygon Mainnet settings as follows:
 
-> Network Name: Matic Mainnet
+> Network Name: Polygon Mainnet
 
-> New RPC URL: https://rpc-mainnet.maticvigil.com/
+> New RPC URL: https://polygon-rpc.com/
 
 > Chain ID: 137
 
