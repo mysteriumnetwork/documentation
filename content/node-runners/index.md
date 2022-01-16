@@ -13,14 +13,14 @@ How are we doing this? We are building: <b>A global decentralised network of res
 ## How does it work?
 Virtual Private Networks (VPNs) establish secure and encrypted connections to provide greater privacy. Mysterium is a peer to peer VPN, where network actors both consume and provide VPN services. 
 
-Mysterium dVPN is available on Windows, Mac and Android. They are currently running on testnet. <a href="https://mysterium.network/apps/">Download</a> and tell us what you think on <a href="https://discord.com/invite/n3vtSwc">discord</a>.
+Mysterium dVPN is available on Windows, Mac and Android. They are currently running on Mainnet. <a href="https://www.mysteriumvpn.com/">Download</a> and tell us what you think on <a href="https://discord.com/invite/n3vtSwc">discord</a>.
 
 When you run a <a href="http://mysterium.network/node">Mysterium Node</a> you share your IP address (anonymously) and your spare bandwidth helps power our <a href="https://mysterium.network/apps/">dVPN</a>. It helps users bypass censorship and surveillance, and protects them against cybercrime. 
 
 ## Like TOR but incentivised
 Mysterium Network is building a global peer to peer network. In this Mysterium Network, nodes earn for providing VPN service to users all over the world. 
 
-Mysterium Network has been running an incentivised test network from early 2019. Check out our <a href="https://testnet2.mysterium.network/network">network statistics</a>. 
+Mysterium Network has been running an incentivised test network from early 2019. Check out our <a href="https://stats.mysterium.network/">network statistics</a>. 
 
 We are also hard at work progressing micropayments within our network. Follow our journey into <a href="https://mysterium.network/blog/">blockchain based payments</a>.
 
