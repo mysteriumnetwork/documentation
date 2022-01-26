@@ -18,7 +18,7 @@ To trigger a monitoring check manually, log in to your [Mystnodes.com](https://m
 go to your node's dashboard where you will find a "Check connection" button.
 
 <div style="text-align:center">
-  <img src="../images/node-ui/check-connection-buttoa.png" alt="Check connection button" class="screenshot" />
+  <img src="../images/node-ui/check-connection-button.png" alt="Check connection button" class="screenshot" />
 </div>
 
 This manual connection check will attempt to connect to your Wireguard service.
