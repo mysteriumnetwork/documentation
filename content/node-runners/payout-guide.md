@@ -24,7 +24,7 @@ identities set-payout-address <identity> <beneficiary>
 ```
 ## Auto Settlement
 
-Unsettled earnings will be settled once you reach ~0.9 MYST
+Unsettled earnings will be automatically settled once you reach 5 MYST
 
 ## Supported wallets
 
