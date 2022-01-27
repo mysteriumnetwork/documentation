@@ -65,7 +65,7 @@ The unattended-upgrades config file location is `/etc/apt/apt.conf.d/50unattende
 
 ### Allowing automatic node updates on RaspberryPi
 
-Edit the `20unattended-upgrades` configuration file:
+Edit the `20auto-upgrades` configuration file:
 
 ```bash
 sudo nano /etc/apt/apt.conf.d/20auto-upgrades
@@ -74,16 +74,16 @@ sudo nano /etc/apt/apt.conf.d/20auto-upgrades
 and your configuration file should look like this:
 
 ```bash
-APT::Periodic::Update-Package-Lists "1h";
-APT::Periodic::Download-Upgradeable-Packages "1h";
+APT::Periodic::Update-Package-Lists "1";
+APT::Periodic::Download-Upgradeable-Packages "1";
 APT::Periodic::AutocleanInterval "7";
-APT::Periodic::Unattended-Upgrade "1h";
+APT::Periodic::Unattended-Upgrade "1";
 ```
 
 Edit the `50unattended-upgrades` configuration:
 
 ```bash
-sudo nano /etc/apt/apt.conf.d/50auto-upgrades
+sudo nano /etc/apt/apt.conf.d/50unattended-upgrades
 ```
 
 and your configuration file should look like this:
