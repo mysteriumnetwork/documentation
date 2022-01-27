@@ -166,12 +166,12 @@ This is the line that gets executed when we start up the `Node service`. Here we
 to this command (variables are the strings which start with $ sign for example `$CONF_DIR`). These variables are defined in a file which is located at: `/etc/default/mysterium-node`
 
 To edit the node configuration and launch options we want to edit the variable `$SERVICE_OPTS` adding additional flags to it, which will get passed
-to our `node` once it's started. For example if we wanted to change our `openVPN` and `wireguard` default ports we would replace it with this:
+to our `node` once it's started. For example if we wanted to change the `wireguard` default ports we would replace it with this:
 ```bash
-SERVICE_OPTS="--openvpn.port 4443 --wireguard.listen.ports 52820:53075 openvpn,wireguard"
+SERVICE_OPTS="--wireguard.listen.ports 52820:53075 wireguard"
 ```
 
-Note that `$SERVICE_OPTS` variable should always finish with `openvpn,wireguard` so any configuration you want to add, must go before that.
+Note that `$SERVICE_OPTS` variable should always finish with `wireguard` so any configuration you want to add, must go before that.
 
 **To get the full list of configuration options execute:** `myst --help`
 
