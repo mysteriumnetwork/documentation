@@ -4,6 +4,7 @@ import Linux from "../images/platforms/linux.png"
 import RPI from "../images/platforms/rpi.jpg"
 import Docker from "../images/platforms/docker.png"
 import Avado from "../images/platforms/avado.png"
+import DAppNode from "../images/platforms/dappnode.png"
 import {
   NavItemsContext,
   NavItemDescription
@@ -38,7 +39,8 @@ const icons = {
   docker: Docker,
   rpi: RPI,
   linux: Linux,
-  avado: Avado
+  avado: Avado,
+  dappnode: DAppNode
 }
 
 export default function SubPagesMenu ({ items }) {
