@@ -79,7 +79,7 @@ identities set-payout-address <providerIdentity> <beneficiary>
 There are two types of wallets that you can use: 
 
 
->  Exchange wallets (HitBTC and Bittrex deposit addresses are supported only); 
+>  Exchange wallets (HitBTC and Bittrex deposit addresses are supported on **Ethereum network only!!**); 
 
 >  Direct Blockchain wallets (Metamask, Trust wallet, Atomic, MEW, MyCrypto, Trezor, Ledger ...). 
 
