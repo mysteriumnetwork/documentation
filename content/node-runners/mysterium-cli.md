@@ -60,17 +60,21 @@ After creating and unlocking the identity it must be registered so that Mysteriu
 about it and it's balance, to do that execute the `identities register` command.
 
 ```bash
-identities register <providerIdentity>
+identities register <providerIdentity> [beneficiary]
 ```
+
+Optional field `[beneficiary]` can be provided. If provided withdrawal will be automatic and will be sent to provided beneficiary wallet on each settlement.
 
 #### Claim your node into my.mysterium.network
 ```bash
 mmn <your-api-key>
 ```
-**Note**: You can find and copy your MMN API key in your [MMN profile](https://my.mysterium.network/user/profile).
+**Note**: You can find and copy your API key in your [Mystnodes profile](https://mystnodes.com).
 
 
 #### Set payout wallet address
+
+> Note: Not required if beneficiary is set as withdrawals will be automatic.
 
 ```bash
 identities set-payout-address <providerIdentity> <beneficiary>
@@ -104,6 +108,8 @@ identities get-payout-address <providerIdentity>
 
 ### Withdraw earned MYST
 
+> Note: Not required if beneficiary is set as withdrawals will be automatic.
+
 You can use the CLI to withdraw MYST you've earned. Make sure your identity is unlocked and check your balance and earnings:
 ```bash
 identities get <providerIdentity>
@@ -127,6 +133,20 @@ You can withdraw to two chains:
 Note that when dealing with ETH mainnet the fees will be a lot higher for any operation including withdrawal.
 The last `[amount]` argument is optional and if skipped all your balance will be withdrawn.
 
+### Set beneficiary for automatic withdrawals 
+
+Automatic withdrawals can be enabled by setting your beneficiary address not to be equal to your `channel address`.
+Doing so requires you to have unsettled balance as a transaction to change the address is also a settlement.
+
+To change your beneficiary execute:
+```bash
+identities beneficiary-set <providerIdentity> <wallet_address>
+```
+
+To view the status of your beneficiary transaction and your current set beneficiary execute:
+```bash
+identities beneficiary-status <providerIdentity>
+```
 
 ### Managing node service
 

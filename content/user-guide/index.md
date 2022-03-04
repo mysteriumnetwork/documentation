@@ -308,13 +308,13 @@ identities unlock 0x4570fe47a49af9ae9bd76f029818413ea18620000
 ```
 
 #### Register your identity
-> Command: identities register [identity] [stake]
+> Command: identities register [identity]
 
 After creating and unlocking the identity it must be registered so that Mysterium services are aware
 about it and it's balance, to do that execute the `identities register` command.
 
 ```bash
-identities register 0x4570fe47a49af9ae9bd76f029818413ea18620000 0
+identities register 0x4570fe47a49af9ae9bd76f029818413ea18620000
 ```
 
 ### Managing your balance 
