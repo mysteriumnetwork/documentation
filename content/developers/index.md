@@ -8,7 +8,7 @@ The minimum recommended pre-requisites for building, running and testing Mysteri
 
 | Software           | Minimum Version |
 |--------------------|-----------------|
-| Go                 | 1.14.0+         |
+| Go                 | 1.17.0+         |
 | Docker             | 19.0+           |
 | Docker Compose     | 1.21.0+         |
 | Mage (Recommended) | 1.10+           |
