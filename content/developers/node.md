@@ -52,9 +52,16 @@ A node can be started as a `daemon` by executing:
 mage daemon
 ```
 
-Or without mage:
+Or without (using a built binary) mage:
 ```bash
 build/myst/myst daemon
+```
+
+This will start node in a `daemon` mode where no service is running, meaning that it will basically only operate in `consumer mode`. To start
+providing service you'd need to start a node with a running service (default is wireguard): 
+
+```bash
+build/myst/myst service
 ```
 
 ### TequilAPI REST API and CLI app
@@ -98,45 +105,6 @@ To explore everything TequilAPI can do, we host its Swagger docs on: https://teq
 
 Feel free to check the Swagger docs of your own node which are available on the same port as the `TequilAPI`: http://localhost:4050/docs.
 
-### Starting noop service
-
-With the daemon running, you can now register an identity and start a service. 
-
-For beginners, noop service is a good starting point as it allow for local sessions to be established. It doesn't tunnel your traffic, just starts a new session and can be used to test session mechanics locally.
-
-First, with daemon running on one terminal, start a new terminal and run a myst cli on by runnin `build/myst/myst cli`
-
-In the cli, create and register an identity.
-
-To create:
-```
-identities new
-```
-
-Then unlock the identity:
-```
-identities unlock {your_identity} 
-```
-
-Finally, start a noop service.
-```
-service start {your_identity} noop
-```
-
-We will call this the provider identity.
-
-### Connecting to your noop service
-
-To establish a connection from your local machine to the noop service you started above, use the same myst cli to create and register a new identity.
-
-You should now have 2 identities one created in the step above and both of them should be unlocked and registered. 
-
-To connect from your freshly created consumer to the provider, use the following commmand:
-
-```
-connect {consumer_identity} {provider_identity} noop
-```
-
 ### Testing
 
 If you've added new features or changed old ones, make sure to cover them with tests as much as possible. 
@@ -165,10 +133,9 @@ mage checks
 
 ### Contributing 
 
-If you've made changes to the `TequilaAPI` make sure to generate new Swagger documentation:
+If you've made changes to the api make sure to generate new documentation and files:
 ```bash
-mage generateswagger
-mage generatedocs
+mage generate
 ```
 
 That's it! Once you're ready to publish your changes, please create a [pull request](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) in the [official node repository](https://github.com/mysteriumnetwork/node).
