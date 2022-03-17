@@ -10,21 +10,19 @@ We also support several standard ways of installing the SDK using dependency man
 
 ## Android
 
-We are publishing an Android SDK library to our [Bintray repository](https://bintray.com/mysteriumnetwork/maven).
-
-Older releases are available here: [https://search.maven.org/search?q=g:network.mysterium](https://search.maven.org/search?q=g:network.mysterium)
+We are publishing an Android SDK library to our [Maven repository](https://maven.mysterium.network/releases).
 
 To add dependency, add the following to your `build.gradle`:
 
 ```
 repositories {
     maven {
-        url 'https://dl.bintray.com/mysteriumnetwork/maven'
+        url "https://maven.mysterium.network/releases"
     }
 }
 
 dependencies {
-    implementation 'network.mysterium:mobile-node:0.40.0'
+    implementation 'network.mysterium:mobile-node:1.4.7'
 }
 ```
 
